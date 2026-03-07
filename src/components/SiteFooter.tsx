@@ -67,7 +67,7 @@ const SiteFooter = () => {
 
         <div className="border-t border-border pt-8 text-center">
           <p className="font-heading text-xs tracking-[0.3em] text-muted-foreground uppercase">
-            © 2025 We The People — "Governments derive their just powers from the consent of the governed."
+            © 2026 We The People — "Governments derive their just powers from the consent of the governed."
           </p>
         </div>
       </div>
