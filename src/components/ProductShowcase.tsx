@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import { products, categories, type Category } from "@/data/products";
+import { products, categories, type Category, type Product } from "@/data/products";
+import ProductDetailModal from "@/components/ProductDetailModal";
 
 const ProductShowcase = () => {
   const [active, setActive] = useState<Category>("all");
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const filtered =
     active === "all" ? products : products.filter((p) => p.category === active);
 
@@ -43,8 +45,9 @@ const ProductShowcase = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filtered.map((product) => (
             <div
-              key={product.name}
-              className="group bg-card rounded border border-border overflow-hidden shadow-card-revolution hover:border-primary transition-all duration-500"
+              key={product.id}
+              className="group bg-card rounded border border-border overflow-hidden shadow-card-revolution hover:border-primary transition-all duration-500 cursor-pointer"
+              onClick={() => setSelectedProduct(product)}
             >
               <div className="relative overflow-hidden aspect-square">
                 <img
@@ -65,17 +68,49 @@ const ProductShowcase = () => {
                 <h3 className="font-display text-xl text-foreground mb-2">
                   {product.name}
                 </h3>
-                <p className="font-display text-2xl text-primary mb-4">
-                  {product.price}
-                </p>
-                <Button variant="outline" className="w-full">
-                  Add to Cart
+                <div className="flex items-center justify-between mb-4">
+                  <p className="font-display text-2xl text-primary">
+                    {product.price}
+                  </p>
+                  {product.colors.length > 0 && (
+                    <div className="flex gap-1">
+                      {product.colors.slice(0, 4).map((c) => (
+                        <span
+                          key={c.name}
+                          className="w-4 h-4 rounded-full border border-border"
+                          style={{ backgroundColor: c.hex }}
+                          title={c.name}
+                        />
+                      ))}
+                      {product.colors.length > 4 && (
+                        <span className="text-xs text-muted-foreground font-display ml-1">
+                          +{product.colors.length - 4}
+                        </span>
+                      )}
+                    </div>
+                  )}
+                </div>
+                <Button
+                  variant="outline"
+                  className="w-full"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setSelectedProduct(product);
+                  }}
+                >
+                  View Options
                 </Button>
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      <ProductDetailModal
+        product={selectedProduct}
+        open={!!selectedProduct}
+        onClose={() => setSelectedProduct(null)}
+      />
     </section>
   );
 };
