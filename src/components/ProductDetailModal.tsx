@@ -9,12 +9,22 @@ interface Props {
   onClose: () => void;
 }
 
+// Parse hex to get lightness and saturation
+function parseColor(hex: string) {
+  const r = parseInt(hex.slice(1, 3), 16) / 255;
+  const g = parseInt(hex.slice(3, 5), 16) / 255;
+  const b = parseInt(hex.slice(5, 7), 16) / 255;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b);
+  const lightness = (max + min) / 2;
+  const saturation = max === min ? 0 : (max - min) / (1 - Math.abs(2 * lightness - 1));
+  return { lightness, saturation };
+}
+
 const ProductDetailModal = ({ product, open, onClose }: Props) => {
   const [selectedColor, setSelectedColor] = useState(0);
   const [selectedSize, setSelectedSize] = useState(0);
   const [qty, setQty] = useState(1);
 
-  // Reset selections when product changes
   useEffect(() => {
     setSelectedColor(0);
     setSelectedSize(0);
@@ -25,6 +35,22 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
 
   const hasColors = product.colors.length > 0;
   const hasSizes = product.sizes && product.sizes.length > 0;
+  const isDefaultColor = selectedColor === 0;
+  const colorHex = hasColors ? product.colors[selectedColor].hex : null;
+  const colorInfo = colorHex ? parseColor(colorHex) : null;
+  const isChromatic = colorInfo ? colorInfo.saturation > 0.15 : false;
+
+  // Compute image filter based on selected color type
+  const getImageStyle = (): React.CSSProperties => {
+    if (isDefaultColor || !colorInfo) return {};
+    if (isChromatic) {
+      // Desaturate so color overlay replaces hue accurately
+      return { filter: "saturate(0) brightness(1.05)", transition: "filter 0.5s" };
+    }
+    // Achromatic (black, white, grey) — map lightness to brightness
+    const brightness = 0.2 + colorInfo.lightness * 1.6;
+    return { filter: `saturate(0) brightness(${brightness.toFixed(2)})`, transition: "filter 0.5s" };
+  };
 
   return (
     <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
@@ -32,17 +58,36 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
         <DialogTitle className="sr-only">{product.name}</DialogTitle>
 
         <div className="grid md:grid-cols-2 gap-0">
-          {/* Product image — no color tinting */}
-          <div className="relative aspect-square bg-secondary overflow-hidden">
+          {/* Product image with color preview */}
+          <div className="relative aspect-square bg-secondary overflow-hidden" style={{ isolation: "isolate" }}>
             <img
               src={product.image}
               alt={product.name}
               className="w-full h-full object-cover"
+              style={getImageStyle()}
             />
+            {/* Color overlay for chromatic colors only */}
+            {!isDefaultColor && isChromatic && colorHex && (
+              <div
+                className="absolute inset-0 pointer-events-none transition-all duration-500"
+                style={{
+                  backgroundColor: colorHex,
+                  mixBlendMode: "color",
+                  opacity: 0.85,
+                }}
+              />
+            )}
             {product.badge && (
               <span className="absolute top-4 left-4 z-10 bg-primary text-primary-foreground font-display text-xs tracking-wider px-3 py-1">
                 {product.badge}
               </span>
+            )}
+            {hasColors && !isDefaultColor && (
+              <div className="absolute bottom-4 left-4 right-4 z-10">
+                <span className="bg-background/80 backdrop-blur-sm text-foreground font-display text-xs tracking-wider px-3 py-2 rounded">
+                  Color: {product.colors[selectedColor].name}
+                </span>
+              </div>
             )}
           </div>
 
