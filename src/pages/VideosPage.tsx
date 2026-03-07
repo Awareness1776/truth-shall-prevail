@@ -1,17 +1,17 @@
 import SiteHeader from "@/components/SiteHeader";
-import HeroSection from "@/components/HeroSection";
 import SiteFooter from "@/components/SiteFooter";
-import EmailSignup from "@/components/EmailSignup";
+import VideoSection from "@/components/VideoSection";
 
-const Index = () => {
+const VideosPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
-      <HeroSection />
-      <EmailSignup />
+      <div className="pt-16">
+        <VideoSection />
+      </div>
       <SiteFooter />
     </div>
   );
 };
 
-export default Index;
+export default VideosPage;

@@ -1,17 +1,17 @@
 import SiteHeader from "@/components/SiteHeader";
-import HeroSection from "@/components/HeroSection";
 import SiteFooter from "@/components/SiteFooter";
-import EmailSignup from "@/components/EmailSignup";
+import ProductShowcase from "@/components/ProductShowcase";
 
-const Index = () => {
+const ShopPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
-      <HeroSection />
-      <EmailSignup />
+      <div className="pt-16">
+        <ProductShowcase />
+      </div>
       <SiteFooter />
     </div>
   );
 };
 
-export default Index;
+export default ShopPage;
