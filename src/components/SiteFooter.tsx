@@ -13,9 +13,12 @@ const SiteFooter = () => {
                 WE THE PEOPLE
               </span>
             </div>
-            <p className="font-body text-sm text-muted-foreground leading-relaxed">
+            <p className="font-body text-sm text-muted-foreground leading-relaxed mb-3">
               Born from the spirit of 1776. We carry the fire of the founders —
               the belief that power belongs to the people, not the powerful.
+            </p>
+            <p className="font-body text-xs text-primary font-medium tracking-wide uppercase">
+              ★ 10% of every sale supports veteran organizations ★
             </p>
           </div>
 
