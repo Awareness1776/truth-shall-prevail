@@ -99,10 +99,7 @@ const ContactPage = () => {
                   <Mail className="text-primary h-8 w-8 mb-4" />
                   <h3 className="font-display text-lg text-foreground mb-2">EMAIL US</h3>
                   <p className="font-body text-muted-foreground text-sm">
-                    info@wethepeople.com
-                  </p>
-                  <p className="font-body text-muted-foreground text-sm">
-                    support@wethepeople.com
+                    wetpeople.1776@gmail.com
                   </p>
                 </div>
 
