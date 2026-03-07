@@ -7,6 +7,9 @@ import beanieImg from "@/assets/product-beanie.jpg";
 import stickersImg from "@/assets/product-stickers.jpg";
 import tee2Img from "@/assets/product-tee2.jpg";
 import hoodie2Img from "@/assets/product-hoodie2.jpg";
+import caseEagleImg from "@/assets/product-case-eagle.jpg";
+import case2aImg from "@/assets/product-case-2a.jpg";
+import caseSkullImg from "@/assets/product-case-skull.jpg";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
