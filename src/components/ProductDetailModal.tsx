@@ -38,25 +38,36 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
 
         <div className="grid md:grid-cols-2 gap-0">
           {/* Image with color overlay - uses 'color' blend to only shift hue on the product, dark bg stays dark */}
-          <div className="relative aspect-square bg-secondary overflow-hidden">
+          <div className="relative aspect-square bg-secondary overflow-hidden" style={{ isolation: "isolate" }}>
             <img
               src={product.image}
               alt={product.name}
               className="w-full h-full object-cover transition-all duration-500"
               style={
                 !isDefaultColor && colorHex
-                  ? { filter: "saturate(0.15)" }
+                  ? { filter: "saturate(0.08) brightness(1.1)" }
                   : undefined
               }
             />
-            {/* Color blend - only affects non-black areas (the fabric), dark bg is unaffected */}
+            {/* Multiply layer — dark bg stays dark, lighter product areas get tinted */}
+            {!isDefaultColor && colorHex && (
+              <div
+                className="absolute inset-0 transition-all duration-500 pointer-events-none"
+                style={{
+                  backgroundColor: colorHex,
+                  mixBlendMode: "multiply",
+                  opacity: 0.7,
+                }}
+              />
+            )}
+            {/* Soft color layer at low opacity for vibrancy on the product */}
             {!isDefaultColor && colorHex && (
               <div
                 className="absolute inset-0 transition-all duration-500 pointer-events-none"
                 style={{
                   backgroundColor: colorHex,
                   mixBlendMode: "color",
-                  opacity: 0.85,
+                  opacity: 0.4,
                 }}
               />
             )}
