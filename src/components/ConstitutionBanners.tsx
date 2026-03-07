@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { ChevronDown, ChevronUp, BookOpen } from "lucide-react";
 import bannerInfringed from "@/assets/banner-infringed.jpg";
 import bannerConsent from "@/assets/banner-consent.jpg";
 import bannerLiberty from "@/assets/banner-liberty.jpg";
