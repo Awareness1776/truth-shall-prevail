@@ -24,12 +24,63 @@ const banners = [
 ];
 
 const slogans = [
-  { phrase: "NO TAXATION WITHOUT REPRESENTATION", twist: "Still paying. Still unheard." },
-  { phrase: "A WELL-REGULATED MILITIA", twist: "The people ARE the militia." },
-  { phrase: "LIFE, LIBERTY & THE PURSUIT", twist: "They're taking all three." },
-  { phrase: "TO PROVIDE FOR THE COMMON DEFENSE", twist: "Defending themselves — not us." },
-  { phrase: "ESTABLISH JUSTICE", twist: "Justice for who? Not for us." },
-  { phrase: "DOMESTIC TRANQUILITY", twist: "There is no peace without accountability." },
+  // Original
+  { phrase: "NO TAXATION WITHOUT REPRESENTATION", twist: "Still paying. Still unheard.", source: "Revolutionary War Cry" },
+  { phrase: "A WELL-REGULATED MILITIA", twist: "The people ARE the militia.", source: "2nd Amendment" },
+  { phrase: "LIFE, LIBERTY & THE PURSUIT", twist: "They're taking all three.", source: "Declaration of Independence" },
+  { phrase: "TO PROVIDE FOR THE COMMON DEFENSE", twist: "Defending themselves — not us.", source: "Preamble" },
+  { phrase: "ESTABLISH JUSTICE", twist: "Justice for who? Not for us.", source: "Preamble" },
+  { phrase: "DOMESTIC TRANQUILITY", twist: "There is no peace without accountability.", source: "Preamble" },
+  // Bill of Rights
+  { phrase: "CONGRESS SHALL MAKE NO LAW... ABRIDGING FREEDOM OF SPEECH", twist: "Unless they don't like what you're saying.", source: "1st Amendment" },
+  { phrase: "THE RIGHT OF THE PEOPLE TO PEACEABLY ASSEMBLE", twist: "They call it a 'riot' when you disagree with them.", source: "1st Amendment" },
+  { phrase: "TO PETITION THE GOVERNMENT FOR A REDRESS OF GRIEVANCES", twist: "We've been petitioning. They've been ignoring.", source: "1st Amendment" },
+  { phrase: "NO SOLDIER SHALL BE QUARTERED IN ANY HOUSE", twist: "But they'll put surveillance in your pocket.", source: "3rd Amendment" },
+  { phrase: "SECURE IN THEIR PERSONS, HOUSES, PAPERS & EFFECTS", twist: "Your data. Your phone. Your life. None of it is private anymore.", source: "4th Amendment" },
+  { phrase: "NOR SHALL PRIVATE PROPERTY BE TAKEN FOR PUBLIC USE", twist: "Unless a corporation wants it more than you do.", source: "5th Amendment" },
+  { phrase: "THE RIGHT TO A SPEEDY AND PUBLIC TRIAL", twist: "3 years in pre-trial detention is not speedy.", source: "6th Amendment" },
+  { phrase: "EXCESSIVE BAIL SHALL NOT BE REQUIRED", twist: "$500K bail for a misdemeanor? That's the system working as designed.", source: "8th Amendment" },
+  { phrase: "NOR CRUEL AND UNUSUAL PUNISHMENTS INFLICTED", twist: "Define cruel. Because they keep redefining it.", source: "8th Amendment" },
+  // Declaration of Independence
+  { phrase: "ALL MEN ARE CREATED EQUAL", twist: "Unless you're poor, veteran, or inconvenient.", source: "Declaration of Independence" },
+  { phrase: "ENDOWED BY THEIR CREATOR WITH CERTAIN UNALIENABLE RIGHTS", twist: "Unalienable means they can't take them. Remind them.", source: "Declaration of Independence" },
+  { phrase: "DERIVING THEIR JUST POWERS FROM THE CONSENT OF THE GOVERNED", twist: "We didn't consent to any of this.", source: "Declaration of Independence" },
+  { phrase: "IT IS THE RIGHT OF THE PEOPLE TO ALTER OR ABOLISH IT", twist: "Read that again. Slowly. It's in the founding document.", source: "Declaration of Independence" },
+  { phrase: "A LONG TRAIN OF ABUSES AND USURPATIONS", twist: "Sound familiar? The Founders wrote this about a king. We're living it under Congress.", source: "Declaration of Independence" },
+  { phrase: "HE HAS ERECTED A MULTITUDE OF NEW OFFICES", twist: "Bureaucrats nobody elected making rules everybody follows.", source: "Declaration of Independence" },
+];
+
+const billOfRights = [
+  {
+    amendment: "1ST",
+    title: "FREEDOM OF SPEECH, PRESS & ASSEMBLY",
+    original: "Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press.",
+    reality: "They can't silence you with laws, so they silence you with algorithms, deplatforming, and 'misinformation' labels. The 1st Amendment doesn't have a terms of service.",
+  },
+  {
+    amendment: "2ND",
+    title: "THE RIGHT TO BEAR ARMS",
+    original: "A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.",
+    reality: "'Shall not be infringed' — four words they've spent 250 years trying to rewrite. The Founders didn't stutter.",
+  },
+  {
+    amendment: "4TH",
+    title: "UNREASONABLE SEARCH & SEIZURE",
+    original: "The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated.",
+    reality: "Your phone is your papers. Your data is your effects. They're searching both without a warrant — every single day.",
+  },
+  {
+    amendment: "5TH",
+    title: "DUE PROCESS OF LAW",
+    original: "No person shall be deprived of life, liberty, or property, without due process of law.",
+    reality: "Civil asset forfeiture lets them take your property without even charging you with a crime. Due process? Only if you can afford a lawyer.",
+  },
+  {
+    amendment: "10TH",
+    title: "POWERS RESERVED TO THE PEOPLE",
+    original: "The powers not delegated to the United States by the Constitution are reserved to the States respectively, or to the people.",
+    reality: "The federal government has taken every power not nailed down — and then pried up the nails. The 10th Amendment is the most ignored sentence in American history.",
+  },
 ];
 
 const ConstitutionBanners = () => {
