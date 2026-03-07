@@ -90,31 +90,28 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
           <div className="relative aspect-square bg-secondary overflow-hidden">
             {showCutout ? (
               /* Transparent cutout with color overlay — background stays clean */
-              <div className="w-full h-full flex items-center justify-center bg-muted/30" style={{ isolation: "isolate" }}>
+              <div className="w-full h-full flex items-center justify-center bg-muted/30 relative">
                 <img
                   src={cutoutImage}
                   alt={product.name}
                   className="w-full h-full object-contain p-4"
                   style={getCutoutStyle()}
                 />
-                {/* Color overlay — only affects the product since background is transparent */}
-                {isChromatic && colorHex && (
+                {/* Color overlay masked to the product shape using the transparent PNG */}
+                {colorHex && (
                   <div
-                    className="absolute inset-0 pointer-events-none transition-all duration-500"
+                    className="absolute inset-0 pointer-events-none transition-all duration-500 p-4"
                     style={{
+                      WebkitMaskImage: `url(${cutoutImage})`,
+                      maskImage: `url(${cutoutImage})`,
+                      WebkitMaskSize: "contain",
+                      maskSize: "contain",
+                      WebkitMaskRepeat: "no-repeat",
+                      maskRepeat: "no-repeat",
+                      WebkitMaskPosition: "center",
+                      maskPosition: "center",
                       backgroundColor: colorHex,
-                      mixBlendMode: "color",
-                      opacity: 0.9,
-                    }}
-                  />
-                )}
-                {colorInfo && colorInfo.lightness > 0.4 && colorHex && (
-                  <div
-                    className="absolute inset-0 pointer-events-none transition-all duration-500"
-                    style={{
-                      backgroundColor: colorHex,
-                      mixBlendMode: "screen",
-                      opacity: Math.min(0.85, colorInfo.lightness * 0.9),
+                      opacity: isChromatic ? 0.55 : (colorInfo!.lightness > 0.5 ? 0.8 : 0.6),
                     }}
                   />
                 )}
