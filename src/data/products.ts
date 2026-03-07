@@ -84,6 +84,7 @@ export interface Product {
   name: string;
   price: string;
   image: string;
+  cutoutImage?: string;
   tagline: string;
   badge: string | null;
   category: Category;
