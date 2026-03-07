@@ -37,7 +37,7 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
 
 
         <div className="grid md:grid-cols-2 gap-0">
-          {/* Image with color overlay */}
+          {/* Image with color overlay - uses 'color' blend to only shift hue on the product, dark bg stays dark */}
           <div className="relative aspect-square bg-secondary overflow-hidden">
             <img
               src={product.image}
@@ -45,22 +45,19 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
               className="w-full h-full object-cover transition-all duration-500"
               style={
                 !isDefaultColor && colorHex
-                  ? { filter: "saturate(0.3) brightness(0.9)" }
+                  ? { filter: "saturate(0.15)" }
                   : undefined
               }
             />
-            {/* Color tint overlay */}
+            {/* Color blend - only affects non-black areas (the fabric), dark bg is unaffected */}
             {!isDefaultColor && colorHex && (
               <div
-                className="absolute inset-0 mix-blend-multiply transition-all duration-500"
-                style={{ backgroundColor: colorHex, opacity: 0.55 }}
-              />
-            )}
-            {/* Restore some detail */}
-            {!isDefaultColor && colorHex && (
-              <div
-                className="absolute inset-0 mix-blend-screen transition-all duration-500"
-                style={{ backgroundColor: colorHex, opacity: 0.1 }}
+                className="absolute inset-0 transition-all duration-500 pointer-events-none"
+                style={{
+                  backgroundColor: colorHex,
+                  mixBlendMode: "color",
+                  opacity: 0.85,
+                }}
               />
             )}
             {product.badge && (
