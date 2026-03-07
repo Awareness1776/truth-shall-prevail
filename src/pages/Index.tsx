@@ -1,6 +1,7 @@
 import SiteHeader from "@/components/SiteHeader";
 import HeroSection from "@/components/HeroSection";
 import ProductShowcase from "@/components/ProductShowcase";
+import VeteranMission from "@/components/VeteranMission";
 import ConstitutionBanners from "@/components/ConstitutionBanners";
 import ManifestoSection from "@/components/ManifestoSection";
 import VideoSection from "@/components/VideoSection";
@@ -12,6 +13,7 @@ const Index = () => {
       <SiteHeader />
       <HeroSection />
       <ProductShowcase />
+      <VeteranMission />
       <ConstitutionBanners />
       <ManifestoSection />
       <VideoSection />
