@@ -86,6 +86,10 @@ const billOfRights = [
 ];
 
 const ConstitutionBanners = () => {
+  const [showAll, setShowAll] = useState(false);
+  const [expandedAmendment, setExpandedAmendment] = useState<string | null>(null);
+  const visibleSlogans = showAll ? slogans : slogans.slice(0, 6);
+
   return (
     <section className="py-24 bg-background">
       <div className="container px-4">
@@ -131,9 +135,83 @@ const ConstitutionBanners = () => {
           ))}
         </div>
 
+        {/* Bill of Rights deep dive */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <BookOpen className="text-primary h-8 w-8 mx-auto mb-4" />
+            <h3 className="font-display text-3xl md:text-5xl text-foreground mb-3">
+              THE BILL OF RIGHTS
+            </h3>
+            <p className="font-heading text-xs tracking-[0.3em] text-primary uppercase mb-2">
+              What They Wrote vs. What They're Doing
+            </p>
+            <p className="font-body text-sm text-muted-foreground max-w-xl mx-auto">
+              Click each amendment to see the original text — and the reality of
+              how it's being violated today.
+            </p>
+          </div>
+
+          <div className="space-y-4 max-w-4xl mx-auto">
+            {billOfRights.map((item) => (
+              <div
+                key={item.amendment}
+                className={`bg-card border rounded overflow-hidden transition-all duration-500 cursor-pointer ${
+                  expandedAmendment === item.amendment
+                    ? "border-primary shadow-revolution"
+                    : "border-border hover:border-primary/50"
+                }`}
+                onClick={() =>
+                  setExpandedAmendment(
+                    expandedAmendment === item.amendment ? null : item.amendment
+                  )
+                }
+              >
+                <div className="flex items-center justify-between p-6">
+                  <div className="flex items-center gap-4">
+                    <span className="font-display text-2xl md:text-3xl text-primary">
+                      {item.amendment}
+                    </span>
+                    <h4 className="font-display text-sm md:text-base text-foreground tracking-wider">
+                      {item.title}
+                    </h4>
+                  </div>
+                  {expandedAmendment === item.amendment ? (
+                    <ChevronUp className="text-primary h-5 w-5 shrink-0" />
+                  ) : (
+                    <ChevronDown className="text-muted-foreground h-5 w-5 shrink-0" />
+                  )}
+                </div>
+
+                {expandedAmendment === item.amendment && (
+                  <div className="px-6 pb-6 border-t border-border pt-4 animate-fade-up">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <p className="font-display text-xs tracking-widest text-muted-foreground uppercase mb-2">
+                          What They Wrote
+                        </p>
+                        <p className="font-body text-sm text-foreground italic leading-relaxed">
+                          "{item.original}"
+                        </p>
+                      </div>
+                      <div>
+                        <p className="font-display text-xs tracking-widest text-primary uppercase mb-2">
+                          What's Really Happening
+                        </p>
+                        <p className="font-body text-sm text-muted-foreground leading-relaxed">
+                          {item.reality}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Constitutional slogans grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {slogans.map((item) => (
+          {visibleSlogans.map((item) => (
             <div
               key={item.phrase}
               className="bg-card border border-border p-8 rounded text-center group hover:border-primary transition-colors duration-500"
@@ -142,12 +220,30 @@ const ConstitutionBanners = () => {
                 "{item.phrase}"
               </p>
               <div className="w-12 h-0.5 bg-primary mx-auto mb-3" />
-              <p className="font-body text-sm text-primary italic font-medium">
+              <p className="font-body text-sm text-primary italic font-medium mb-2">
                 {item.twist}
+              </p>
+              <p className="font-heading text-[10px] tracking-[0.2em] text-muted-foreground uppercase">
+                — {item.source}
               </p>
             </div>
           ))}
         </div>
+
+        {slogans.length > 6 && (
+          <div className="text-center mt-8">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="font-display text-sm tracking-widest uppercase text-primary hover:text-accent transition-colors flex items-center gap-2 mx-auto"
+            >
+              {showAll ? (
+                <>Show Less <ChevronUp className="h-4 w-4" /></>
+              ) : (
+                <>Show All {slogans.length} Slogans <ChevronDown className="h-4 w-4" /></>
+              )}
+            </button>
+          </div>
+        )}
 
         {/* Full-width call to action quote */}
         <div className="mt-20 py-16 border-t border-b border-primary text-center">
