@@ -26,63 +26,23 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
   const hasColors = product.colors.length > 0;
   const hasSizes = product.sizes && product.sizes.length > 0;
 
-  // Build a color overlay style based on selected color
-  const colorHex = hasColors ? product.colors[selectedColor].hex : null;
-  const isDefaultColor = selectedColor === 0;
-
   return (
     <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
       <DialogContent className="max-w-3xl p-0 bg-card border-border overflow-hidden max-h-[90vh] overflow-y-auto">
         <DialogTitle className="sr-only">{product.name}</DialogTitle>
 
-
         <div className="grid md:grid-cols-2 gap-0">
-          {/* Image with color overlay - uses 'color' blend to only shift hue on the product, dark bg stays dark */}
-          <div className="relative aspect-square bg-secondary overflow-hidden" style={{ isolation: "isolate" }}>
+          {/* Product image — no color tinting */}
+          <div className="relative aspect-square bg-secondary overflow-hidden">
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-full object-cover transition-all duration-500"
-              style={
-                !isDefaultColor && colorHex
-                  ? { filter: "saturate(0.08) brightness(1.1)" }
-                  : undefined
-              }
+              className="w-full h-full object-cover"
             />
-            {/* Multiply layer — dark bg stays dark, lighter product areas get tinted */}
-            {!isDefaultColor && colorHex && (
-              <div
-                className="absolute inset-0 transition-all duration-500 pointer-events-none"
-                style={{
-                  backgroundColor: colorHex,
-                  mixBlendMode: "multiply",
-                  opacity: 0.7,
-                }}
-              />
-            )}
-            {/* Soft color layer at low opacity for vibrancy on the product */}
-            {!isDefaultColor && colorHex && (
-              <div
-                className="absolute inset-0 transition-all duration-500 pointer-events-none"
-                style={{
-                  backgroundColor: colorHex,
-                  mixBlendMode: "color",
-                  opacity: 0.4,
-                }}
-              />
-            )}
             {product.badge && (
               <span className="absolute top-4 left-4 z-10 bg-primary text-primary-foreground font-display text-xs tracking-wider px-3 py-1">
                 {product.badge}
               </span>
-            )}
-            {/* Color name indicator */}
-            {hasColors && !isDefaultColor && (
-              <div className="absolute bottom-4 left-4 right-4 z-10">
-                <span className="bg-background/80 backdrop-blur-sm text-foreground font-display text-xs tracking-wider px-3 py-2 rounded">
-                  Showing: {product.colors[selectedColor].name}
-                </span>
-              </div>
             )}
           </div>
 
