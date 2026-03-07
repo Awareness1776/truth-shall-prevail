@@ -7,10 +7,13 @@ import beanieImg from "@/assets/product-beanie.jpg";
 import stickersImg from "@/assets/product-stickers.jpg";
 import tee2Img from "@/assets/product-tee2.jpg";
 import hoodie2Img from "@/assets/product-hoodie2.jpg";
+import caseEagleImg from "@/assets/product-case-eagle.jpg";
+import case2aImg from "@/assets/product-case-2a.jpg";
+import caseSkullImg from "@/assets/product-case-skull.jpg";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
-type Category = "all" | "apparel" | "headwear" | "accessories";
+type Category = "all" | "apparel" | "headwear" | "accessories" | "phone-cases";
 
 const products = [
   {
@@ -85,11 +88,36 @@ const products = [
     badge: "FAN FAVORITE",
     category: "accessories" as Category,
   },
+  {
+    name: '"WTP Eagle" Phone Case',
+    price: "$24.99",
+    image: caseEagleImg,
+    tagline: "iPhone & Samsung — Tough Case",
+    badge: "NEW",
+    category: "phone-cases" as Category,
+  },
+  {
+    name: '"2nd Amendment" Phone Case',
+    price: "$24.99",
+    image: case2aImg,
+    tagline: "iPhone & Samsung — Tough Case",
+    badge: "🔥 HOT",
+    category: "phone-cases" as Category,
+  },
+  {
+    name: '"Flag Skull" Phone Case',
+    price: "$24.99",
+    image: caseSkullImg,
+    tagline: "iPhone & Samsung — Tough Case",
+    badge: "BESTSELLER",
+    category: "phone-cases" as Category,
+  },
 ];
 
 const categories: { label: string; value: Category }[] = [
   { label: "All", value: "all" },
   { label: "Apparel", value: "apparel" },
+  { label: "Phone Cases", value: "phone-cases" },
   { label: "Headwear", value: "headwear" },
   { label: "Accessories", value: "accessories" },
 ];
