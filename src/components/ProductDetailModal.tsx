@@ -3,13 +3,36 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import type { Product } from "@/data/products";
 
+// Transparent-background cutout images per category
+import tshirtCutout from "@/assets/product-tshirt-cutout.png";
+import hoodieCutout from "@/assets/product-hoodie-cutout.png";
+import tankCutout from "@/assets/product-tank-cutout.png";
+import mugCutout from "@/assets/product-mug-cutout.png";
+import bottleCutout from "@/assets/product-bottle-cutout.png";
+import caseCutout from "@/assets/product-case-cutout.png";
+import keychainCutout from "@/assets/product-keychain-cutout.png";
+
+const CATEGORY_CUTOUTS: Record<string, string> = {
+  apparel: tshirtCutout,
+  "tank-tops": tankCutout,
+  mugs: mugCutout,
+  drinkware: bottleCutout,
+  "phone-cases": caseCutout,
+  keychains: keychainCutout,
+};
+
+// Hoodie products get the hoodie cutout instead of tshirt
+const HOODIE_CUTOUT_IDS = new Set([
+  "hoodie-patriot", "hoodie-1776", "hoodie-dont-tread",
+  "hoodie-liberty", "hoodie-shield", "hoodie-revolution",
+]);
+
 interface Props {
   product: Product | null;
   open: boolean;
   onClose: () => void;
 }
 
-// Parse hex to get lightness and saturation
 function parseColor(hex: string) {
   const r = parseInt(hex.slice(1, 3), 16) / 255;
   const g = parseInt(hex.slice(3, 5), 16) / 255;
@@ -40,12 +63,21 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
   const colorInfo = colorHex ? parseColor(colorHex) : null;
   const isChromatic = colorInfo ? colorInfo.saturation > 0.15 : false;
 
-  // Compute image filter based on selected color type
-  // For all non-default colors, we overlay the color on a desaturated base
-  const getImageStyle = (): React.CSSProperties => {
-    if (isDefaultColor || !colorInfo) return {};
-    // Desaturate base so overlay color is accurate
-    return { filter: "saturate(0) brightness(1.0)", transition: "filter 0.5s" };
+  // Get the cutout image for this product's category
+  const cutoutImage = HOODIE_CUTOUT_IDS.has(product.id)
+    ? hoodieCutout
+    : CATEGORY_CUTOUTS[product.category] || null;
+
+  // When a non-default color is selected AND we have a cutout, show the cutout with color overlay
+  const showCutout = !isDefaultColor && cutoutImage;
+
+  const getCutoutStyle = (): React.CSSProperties => {
+    if (!colorInfo) return {};
+    if (isChromatic) {
+      return { filter: "saturate(0) brightness(1.05)", transition: "filter 0.5s" };
+    }
+    const brightness = 0.2 + colorInfo.lightness * 1.6;
+    return { filter: `saturate(0) brightness(${brightness.toFixed(2)})`, transition: "filter 0.5s" };
   };
 
   return (
@@ -54,45 +86,45 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
         <DialogTitle className="sr-only">{product.name}</DialogTitle>
 
         <div className="grid md:grid-cols-2 gap-0">
-          {/* Product image with color preview */}
-          <div className="relative aspect-square bg-secondary overflow-hidden" style={{ isolation: "isolate" }}>
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-full object-cover"
-              style={getImageStyle()}
-            />
-            {/* Color tint overlay — works for ALL colors including black/white */}
-            {!isDefaultColor && colorHex && (
-              <div
-                className="absolute inset-0 pointer-events-none transition-all duration-500"
-                style={{
-                  backgroundColor: colorHex,
-                  mixBlendMode: "color",
-                  opacity: 0.9,
-                }}
-              />
-            )}
-            {/* Screen layer for light colors to brighten the image */}
-            {!isDefaultColor && colorHex && colorInfo && colorInfo.lightness > 0.4 && (
-              <div
-                className="absolute inset-0 pointer-events-none transition-all duration-500"
-                style={{
-                  backgroundColor: colorHex,
-                  mixBlendMode: "screen",
-                  opacity: Math.min(0.85, colorInfo.lightness * 0.9),
-                }}
-              />
-            )}
-            {/* Multiply layer for dark colors to deepen */}
-            {!isDefaultColor && colorHex && colorInfo && colorInfo.lightness <= 0.4 && colorInfo.saturation > 0.15 && (
-              <div
-                className="absolute inset-0 pointer-events-none transition-all duration-500"
-                style={{
-                  backgroundColor: colorHex,
-                  mixBlendMode: "multiply",
-                  opacity: 0.5,
-                }}
+          {/* Product image area */}
+          <div className="relative aspect-square bg-secondary overflow-hidden">
+            {showCutout ? (
+              /* Transparent cutout with color overlay — background stays clean */
+              <div className="w-full h-full flex items-center justify-center bg-muted/30" style={{ isolation: "isolate" }}>
+                <img
+                  src={cutoutImage}
+                  alt={product.name}
+                  className="w-full h-full object-contain p-4"
+                  style={getCutoutStyle()}
+                />
+                {/* Color overlay — only affects the product since background is transparent */}
+                {isChromatic && colorHex && (
+                  <div
+                    className="absolute inset-0 pointer-events-none transition-all duration-500"
+                    style={{
+                      backgroundColor: colorHex,
+                      mixBlendMode: "color",
+                      opacity: 0.9,
+                    }}
+                  />
+                )}
+                {colorInfo && colorInfo.lightness > 0.4 && colorHex && (
+                  <div
+                    className="absolute inset-0 pointer-events-none transition-all duration-500"
+                    style={{
+                      backgroundColor: colorHex,
+                      mixBlendMode: "screen",
+                      opacity: Math.min(0.85, colorInfo.lightness * 0.9),
+                    }}
+                  />
+                )}
+              </div>
+            ) : (
+              /* Default: show original product photo */
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-full object-cover"
               />
             )}
             {product.badge && (
@@ -133,7 +165,7 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
                 <p className="font-heading text-xs tracking-widest text-muted-foreground uppercase mb-3">
                   Color: <span className="text-foreground">{product.colors[selectedColor].name}</span>
                 </p>
-                <div className="flex gap-2">
+                <div className="flex gap-2 flex-wrap">
                   {product.colors.map((color, i) => (
                     <button
                       key={color.name}
