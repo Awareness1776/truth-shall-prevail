@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
@@ -15,10 +15,21 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
   const [selectedSize, setSelectedSize] = useState(0);
   const [qty, setQty] = useState(1);
 
+  // Reset selections when product changes
+  useEffect(() => {
+    setSelectedColor(0);
+    setSelectedSize(0);
+    setQty(1);
+  }, [product?.id]);
+
   if (!product) return null;
 
   const hasColors = product.colors.length > 0;
   const hasSizes = product.sizes && product.sizes.length > 0;
+
+  // Build a color overlay style based on selected color
+  const colorHex = hasColors ? product.colors[selectedColor].hex : null;
+  const isDefaultColor = selectedColor === 0;
 
   return (
     <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
@@ -34,17 +45,44 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
         </button>
 
         <div className="grid md:grid-cols-2 gap-0">
-          {/* Image */}
-          <div className="relative aspect-square bg-secondary">
+          {/* Image with color overlay */}
+          <div className="relative aspect-square bg-secondary overflow-hidden">
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-all duration-500"
+              style={
+                !isDefaultColor && colorHex
+                  ? { filter: "saturate(0.3) brightness(0.9)" }
+                  : undefined
+              }
             />
+            {/* Color tint overlay */}
+            {!isDefaultColor && colorHex && (
+              <div
+                className="absolute inset-0 mix-blend-multiply transition-all duration-500"
+                style={{ backgroundColor: colorHex, opacity: 0.55 }}
+              />
+            )}
+            {/* Restore some detail */}
+            {!isDefaultColor && colorHex && (
+              <div
+                className="absolute inset-0 mix-blend-screen transition-all duration-500"
+                style={{ backgroundColor: colorHex, opacity: 0.1 }}
+              />
+            )}
             {product.badge && (
-              <span className="absolute top-4 left-4 bg-primary text-primary-foreground font-display text-xs tracking-wider px-3 py-1">
+              <span className="absolute top-4 left-4 z-10 bg-primary text-primary-foreground font-display text-xs tracking-wider px-3 py-1">
                 {product.badge}
               </span>
+            )}
+            {/* Color name indicator */}
+            {hasColors && !isDefaultColor && (
+              <div className="absolute bottom-4 left-4 right-4 z-10">
+                <span className="bg-background/80 backdrop-blur-sm text-foreground font-display text-xs tracking-wider px-3 py-2 rounded">
+                  Showing: {product.colors[selectedColor].name}
+                </span>
+              </div>
             )}
           </div>
 
