@@ -101,7 +101,6 @@ const ContactPage = () => {
                   <p className="font-body text-muted-foreground text-sm">
                     wetpeople.1776@gmail.com
                   </p>
-                  </p>
                 </div>
 
                 <div className="bg-card border border-border rounded p-8">
