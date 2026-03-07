@@ -20,7 +20,17 @@ import yardSignImg from "@/assets/product-yardsign.jpg";
 import bottleImg from "@/assets/product-bottle.jpg";
 import koozieImg from "@/assets/product-koozie.jpg";
 import keychainImg from "@/assets/product-keychain.jpg";
+import keychain2Img from "@/assets/product-keychain2.jpg";
+import keychain3Img from "@/assets/product-keychain3.jpg";
+import keychain4Img from "@/assets/product-keychain4.jpg";
+import keychain5Img from "@/assets/product-keychain5.jpg";
+import keychain6Img from "@/assets/product-keychain6.jpg";
 import decalImg from "@/assets/product-decal.jpg";
+import mug2Img from "@/assets/product-mug2.jpg";
+import mug3Img from "@/assets/product-mug3.jpg";
+import mug4Img from "@/assets/product-mug4.jpg";
+import mug5Img from "@/assets/product-mug5.jpg";
+import mug6Img from "@/assets/product-mug6.jpg";
 import hoodie3Img from "@/assets/product-hoodie3.jpg";
 import hoodie4Img from "@/assets/product-hoodie4.jpg";
 import hoodie5Img from "@/assets/product-hoodie5.jpg";
@@ -36,7 +46,7 @@ import tank4Img from "@/assets/product-tank4.jpg";
 import tank5Img from "@/assets/product-tank5.jpg";
 import tank6Img from "@/assets/product-tank6.jpg";
 
-export type Category = "all" | "apparel" | "tank-tops" | "headwear" | "accessories" | "phone-cases";
+export type Category = "all" | "apparel" | "tank-tops" | "headwear" | "accessories" | "phone-cases" | "mugs" | "keychains";
 
 export interface Product {
   name: string;
@@ -212,14 +222,54 @@ export const products: Product[] = [
     badge: "NEW",
     category: "headwear",
   },
-  // Accessories
+  // Mugs (6)
   {
     name: '"Don\'t Tread" Mug',
     price: "$19.99",
     image: mugImg,
     tagline: "Don't Tread On Us",
     badge: null,
-    category: "accessories",
+    category: "mugs",
+  },
+  {
+    name: '"WTP Flag" Mug',
+    price: "$19.99",
+    image: mug2Img,
+    tagline: "We The People — White Ceramic",
+    badge: "NEW",
+    category: "mugs",
+  },
+  {
+    name: '"1776 Eagle" Mug',
+    price: "$22.99",
+    image: mug3Img,
+    tagline: "Eagle Crest — Navy Ceramic",
+    badge: "BESTSELLER",
+    category: "mugs",
+  },
+  {
+    name: '"2nd Amendment" Mug',
+    price: "$19.99",
+    image: mug4Img,
+    tagline: "2A Shield — Full Wrap Print",
+    badge: "🔥 HOT",
+    category: "mugs",
+  },
+  {
+    name: '"Flag Skull" Mug',
+    price: "$22.99",
+    image: mug5Img,
+    tagline: "Liberty Skull — Black Ceramic",
+    badge: "LIMITED",
+    category: "mugs",
+  },
+  {
+    name: '"Betsy Ross" Mug',
+    price: "$19.99",
+    image: mug6Img,
+    tagline: "13-Star Flag — Gold Rim",
+    badge: "FAN FAVORITE",
+    category: "mugs",
   },
   {
     name: '"RISE" Poster',
@@ -285,13 +335,54 @@ export const products: Product[] = [
     badge: null,
     category: "accessories",
   },
+  // Keychains (6)
   {
     name: '"The People" Keychain',
     price: "$12.99",
     image: keychainImg,
     tagline: "Brass Finish — Engraved Script",
     badge: "NEW",
-    category: "accessories",
+    category: "keychains",
+  },
+  {
+    name: '"1776 Eagle" Keychain',
+    price: "$14.99",
+    image: keychain2Img,
+    tagline: "Brass — Eagle Emblem",
+    badge: "BESTSELLER",
+    category: "keychains",
+  },
+  {
+    name: '"Don\'t Tread" Keychain',
+    price: "$12.99",
+    image: keychain3Img,
+    tagline: "Gadsden Medallion — Bronze",
+    badge: "🔥 HOT",
+    category: "keychains",
+  },
+  {
+    name: '"Old Glory" Bottle Opener',
+    price: "$14.99",
+    image: keychain4Img,
+    tagline: "Flag Opener — Stainless Steel",
+    badge: "FAN FAVORITE",
+    category: "keychains",
+  },
+  {
+    name: '"2A Shield" Keychain',
+    price: "$12.99",
+    image: keychain5Img,
+    tagline: "Second Amendment — Gunmetal",
+    badge: null,
+    category: "keychains",
+  },
+  {
+    name: '"Flag Skull" Keychain',
+    price: "$14.99",
+    image: keychain6Img,
+    tagline: "Patriot Skull — Antique Bronze",
+    badge: "LIMITED",
+    category: "keychains",
   },
   {
     name: '"Flag Skull" Car Decal',
@@ -356,6 +447,8 @@ export const categories: { label: string; value: Category }[] = [
   { label: "All", value: "all" },
   { label: "Apparel", value: "apparel" },
   { label: "Tank Tops", value: "tank-tops" },
+  { label: "Mugs", value: "mugs" },
+  { label: "Keychains", value: "keychains" },
   { label: "Phone Cases", value: "phone-cases" },
   { label: "Headwear", value: "headwear" },
   { label: "Accessories", value: "accessories" },
