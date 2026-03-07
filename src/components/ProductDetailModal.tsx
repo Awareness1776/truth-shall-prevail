@@ -35,13 +35,6 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
       <DialogContent className="max-w-3xl p-0 bg-card border-border overflow-hidden max-h-[90vh] overflow-y-auto">
         <DialogTitle className="sr-only">{product.name}</DialogTitle>
 
-        {/* Close */}
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 z-10 text-muted-foreground hover:text-foreground transition-colors"
-        >
-          <X className="h-5 w-5" />
-        </button>
 
         <div className="grid md:grid-cols-2 gap-0">
           {/* Image with color overlay */}
