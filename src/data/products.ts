@@ -872,7 +872,7 @@ export const products: Product[] = [
     badge: "NEW",
     category: "phone-cases",
     colors: CASE_COLORS,
-    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "Samsung S23", "Samsung S24"],
+    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "iPhone 17", "Samsung S23", "Samsung S24"],
     description: "Dual-layer tough case with WTP eagle design. Impact-resistant polycarbonate shell + TPU liner.",
   },
   {
@@ -884,7 +884,7 @@ export const products: Product[] = [
     badge: "🔥 HOT",
     category: "phone-cases",
     colors: CASE_COLORS,
-    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "Samsung S23", "Samsung S24"],
+    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "iPhone 17", "Samsung S23", "Samsung S24"],
     description: "Second Amendment design tough case. Raised edges protect camera and screen. Wireless charging compatible.",
   },
   {
@@ -896,7 +896,7 @@ export const products: Product[] = [
     badge: "BESTSELLER",
     category: "phone-cases",
     colors: CASE_COLORS,
-    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "Samsung S23", "Samsung S24"],
+    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "iPhone 17", "Samsung S23", "Samsung S24"],
     description: "Flag skull design on tough case. Non-slip grip texture, precise cutouts for all ports.",
   },
   {
@@ -908,7 +908,7 @@ export const products: Product[] = [
     badge: "NEW",
     category: "phone-cases",
     colors: CASE_COLORS,
-    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "Samsung S23", "Samsung S24"],
+    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "iPhone 17", "Samsung S23", "Samsung S24"],
     description: "We The People flag design tough case. Slim profile doesn't add bulk. Drop tested to 6 feet.",
   },
   {
@@ -920,7 +920,7 @@ export const products: Product[] = [
     badge: "FAN FAVORITE",
     category: "phone-cases",
     colors: CASE_COLORS,
-    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "Samsung S23", "Samsung S24"],
+    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "iPhone 17", "Samsung S23", "Samsung S24"],
     description: "Gadsden rattlesnake + American flag tough case. UV-printed design won't fade or peel.",
   },
   {
@@ -932,7 +932,7 @@ export const products: Product[] = [
     badge: "LIMITED",
     category: "phone-cases",
     colors: CASE_COLORS,
-    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "Samsung S23", "Samsung S24"],
+    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "iPhone 17", "Samsung S23", "Samsung S24"],
     description: "1776 distressed flag tough case. Matte finish, anti-fingerprint coating. Limited edition print.",
   },
 ];
