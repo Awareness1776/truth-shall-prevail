@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { products, categories, type Category, type Product } from "@/data/products";
 import ProductDetailModal from "@/components/ProductDetailModal";
+import logo from "@/assets/logo.png";
 
 const ProductShowcase = () => {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
-  // Get categories excluding "all"
   const sections = categories.filter((c) => c.value !== "all");
 
   return (
@@ -48,6 +48,12 @@ const ProductShowcase = () => {
                           {product.badge}
                         </span>
                       )}
+                      {/* Brand logo watermark */}
+                      <img
+                        src={logo}
+                        alt="WTP"
+                        className="absolute bottom-3 right-3 w-8 h-8 opacity-80 drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] pointer-events-none"
+                      />
                     </div>
                     <div className="p-6">
                       <p className="font-heading text-xs tracking-widest text-muted-foreground mb-1 uppercase">
