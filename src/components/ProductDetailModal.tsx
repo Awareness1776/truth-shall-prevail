@@ -41,15 +41,11 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
   const isChromatic = colorInfo ? colorInfo.saturation > 0.15 : false;
 
   // Compute image filter based on selected color type
+  // For all non-default colors, we overlay the color on a desaturated base
   const getImageStyle = (): React.CSSProperties => {
     if (isDefaultColor || !colorInfo) return {};
-    if (isChromatic) {
-      // Desaturate so color overlay replaces hue accurately
-      return { filter: "saturate(0) brightness(1.05)", transition: "filter 0.5s" };
-    }
-    // Achromatic (black, white, grey) — map lightness to brightness
-    const brightness = 0.2 + colorInfo.lightness * 1.6;
-    return { filter: `saturate(0) brightness(${brightness.toFixed(2)})`, transition: "filter 0.5s" };
+    // Desaturate base so overlay color is accurate
+    return { filter: "saturate(0) brightness(1.0)", transition: "filter 0.5s" };
   };
 
   return (
@@ -66,14 +62,36 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
               className="w-full h-full object-cover"
               style={getImageStyle()}
             />
-            {/* Color overlay for chromatic colors only */}
-            {!isDefaultColor && isChromatic && colorHex && (
+            {/* Color tint overlay — works for ALL colors including black/white */}
+            {!isDefaultColor && colorHex && (
               <div
                 className="absolute inset-0 pointer-events-none transition-all duration-500"
                 style={{
                   backgroundColor: colorHex,
                   mixBlendMode: "color",
-                  opacity: 0.85,
+                  opacity: 0.9,
+                }}
+              />
+            )}
+            {/* Screen layer for light colors to brighten the image */}
+            {!isDefaultColor && colorHex && colorInfo && colorInfo.lightness > 0.4 && (
+              <div
+                className="absolute inset-0 pointer-events-none transition-all duration-500"
+                style={{
+                  backgroundColor: colorHex,
+                  mixBlendMode: "screen",
+                  opacity: Math.min(0.85, colorInfo.lightness * 0.9),
+                }}
+              />
+            )}
+            {/* Multiply layer for dark colors to deepen */}
+            {!isDefaultColor && colorHex && colorInfo && colorInfo.lightness <= 0.4 && colorInfo.saturation > 0.15 && (
+              <div
+                className="absolute inset-0 pointer-events-none transition-all duration-500"
+                style={{
+                  backgroundColor: colorHex,
+                  mixBlendMode: "multiply",
+                  opacity: 0.5,
                 }}
               />
             )}
