@@ -10,6 +10,9 @@ import hoodie2Img from "@/assets/product-hoodie2.jpg";
 import caseEagleImg from "@/assets/product-case-eagle.jpg";
 import case2aImg from "@/assets/product-case-2a.jpg";
 import caseSkullImg from "@/assets/product-case-skull.jpg";
+import caseWtpImg from "@/assets/product-case-wtp.jpg";
+import caseGadsdenImg from "@/assets/product-case-gadsden.jpg";
+import case1776Img from "@/assets/product-case-1776.jpg";
 import patchImg from "@/assets/product-patch.jpg";
 import pinImg from "@/assets/product-pin.jpg";
 import flagImg from "@/assets/product-flag.jpg";
@@ -321,6 +324,30 @@ export const products: Product[] = [
     image: caseSkullImg,
     tagline: "iPhone & Samsung — Tough Case",
     badge: "BESTSELLER",
+    category: "phone-cases",
+  },
+  {
+    name: '"WTP Flag" Phone Case',
+    price: "$24.99",
+    image: caseWtpImg,
+    tagline: "iPhone & Samsung — Tough Case",
+    badge: "NEW",
+    category: "phone-cases",
+  },
+  {
+    name: '"Don\'t Tread" Phone Case',
+    price: "$24.99",
+    image: caseGadsdenImg,
+    tagline: "iPhone & Samsung — Tough Case",
+    badge: "FAN FAVORITE",
+    category: "phone-cases",
+  },
+  {
+    name: '"1776 Flag" Phone Case',
+    price: "$24.99",
+    image: case1776Img,
+    tagline: "iPhone & Samsung — Tough Case",
+    badge: "LIMITED",
     category: "phone-cases",
   },
 ];
