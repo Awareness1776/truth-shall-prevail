@@ -94,43 +94,60 @@ export interface Product {
 
 const APPAREL_COLORS: ColorOption[] = [
   { name: "Black", hex: "#1a1a1a" },
+  { name: "White", hex: "#F5F5F5" },
   { name: "Charcoal", hex: "#36454F" },
   { name: "Navy", hex: "#1B2A4A" },
   { name: "Olive", hex: "#556B2F" },
-  { name: "White", hex: "#F5F5F5" },
+  { name: "Crimson Red", hex: "#DC143C" },
+  { name: "Royal Blue", hex: "#1E40AF" },
+  { name: "Burgundy", hex: "#800020" },
+  { name: "Forest Green", hex: "#228B22" },
 ];
 
 const TANK_COLORS: ColorOption[] = [
   { name: "Black", hex: "#1a1a1a" },
   { name: "White", hex: "#F5F5F5" },
   { name: "Gray", hex: "#808080" },
-  { name: "Red", hex: "#B22222" },
+  { name: "Crimson Red", hex: "#DC143C" },
   { name: "Navy", hex: "#1B2A4A" },
+  { name: "Royal Blue", hex: "#1E40AF" },
+  { name: "Burnt Orange", hex: "#CC5500" },
+  { name: "Forest Green", hex: "#228B22" },
 ];
 
 const MUG_COLORS: ColorOption[] = [
   { name: "White", hex: "#F5F5F5" },
   { name: "Black", hex: "#1a1a1a" },
   { name: "Navy", hex: "#1B2A4A" },
+  { name: "Crimson Red", hex: "#DC143C" },
+  { name: "Royal Blue", hex: "#1E40AF" },
+  { name: "Hunter Green", hex: "#355E3B" },
 ];
 
 const BOTTLE_COLORS: ColorOption[] = [
   { name: "Stainless", hex: "#C0C0C0" },
   { name: "Matte Black", hex: "#1a1a1a" },
   { name: "Navy", hex: "#1B2A4A" },
-  { name: "Red", hex: "#B22222" },
+  { name: "Crimson Red", hex: "#DC143C" },
+  { name: "Royal Blue", hex: "#1E40AF" },
+  { name: "Olive Drab", hex: "#556B2F" },
 ];
 
 const CASE_COLORS: ColorOption[] = [
   { name: "Black", hex: "#1a1a1a" },
   { name: "Clear", hex: "#E8E8E8" },
   { name: "Navy", hex: "#1B2A4A" },
+  { name: "Crimson Red", hex: "#DC143C" },
+  { name: "Royal Blue", hex: "#1E40AF" },
+  { name: "Forest Green", hex: "#228B22" },
 ];
 
 const KEYCHAIN_COLORS: ColorOption[] = [
   { name: "Brass", hex: "#B5A642" },
   { name: "Silver", hex: "#C0C0C0" },
   { name: "Gunmetal", hex: "#2C3539" },
+  { name: "Red Enamel", hex: "#DC143C" },
+  { name: "Blue Enamel", hex: "#1E40AF" },
 ];
 
 const APPAREL_SIZES = ["XS", "S", "M", "L", "XL", "2XL", "3XL"];
