@@ -3,22 +3,22 @@ import { useState } from "react";
 
 const videos = [
   {
-    title: "The Awakening",
-    description: "People across America are waking up. This is their story.",
-    thumbnail: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0",
-  },
-  {
-    title: "Know Your Rights",
-    description: "The Constitution isn't a suggestion. Learn what they don't teach you.",
+    title: "The First Amendment Under Attack",
+    description: "Congressman exposes the censorship industrial complex targeting free speech.",
     thumbnail: "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0",
+    videoUrl: "https://www.youtube.com/embed/7I1duV_m9xg?autoplay=1&rel=0",
   },
   {
-    title: "Voices of Change",
-    description: "Real people. Real stories. The revolution is happening now.",
+    title: "The Bill of Rights Explained",
+    description: "Why every American needs to understand the rights the founders fought and died for.",
+    thumbnail: "https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=600&h=400&fit=crop",
+    videoUrl: "https://www.youtube.com/embed/3F9A9ih4z1Q?autoplay=1&rel=0",
+  },
+  {
+    title: "Veterans Abandoned by Congress",
+    description: "The broken promises to those who served — and how we can fix it.",
     thumbnail: "https://images.unsplash.com/photo-1591848478625-de43268e6fb8?w=600&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0",
+    videoUrl: "https://www.youtube.com/embed/BqmFrmIOlMI?autoplay=1&rel=0",
   },
 ];
 
@@ -87,10 +87,6 @@ const VideoSection = () => {
             </div>
           ))}
         </div>
-
-        <p className="text-center font-body text-xs text-muted-foreground mt-8">
-          Replace the placeholder YouTube URLs with your actual TikTok, YouTube, or Reels links
-        </p>
       </div>
     </section>
   );

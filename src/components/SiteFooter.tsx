@@ -1,5 +1,6 @@
 import logo from "@/assets/logo.png";
 import { Instagram, Youtube } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const SiteFooter = () => {
   return (
@@ -7,12 +8,12 @@ const SiteFooter = () => {
       <div className="container px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <div className="flex items-center gap-3 mb-4">
+            <Link to="/" className="flex items-center gap-3 mb-4">
               <img src={logo} alt="WTP Logo" className="h-10 w-10" />
               <span className="font-display text-lg tracking-widest text-foreground">
                 WE THE PEOPLE
               </span>
-            </div>
+            </Link>
             <p className="font-body text-sm text-muted-foreground leading-relaxed mb-3">
               Born from the spirit of 1776. We carry the fire of the founders —
               the belief that power belongs to the people, not the powerful.
@@ -27,18 +28,22 @@ const SiteFooter = () => {
               Quick Links
             </h4>
             <ul className="space-y-2">
-              {["Shop", "The Movement", "Our Story", "Videos", "Contact"].map(
-                (link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="font-body text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                )
-              )}
+              {[
+                { label: "The Movement", path: "/movement" },
+                { label: "Our Story", path: "/our-story" },
+                { label: "Shop", path: "/shop" },
+                { label: "Videos", path: "/videos" },
+                { label: "Contact Us", path: "/contact" },
+              ].map((link) => (
+                <li key={link.label}>
+                  <Link
+                    to={link.path}
+                    className="font-body text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

@@ -1,5 +1,6 @@
 import heroBg from "@/assets/hero-bg.jpg";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -30,11 +31,11 @@ const HeroSection = () => {
           </span>
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="revolution" size="xl">
-            Shop The Collection
+          <Button variant="revolution" size="xl" asChild>
+            <Link to="/shop">Shop The Collection</Link>
           </Button>
-          <Button variant="hero" size="xl">
-            Join The Movement
+          <Button variant="hero" size="xl" asChild>
+            <Link to="/movement">Join The Movement</Link>
           </Button>
         </div>
       </div>
