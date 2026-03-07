@@ -133,8 +133,8 @@ const KEYCHAIN_COLORS: ColorOption[] = [
   { name: "Gunmetal", hex: "#2C3539" },
 ];
 
-const APPAREL_SIZES = ["S", "M", "L", "XL", "2XL", "3XL"];
-const TANK_SIZES = ["S", "M", "L", "XL", "2XL"];
+const APPAREL_SIZES = ["XS", "S", "M", "L", "XL", "2XL", "3XL"];
+const TANK_SIZES = ["XS", "S", "M", "L", "XL", "2XL", "3XL"];
 
 export const products: Product[] = [
   // T-Shirts (6)
