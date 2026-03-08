@@ -78,7 +78,8 @@ export type Category =
   | "keychains"
   | "drinkware"
   | "fitness"
-  | "posters";
+  | "posters"
+  | "march-banners";
 
 export interface ColorOption {
   name: string;
@@ -941,12 +942,80 @@ export const products: Product[] = [
     sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "iPhone 17", "Samsung S23", "Samsung S24"],
     description: "1776 distressed flag tough case. Matte finish, anti-fingerprint coating. Limited edition print.",
   },
+  // March Banners (6)
+  {
+    id: "banner-had-enough",
+    name: '"Had Enough" March Banner',
+    price: "$39.99",
+    image: bannerHadEnoughImg,
+    tagline: "We The People Have Had Enough",
+    badge: "BESTSELLER",
+    category: "march-banners",
+    colors: [],
+    description: "3×5 foot heavy-duty polyester march banner with wooden pole sleeve. Double-sided print, reinforced edges. Grab it, raise it, march with it.",
+  },
+  {
+    id: "banner-take-back",
+    name: '"Take Back What\'s Ours" Banner',
+    price: "$39.99",
+    image: bannerTakeBackImg,
+    tagline: "Reclaim Our Government",
+    badge: "NEW",
+    category: "march-banners",
+    colors: [],
+    description: "3×5 foot navy protest banner with gold eagle emblem. Wooden pole sleeve, brass grommets. Built for the frontlines of democracy.",
+  },
+  {
+    id: "banner-parasites",
+    name: '"No More Parasites" Banner',
+    price: "$39.99",
+    image: bannerParasitesImg,
+    tagline: "No More Parasites In Power",
+    badge: "🔥 HOT",
+    category: "march-banners",
+    colors: [],
+    description: "3×5 foot crimson red march banner with Gadsden rattlesnake. Heavy-duty fabric, pole sleeve included. Send the message loud and clear.",
+  },
+  {
+    id: "banner-coming",
+    name: '"The People Are Coming" Banner',
+    price: "$39.99",
+    image: bannerComingImg,
+    tagline: "They Can't Stop All Of Us",
+    badge: "NEW DROP",
+    category: "march-banners",
+    colors: [],
+    description: "3×5 foot black march banner with 13-star emblem. Double-sided, weather-resistant. The warning shot before the movement arrives.",
+  },
+  {
+    id: "banner-our-rules",
+    name: '"Our Country, Our Rules" Banner',
+    price: "$39.99",
+    image: bannerOurRulesImg,
+    tagline: "Crossed Muskets — Olive Drab",
+    badge: "LIMITED",
+    category: "march-banners",
+    colors: [],
+    description: "3×5 foot military olive march banner with crossed muskets. Reinforced pole sleeve, built to fly in any weather. Your country, your rules.",
+  },
+  {
+    id: "banner-drain",
+    name: '"Drain Every Last One" Banner',
+    price: "$39.99",
+    image: bannerDrainImg,
+    tagline: "Flag Skull — No Mercy Edition",
+    badge: "FAN FAVORITE",
+    category: "march-banners",
+    colors: [],
+    description: "3×5 foot charcoal black march banner with flag skull. Heavy-duty polyester, wooden pole sleeve. March until they hear you.",
+  },
 ];
 
 export const categories: { label: string; value: Category }[] = [
   { label: "All", value: "all" },
   { label: "Apparel", value: "apparel" },
   { label: "Tank Tops", value: "tank-tops" },
+  { label: "March Banners", value: "march-banners" },
   { label: "Phone Cases", value: "phone-cases" },
   { label: "Mugs", value: "mugs" },
   { label: "Drinkware", value: "drinkware" },
