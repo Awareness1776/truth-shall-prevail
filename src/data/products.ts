@@ -75,6 +75,16 @@ import hoodieOurRulesImg from "@/assets/product-hoodie-ourrules.jpg";
 import tankDrainImg from "@/assets/product-tank-drain.jpg";
 import tankTakebackImg from "@/assets/product-tank-takeback.jpg";
 import tankComingImg from "@/assets/product-tank-coming.jpg";
+import stickerReleaseFilesImg from "@/assets/product-sticker-release-files.jpg";
+import stickerAboveLawImg from "@/assets/product-sticker-above-law.jpg";
+import stickerClientListImg from "@/assets/product-sticker-client-list.jpg";
+import stickerProtectChildrenImg from "@/assets/product-sticker-protect-children.jpg";
+import bannerReleaseNamesImg from "@/assets/product-banner-release-names.jpg";
+import bannerCongressKnewImg from "@/assets/product-banner-congress-knew.jpg";
+import teeReleaseFilesImg from "@/assets/product-tee-release-files.jpg";
+import teeAboveLawImg from "@/assets/product-tee-above-law.jpg";
+import hoodieClientListImg from "@/assets/product-hoodie-client-list.jpg";
+import hoodieProtectChildrenImg from "@/assets/product-hoodie-protect-children.jpg";
 
 export type Category =
   | "all"
@@ -88,7 +98,8 @@ export type Category =
   | "drinkware"
   | "fitness"
   | "posters"
-  | "march-banners";
+  | "march-banners"
+  | "car-stickers";
 
 export interface ColorOption {
   name: string;
@@ -1030,12 +1041,132 @@ export const products: Product[] = [
     colors: [],
     description: "3×5 foot charcoal black march banner with flag skull. Heavy-duty polyester, wooden pole sleeve. March until they hear you.",
   },
+  // ===== EPSTEIN FILES / ACCOUNTABILITY COLLECTION =====
+  // Car Stickers (4)
+  {
+    id: "sticker-release-files",
+    name: '"Release The Files" Car Sticker',
+    price: "$9.99",
+    image: stickerReleaseFilesImg,
+    tagline: "Prosecute Them All",
+    badge: "🔥 HOT",
+    category: "car-stickers" as Category,
+    colors: [],
+    description: "Die-cut vinyl car sticker — RELEASE THE FILES / PROSECUTE THEM ALL. 5-year outdoor rated, UV and weather resistant. Slap it on your truck, car, or laptop. The cover-up ends now.",
+  },
+  {
+    id: "sticker-above-law",
+    name: '"No One Is Above The Law" Sticker',
+    price: "$9.99",
+    image: stickerAboveLawImg,
+    tagline: "Lady Justice — Accountability",
+    badge: "NEW DROP",
+    category: "car-stickers" as Category,
+    colors: [],
+    description: "Die-cut vinyl sticker with Lady Justice and American flag. No One Is Above The Law. Weather-proof, UV resistant, 5-year outdoor rated. Hold them ALL accountable.",
+  },
+  {
+    id: "sticker-client-list",
+    name: '"Where Is The Client List?" Sticker',
+    price: "$9.99",
+    image: stickerClientListImg,
+    tagline: "Capitol Building — Demand Answers",
+    badge: "🔥 HOT",
+    category: "car-stickers" as Category,
+    colors: [],
+    description: "Die-cut vinyl sticker — WHERE IS THE CLIENT LIST? Capitol dome with question marks. Congress owes us answers. Weather-proof, 5-year outdoor rated.",
+  },
+  {
+    id: "sticker-protect-children",
+    name: '"Protect The Children" Sticker',
+    price: "$9.99",
+    image: stickerProtectChildrenImg,
+    tagline: "Not The Predators — Broken Chains",
+    badge: "BESTSELLER",
+    category: "car-stickers" as Category,
+    colors: [],
+    description: "Die-cut vinyl sticker — PROTECT THE CHILDREN, NOT THE PREDATORS. Broken chains over American flag. Weather-proof, UV resistant. The kids come first — always.",
+  },
+  // Epstein Accountability Banners (2)
+  {
+    id: "banner-release-names",
+    name: '"Release Every Name" Banner',
+    price: "$69.99",
+    image: bannerReleaseNamesImg,
+    tagline: "Prosecute Every One",
+    badge: "🔥 HOT",
+    category: "march-banners",
+    colors: [],
+    description: "3×5 foot heavy-duty march banner — RELEASE EVERY NAME / PROSECUTE EVERY ONE. Scales of justice over distressed American flag. Double-sided, pole sleeve, brass grommets. They sealed the files. We demand them opened.",
+  },
+  {
+    id: "banner-congress-knew",
+    name: '"Congress Knew" Banner',
+    price: "$69.99",
+    image: bannerCongressKnewImg,
+    tagline: "We Demand Justice",
+    badge: "NEW DROP",
+    category: "march-banners",
+    colors: [],
+    description: "3×5 foot black march banner — CONGRESS KNEW / WE DEMAND JUSTICE. Broken gavel over Capitol dome. Heavy-duty polyester, double-sided. They looked the other way while children suffered. No more silence.",
+  },
+  // Epstein Accountability Tees (2)
+  {
+    id: "tee-release-files",
+    name: '"Release The Files" Tee',
+    price: "$59.99",
+    image: teeReleaseFilesImg,
+    tagline: "Prosecute Them All — Flag Skull",
+    badge: "🔥 HOT",
+    category: "apparel",
+    colors: APPAREL_COLORS,
+    sizes: APPAREL_SIZES,
+    description: "Premium heavyweight cotton tee — RELEASE THE FILES / PROSECUTE THEM ALL. American flag skull graphic. They buried the evidence. We wear the truth. Pre-shrunk, tagless comfort.",
+  },
+  {
+    id: "tee-above-law",
+    name: '"No One Is Above The Law" Tee',
+    price: "$59.99",
+    image: teeAboveLawImg,
+    tagline: "Lady Justice — Demand Accountability",
+    badge: "NEW DROP",
+    category: "apparel",
+    colors: APPAREL_COLORS,
+    sizes: APPAREL_SIZES,
+    description: "Premium heavyweight cotton tee — NO ONE IS ABOVE THE LAW. Blindfolded Lady Justice over distressed American flag. Congress let predators walk free. This shirt says what they won't.",
+  },
+  // Epstein Accountability Hoodies (2)
+  {
+    id: "hoodie-client-list",
+    name: '"Where Is The Client List?" Hoodie',
+    price: "$109.99",
+    image: hoodieClientListImg,
+    tagline: "Capitol Dome — Demand Answers",
+    badge: "🔥 HOT",
+    category: "apparel",
+    colors: APPAREL_COLORS,
+    sizes: APPAREL_SIZES,
+    description: "Heavyweight 10oz fleece hoodie — WHERE IS THE CLIENT LIST? / DEMAND ANSWERS. Capitol dome with question marks. They sealed the names to protect the powerful. We won't forget. Double-lined hood, metal grommets.",
+  },
+  {
+    id: "hoodie-protect-children",
+    name: '"Protect The Children" Hoodie',
+    price: "$109.99",
+    image: hoodieProtectChildrenImg,
+    tagline: "Eagle & Broken Chains",
+    badge: "NEW DROP",
+    category: "apparel",
+    colors: APPAREL_COLORS,
+    sizes: APPAREL_SIZES,
+    description: "Heavyweight 10oz fleece hoodie — PROTECT THE CHILDREN / NOT THE PREDATORS. American eagle breaking chains. Congress chose silence over justice. This hoodie chooses the children. Double-lined hood, front pouch pocket.",
+  },
 ];
 
 export const categories: { label: string; value: Category }[] = [
   { label: "All", value: "all" },
   { label: "Apparel", value: "apparel" },
   { label: "Tank Tops", value: "tank-tops" },
+  { label: "Car Stickers", value: "car-stickers" },
   { label: "March Banners", value: "march-banners" },
   { label: "Phone Cases", value: "phone-cases" },
   { label: "Mugs", value: "mugs" },
