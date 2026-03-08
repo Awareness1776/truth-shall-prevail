@@ -54,6 +54,8 @@ function categoryToType(category: string): string {
     posters: "Posters",
     accessories: "Accessories",
     "phone-cases": "Phone Cases",
+    "car-stickers": "Car Stickers",
+    "march-banners": "March Banners",
   };
   return map[category] || category;
 }
