@@ -75,6 +75,16 @@ import hoodieOurRulesImg from "@/assets/product-hoodie-ourrules.jpg";
 import tankDrainImg from "@/assets/product-tank-drain.jpg";
 import tankTakebackImg from "@/assets/product-tank-takeback.jpg";
 import tankComingImg from "@/assets/product-tank-coming.jpg";
+import stickerReleaseFilesImg from "@/assets/product-sticker-release-files.jpg";
+import stickerAboveLawImg from "@/assets/product-sticker-above-law.jpg";
+import stickerClientListImg from "@/assets/product-sticker-client-list.jpg";
+import stickerProtectChildrenImg from "@/assets/product-sticker-protect-children.jpg";
+import bannerReleaseNamesImg from "@/assets/product-banner-release-names.jpg";
+import bannerCongressKnewImg from "@/assets/product-banner-congress-knew.jpg";
+import teeReleaseFilesImg from "@/assets/product-tee-release-files.jpg";
+import teeAboveLawImg from "@/assets/product-tee-above-law.jpg";
+import hoodieClientListImg from "@/assets/product-hoodie-client-list.jpg";
+import hoodieProtectChildrenImg from "@/assets/product-hoodie-protect-children.jpg";
 
 export type Category =
   | "all"
