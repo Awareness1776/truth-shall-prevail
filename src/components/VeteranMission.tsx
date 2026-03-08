@@ -214,6 +214,20 @@ const VeteranMission = () => {
               programs. No exceptions. No fine print. No CEO bonuses.
             </p>
             <p>
+              <span className="text-foreground font-medium">Another 10% of every sale</span> goes
+              directly to organizations supporting the{" "}
+              <span className="text-primary font-medium">survivors and victims of the Epstein
+              trafficking ring</span>. These are real people — many of them were children when
+              they were abused by the most powerful people in the world. They deserve therapy,
+              legal aid, and the chance to rebuild their lives. Our government failed them.
+              We won't.
+            </p>
+            <p>
+              That's <span className="text-foreground font-medium">20% of every purchase</span> going
+              to the people who need it most — veterans who bled for this country and survivors
+              who were failed by the people running it.
+            </p>
+            <p>
               We publish our donation receipts quarterly because{" "}
               <span className="text-primary font-medium">
                 transparency isn't optional — it's constitutional
@@ -222,7 +236,7 @@ const VeteranMission = () => {
             </p>
             <p className="text-foreground font-medium">
               When you wear WTP, you're not just making a statement — you're
-              funding the fight for the people who fought for you.
+              funding the fight for veterans and for the survivors that Congress abandoned.
             </p>
           </div>
 
