@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { useCart } from "@/context/CartContext";
+import { useNavigate } from "react-router-dom";
+import { toast } from "sonner";
 import type { Product } from "@/data/products";
 
 interface Props {
@@ -13,6 +16,8 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
   const [selectedColor, setSelectedColor] = useState(0);
   const [selectedSize, setSelectedSize] = useState(0);
   const [qty, setQty] = useState(1);
+  const { addItem } = useCart();
+  const navigate = useNavigate();
 
   useEffect(() => {
     setSelectedColor(0);
@@ -24,8 +29,32 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
 
   const hasColors = product.colors.length > 0;
   const hasSizes = product.sizes && product.sizes.length > 0;
-  const isDefaultColor = selectedColor === 0;
-  const colorHex = hasColors ? product.colors[selectedColor].hex : null;
+
+  const handleAddToCart = () => {
+    addItem({
+      product,
+      color: hasColors ? product.colors[selectedColor].name : "",
+      size: hasSizes ? product.sizes![selectedSize] : "",
+      qty,
+    });
+    toast.success(`${product.name} added to cart`, {
+      action: {
+        label: "View Cart",
+        onClick: () => navigate("/cart"),
+      },
+    });
+  };
+
+  const handleBuyNow = () => {
+    addItem({
+      product,
+      color: hasColors ? product.colors[selectedColor].name : "",
+      size: hasSizes ? product.sizes![selectedSize] : "",
+      qty,
+    });
+    onClose();
+    navigate("/cart");
+  };
 
   return (
     <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
@@ -140,10 +169,20 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
 
             {/* Add to Cart */}
             <div className="mt-auto space-y-3">
-              <Button variant="default" size="xl" className="w-full font-display tracking-wider">
+              <Button
+                variant="default"
+                size="xl"
+                className="w-full font-display tracking-wider"
+                onClick={handleAddToCart}
+              >
                 ADD TO CART
               </Button>
-              <Button variant="outline" size="lg" className="w-full font-display tracking-wider">
+              <Button
+                variant="outline"
+                size="lg"
+                className="w-full font-display tracking-wider"
+                onClick={handleBuyNow}
+              >
                 BUY IT NOW
               </Button>
             </div>
