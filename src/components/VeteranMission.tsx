@@ -8,6 +8,7 @@ const stats = [
   { number: "37K+", label: "Veterans experiencing homelessness tonight" },
   { number: "$0", label: "What Congress budgets for real veteran care reform" },
   { number: "10%", label: "Of every sale goes directly to veteran aid" },
+  { number: "10%", label: "Of every sale supports Epstein victims' recovery" },
 ];
 
 const VeteranMission = () => {
