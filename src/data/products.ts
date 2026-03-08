@@ -391,15 +391,15 @@ export const products: Product[] = [
   },
   {
     id: "tank-coming",
-    name: '"The People Are Coming For You" Tank',
+    name: '"We\'re Coming For You" Tank',
     price: "$49.99",
     image: tankComingImg,
-    tagline: "No Place To Hide, Washington",
+    tagline: "Nowhere To Hide, Washington",
     badge: "LIMITED",
     category: "tank-tops",
     colors: TANK_COLORS,
     sizes: TANK_SIZES,
-    description: "The People Are Coming — 13-star circle stamp on heather gray tank. Every crooked politician hiding behind closed doors should hear the footsteps. Lightweight, breathable, ready for anything.",
+    description: "We're Coming For You — 13-star circle stamp on heather gray tank. Every crooked politician hiding behind closed doors should hear the footsteps. Lightweight, breathable, ready for anything.",
   },
   {
     id: "tank-had-enough",
