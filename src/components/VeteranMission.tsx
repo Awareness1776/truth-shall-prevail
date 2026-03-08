@@ -37,7 +37,7 @@ const VeteranMission = () => {
             />
             <div className="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur-sm p-4 rounded border border-border">
               <p className="font-heading text-xs tracking-[0.2em] text-primary uppercase">
-                10% of every purchase supports veteran organizations
+                20% of every purchase supports veterans & Epstein survivors
               </p>
             </div>
           </div>
