@@ -166,7 +166,7 @@ export const products: Product[] = [
   {
     id: "tee-had-enough",
     name: '"Had Enough" Tee',
-    price: "$34.99",
+    price: "$59.99",
     image: tshirtImg,
     tagline: "We The People Have Had Enough",
     badge: "BESTSELLER",
@@ -178,7 +178,7 @@ export const products: Product[] = [
   {
     id: "tee-article-v",
     name: '"Article V" Tee',
-    price: "$34.99",
+    price: "$59.99",
     image: tee2Img,
     tagline: "The People's Reset",
     badge: "NEW",
@@ -190,7 +190,7 @@ export const products: Product[] = [
   {
     id: "tee-dont-tread",
     name: '"Don\'t Tread" Tee',
-    price: "$34.99",
+    price: "$59.99",
     image: tee3Img,
     tagline: "Gadsden Rattlesnake Edition",
     badge: null,
@@ -202,7 +202,7 @@ export const products: Product[] = [
   {
     id: "tee-liberty-death",
     name: '"Liberty or Death" Tee',
-    price: "$34.99",
+    price: "$59.99",
     image: tee4Img,
     tagline: "Flag Skull — White Edition",
     badge: "🔥 HOT",
@@ -214,7 +214,7 @@ export const products: Product[] = [
   {
     id: "tee-1776-muskets",
     name: '"1776 Muskets" Tee',
-    price: "$34.99",
+    price: "$59.99",
     image: tee5Img,
     tagline: "Crossed Muskets — Charcoal",
     badge: null,
@@ -226,7 +226,7 @@ export const products: Product[] = [
   {
     id: "tee-land-free",
     name: '"Land of the Free" Tee',
-    price: "$34.99",
+    price: "$59.99",
     image: tee6Img,
     tagline: "Eagle Edition — Red",
     badge: "NEW DROP",
@@ -239,7 +239,7 @@ export const products: Product[] = [
   {
     id: "hoodie-defend",
     name: '"Defend" Hoodie',
-    price: "$64.99",
+    price: "$109.99",
     image: hoodieImg,
     tagline: "Defend The Constitution",
     badge: "NEW DROP",
@@ -251,7 +251,7 @@ export const products: Product[] = [
   {
     id: "hoodie-liberty-death",
     name: '"Liberty or Death" Hoodie',
-    price: "$64.99",
+    price: "$109.99",
     image: hoodie2Img,
     tagline: "Flag Skull Edition",
     badge: "🔥 HOT",
@@ -263,7 +263,7 @@ export const products: Product[] = [
   {
     id: "hoodie-1776-eagle",
     name: '"1776 Eagle" Hoodie',
-    price: "$64.99",
+    price: "$109.99",
     image: hoodie3Img,
     tagline: "Screaming Eagle — Black",
     badge: "BESTSELLER",
@@ -275,7 +275,7 @@ export const products: Product[] = [
   {
     id: "hoodie-wtp",
     name: '"WTP" Hoodie',
-    price: "$64.99",
+    price: "$109.99",
     image: hoodie4Img,
     tagline: "Distressed Print — Olive",
     badge: "NEW",
@@ -287,7 +287,7 @@ export const products: Product[] = [
   {
     id: "hoodie-dont-tread",
     name: '"Don\'t Tread" Hoodie',
-    price: "$64.99",
+    price: "$109.99",
     image: hoodie5Img,
     tagline: "Back Print — Navy",
     badge: null,
@@ -299,7 +299,7 @@ export const products: Product[] = [
   {
     id: "hoodie-old-glory",
     name: '"Old Glory" Hoodie',
-    price: "$64.99",
+    price: "$109.99",
     image: hoodie6Img,
     tagline: "Distressed Flag — Gray",
     badge: "LIMITED",
@@ -312,7 +312,7 @@ export const products: Product[] = [
   {
     id: "tank-wtp",
     name: '"WTP" Tank',
-    price: "$29.99",
+    price: "$49.99",
     image: tank1Img,
     tagline: "We The People — Bold Print",
     badge: "NEW",
@@ -324,7 +324,7 @@ export const products: Product[] = [
   {
     id: "tank-drip-flag",
     name: '"Drip Flag" Tank',
-    price: "$29.99",
+    price: "$49.99",
     image: tank2Img,
     tagline: "Distressed Flag — White",
     badge: "BESTSELLER",
@@ -336,7 +336,7 @@ export const products: Product[] = [
   {
     id: "tank-dont-tread",
     name: '"Don\'t Tread" Tank',
-    price: "$29.99",
+    price: "$49.99",
     image: tank3Img,
     tagline: "Gadsden Edition — Olive",
     badge: "🔥 HOT",
@@ -348,7 +348,7 @@ export const products: Product[] = [
   {
     id: "tank-1776-eagle",
     name: '"1776 Eagle" Tank',
-    price: "$29.99",
+    price: "$49.99",
     image: tank4Img,
     tagline: "Three Star Eagle — Navy",
     badge: null,
@@ -360,7 +360,7 @@ export const products: Product[] = [
   {
     id: "tank-liberty-torch",
     name: '"Liberty Torch" Tank',
-    price: "$29.99",
+    price: "$49.99",
     image: tank5Img,
     tagline: "13 Stars — Red",
     badge: "NEW",
@@ -372,7 +372,7 @@ export const products: Product[] = [
   {
     id: "tank-had-enough",
     name: '"Had Enough" Tank',
-    price: "$29.99",
+    price: "$49.99",
     image: tank6Img,
     tagline: "Flag Fist — Gray",
     badge: "FAN FAVORITE",
@@ -385,7 +385,7 @@ export const products: Product[] = [
   {
     id: "cap-1776",
     name: '"1776" Dad Cap',
-    price: "$29.99",
+    price: "$49.99",
     image: capImg,
     tagline: "The Year It All Began",
     badge: null,
@@ -401,7 +401,7 @@ export const products: Product[] = [
   {
     id: "beanie-wtp",
     name: '"WTP" Beanie',
-    price: "$24.99",
+    price: "$42.99",
     image: beanieImg,
     tagline: "We The People — Embroidered",
     badge: "NEW",
@@ -418,7 +418,7 @@ export const products: Product[] = [
   {
     id: "mug-dont-tread",
     name: '"Don\'t Tread" Mug',
-    price: "$19.99",
+    price: "$34.99",
     image: mugImg,
     tagline: "Don't Tread On Us",
     badge: null,
@@ -429,7 +429,7 @@ export const products: Product[] = [
   {
     id: "mug-wtp-flag",
     name: '"WTP Flag" Mug',
-    price: "$19.99",
+    price: "$34.99",
     image: mug2Img,
     tagline: "We The People — White Ceramic",
     badge: "NEW",
@@ -440,7 +440,7 @@ export const products: Product[] = [
   {
     id: "mug-1776-eagle",
     name: '"1776 Eagle" Mug',
-    price: "$22.99",
+    price: "$39.99",
     image: mug3Img,
     tagline: "Eagle Crest — Navy Ceramic",
     badge: "BESTSELLER",
@@ -451,7 +451,7 @@ export const products: Product[] = [
   {
     id: "mug-2a",
     name: '"2nd Amendment" Mug',
-    price: "$19.99",
+    price: "$34.99",
     image: mug4Img,
     tagline: "2A Shield — Full Wrap Print",
     badge: "🔥 HOT",
@@ -462,7 +462,7 @@ export const products: Product[] = [
   {
     id: "mug-flag-skull",
     name: '"Flag Skull" Mug',
-    price: "$22.99",
+    price: "$39.99",
     image: mug5Img,
     tagline: "Liberty Skull — Black Ceramic",
     badge: "LIMITED",
@@ -473,7 +473,7 @@ export const products: Product[] = [
   {
     id: "mug-betsy-ross",
     name: '"Betsy Ross" Mug',
-    price: "$19.99",
+    price: "$34.99",
     image: mug6Img,
     tagline: "13-Star Flag — Gold Rim",
     badge: "FAN FAVORITE",
@@ -485,7 +485,7 @@ export const products: Product[] = [
   {
     id: "bottle-1776-eagle",
     name: '"1776 Eagle" Bottle',
-    price: "$29.99",
+    price: "$49.99",
     image: bottleImg,
     tagline: "32oz Stainless Steel — Engraved",
     badge: "BESTSELLER",
@@ -496,7 +496,7 @@ export const products: Product[] = [
   {
     id: "bottle-wtp",
     name: '"WTP" Bottle',
-    price: "$29.99",
+    price: "$49.99",
     image: bottle2Img,
     tagline: "32oz Stainless — Flag Print",
     badge: "NEW",
@@ -507,7 +507,7 @@ export const products: Product[] = [
   {
     id: "bottle-gadsden",
     name: '"Don\'t Tread" Bottle',
-    price: "$32.99",
+    price: "$54.99",
     image: bottle3Img,
     tagline: "32oz Matte Black — Engraved",
     badge: "🔥 HOT",
@@ -518,7 +518,7 @@ export const products: Product[] = [
   {
     id: "bottle-skull",
     name: '"Flag Skull" Bottle',
-    price: "$32.99",
+    price: "$54.99",
     image: bottle4Img,
     tagline: "32oz — Liberty Skull Design",
     badge: "LIMITED",
@@ -529,7 +529,7 @@ export const products: Product[] = [
   {
     id: "bottle-2a",
     name: '"2A" Bottle',
-    price: "$29.99",
+    price: "$49.99",
     image: bottle5Img,
     tagline: "32oz Stainless — Crossed Rifles",
     badge: null,
@@ -540,7 +540,7 @@ export const products: Product[] = [
   {
     id: "shaker-wtp",
     name: '"WTP" Protein Shaker',
-    price: "$24.99",
+    price: "$42.99",
     image: shakerImg,
     tagline: "28oz Stainless — Gym Ready",
     badge: "NEW",
@@ -552,7 +552,7 @@ export const products: Product[] = [
   {
     id: "fitness-gym-towel",
     name: '"WTP" Gym Towel',
-    price: "$19.99",
+    price: "$34.99",
     image: gymTowelImg,
     tagline: "Microfiber — Full Print",
     badge: "NEW",
@@ -567,7 +567,7 @@ export const products: Product[] = [
   {
     id: "fitness-gym-bag",
     name: '"1776" Gym Bag',
-    price: "$49.99",
+    price: "$84.99",
     image: gymBagImg,
     tagline: "Eagle Duffle — Tactical Black",
     badge: "BESTSELLER",
@@ -582,7 +582,7 @@ export const products: Product[] = [
   {
     id: "fitness-wrist-wraps",
     name: '"Old Glory" Wrist Wraps',
-    price: "$16.99",
+    price: "$29.99",
     image: wristWrapsImg,
     tagline: "Flag Print — Heavy Duty",
     badge: "🔥 HOT",
@@ -597,7 +597,7 @@ export const products: Product[] = [
   {
     id: "fitness-bands",
     name: '"Patriot" Resistance Bands',
-    price: "$22.99",
+    price: "$39.99",
     image: bandsImg,
     tagline: "Red, White & Blue Set",
     badge: "NEW",
@@ -610,7 +610,7 @@ export const products: Product[] = [
   {
     id: "fitness-headband",
     name: '"Stars & Stripes" Headband',
-    price: "$12.99",
+    price: "$22.99",
     image: headbandImg,
     tagline: "Moisture-Wicking — Non-Slip",
     badge: "FAN FAVORITE",
@@ -625,7 +625,7 @@ export const products: Product[] = [
   {
     id: "fitness-koozie",
     name: '"Don\'t Tread" Koozie',
-    price: "$7.99",
+    price: "$14.99",
     image: koozieImg,
     tagline: "Neoprene Can Cooler",
     badge: null,
@@ -641,7 +641,7 @@ export const products: Product[] = [
   {
     id: "poster-rise",
     name: '"RISE" Poster',
-    price: "$14.99",
+    price: "$26.99",
     image: posterImg,
     tagline: "18×24 Screenprint Style",
     badge: "LIMITED",
@@ -655,7 +655,7 @@ export const products: Product[] = [
   {
     id: "poster-liberty-death",
     name: '"Liberty or Death" Poster',
-    price: "$16.99",
+    price: "$29.99",
     image: poster2Img,
     tagline: "18×24 — Flag Skull Print",
     badge: "🔥 HOT",
@@ -670,7 +670,7 @@ export const products: Product[] = [
   {
     id: "poster-wtp",
     name: '"We The People" Poster',
-    price: "$14.99",
+    price: "$26.99",
     image: poster3Img,
     tagline: "18×24 — Parchment Style",
     badge: "BESTSELLER",
@@ -684,7 +684,7 @@ export const products: Product[] = [
   {
     id: "poster-gadsden",
     name: '"Don\'t Tread" Poster',
-    price: "$14.99",
+    price: "$26.99",
     image: poster4Img,
     tagline: "18×24 — Propaganda Style",
     badge: "NEW",
@@ -698,7 +698,7 @@ export const products: Product[] = [
   {
     id: "poster-1776",
     name: '"1776 Muskets" Poster',
-    price: "$16.99",
+    price: "$29.99",
     image: poster5Img,
     tagline: "18×24 — Parchment Eagle",
     badge: "FAN FAVORITE",
@@ -713,7 +713,7 @@ export const products: Product[] = [
   {
     id: "poster-2a",
     name: '"2nd Amendment" Poster',
-    price: "$14.99",
+    price: "$26.99",
     image: poster6Img,
     tagline: "18×24 — Distressed Flag",
     badge: "LIMITED",
@@ -728,7 +728,7 @@ export const products: Product[] = [
   {
     id: "sticker-pack",
     name: "Sticker Pack (6pc)",
-    price: "$12.99",
+    price: "$22.99",
     image: stickersImg,
     tagline: "Slap 'Em Everywhere",
     badge: "FAN FAVORITE",
@@ -739,7 +739,7 @@ export const products: Product[] = [
   {
     id: "patch-wtp",
     name: '"WTP" Morale Patch',
-    price: "$9.99",
+    price: "$18.99",
     image: patchImg,
     tagline: "Velcro-Backed — Tactical Style",
     badge: "NEW",
@@ -754,7 +754,7 @@ export const products: Product[] = [
   {
     id: "pin-old-glory",
     name: '"Old Glory" Enamel Pin',
-    price: "$8.99",
+    price: "$16.99",
     image: pinImg,
     tagline: "Gold Finish — Lapel Ready",
     badge: null,
@@ -768,7 +768,7 @@ export const products: Product[] = [
   {
     id: "flag-gadsden",
     name: '"Don\'t Tread" 3×5 Flag',
-    price: "$24.99",
+    price: "$42.99",
     image: flagImg,
     tagline: "Gadsden Edition — Double-Sided",
     badge: "🔥 HOT",
@@ -779,7 +779,7 @@ export const products: Product[] = [
   {
     id: "yardsign-wtp",
     name: '"WTP" Yard Sign',
-    price: "$14.99",
+    price: "$26.99",
     image: yardSignImg,
     tagline: "18×24 — Metal Stakes Included",
     badge: "NEW",
@@ -790,7 +790,7 @@ export const products: Product[] = [
   {
     id: "decal-flag-skull",
     name: '"Flag Skull" Car Decal',
-    price: "$6.99",
+    price: "$12.99",
     image: decalImg,
     tagline: "Die-Cut Vinyl — Weather Proof",
     badge: "FAN FAVORITE",
@@ -806,7 +806,7 @@ export const products: Product[] = [
   {
     id: "keychain-the-people",
     name: '"The People" Keychain',
-    price: "$12.99",
+    price: "$22.99",
     image: keychainImg,
     tagline: "Brass Finish — Engraved Script",
     badge: "NEW",
@@ -817,7 +817,7 @@ export const products: Product[] = [
   {
     id: "keychain-1776-eagle",
     name: '"1776 Eagle" Keychain',
-    price: "$14.99",
+    price: "$26.99",
     image: keychain2Img,
     tagline: "Brass — Eagle Emblem",
     badge: "BESTSELLER",
@@ -828,7 +828,7 @@ export const products: Product[] = [
   {
     id: "keychain-dont-tread",
     name: '"Don\'t Tread" Keychain',
-    price: "$12.99",
+    price: "$22.99",
     image: keychain3Img,
     tagline: "Gadsden Medallion — Bronze",
     badge: "🔥 HOT",
@@ -839,7 +839,7 @@ export const products: Product[] = [
   {
     id: "keychain-bottle-opener",
     name: '"Old Glory" Bottle Opener',
-    price: "$14.99",
+    price: "$26.99",
     image: keychain4Img,
     tagline: "Flag Opener — Stainless Steel",
     badge: "FAN FAVORITE",
@@ -850,7 +850,7 @@ export const products: Product[] = [
   {
     id: "keychain-2a-shield",
     name: '"2A Shield" Keychain',
-    price: "$12.99",
+    price: "$22.99",
     image: keychain5Img,
     tagline: "Second Amendment — Gunmetal",
     badge: null,
@@ -861,7 +861,7 @@ export const products: Product[] = [
   {
     id: "keychain-flag-skull",
     name: '"Flag Skull" Keychain',
-    price: "$14.99",
+    price: "$26.99",
     image: keychain6Img,
     tagline: "Patriot Skull — Antique Bronze",
     badge: "LIMITED",
@@ -873,7 +873,7 @@ export const products: Product[] = [
   {
     id: "case-wtp-eagle",
     name: '"WTP Eagle" Phone Case',
-    price: "$24.99",
+    price: "$42.99",
     image: caseEagleImg,
     tagline: "iPhone & Samsung — Tough Case",
     badge: "NEW",
@@ -885,7 +885,7 @@ export const products: Product[] = [
   {
     id: "case-2a",
     name: '"2nd Amendment" Phone Case',
-    price: "$24.99",
+    price: "$42.99",
     image: case2aImg,
     tagline: "iPhone & Samsung — Tough Case",
     badge: "🔥 HOT",
@@ -897,7 +897,7 @@ export const products: Product[] = [
   {
     id: "case-flag-skull",
     name: '"Flag Skull" Phone Case',
-    price: "$24.99",
+    price: "$42.99",
     image: caseSkullImg,
     tagline: "iPhone & Samsung — Tough Case",
     badge: "BESTSELLER",
@@ -909,7 +909,7 @@ export const products: Product[] = [
   {
     id: "case-wtp-flag",
     name: '"WTP Flag" Phone Case',
-    price: "$24.99",
+    price: "$42.99",
     image: caseWtpImg,
     tagline: "iPhone & Samsung — Tough Case",
     badge: "NEW",
@@ -921,7 +921,7 @@ export const products: Product[] = [
   {
     id: "case-gadsden",
     name: '"Don\'t Tread" Phone Case',
-    price: "$24.99",
+    price: "$42.99",
     image: caseGadsdenImg,
     tagline: "iPhone & Samsung — Tough Case",
     badge: "FAN FAVORITE",
@@ -933,7 +933,7 @@ export const products: Product[] = [
   {
     id: "case-1776",
     name: '"1776 Flag" Phone Case',
-    price: "$24.99",
+    price: "$42.99",
     image: case1776Img,
     tagline: "iPhone & Samsung — Tough Case",
     badge: "LIMITED",
@@ -946,7 +946,7 @@ export const products: Product[] = [
   {
     id: "banner-had-enough",
     name: '"Had Enough" March Banner',
-    price: "$39.99",
+    price: "$69.99",
     image: bannerHadEnoughImg,
     tagline: "We The People Have Had Enough",
     badge: "BESTSELLER",
@@ -957,7 +957,7 @@ export const products: Product[] = [
   {
     id: "banner-take-back",
     name: '"Take Back What\'s Ours" Banner',
-    price: "$39.99",
+    price: "$69.99",
     image: bannerTakeBackImg,
     tagline: "Reclaim Our Government",
     badge: "NEW",
@@ -968,7 +968,7 @@ export const products: Product[] = [
   {
     id: "banner-parasites",
     name: '"No More Parasites" Banner',
-    price: "$39.99",
+    price: "$69.99",
     image: bannerParasitesImg,
     tagline: "No More Parasites In Power",
     badge: "🔥 HOT",
@@ -979,7 +979,7 @@ export const products: Product[] = [
   {
     id: "banner-coming",
     name: '"The People Are Coming" Banner',
-    price: "$39.99",
+    price: "$69.99",
     image: bannerComingImg,
     tagline: "They Can't Stop All Of Us",
     badge: "NEW DROP",
@@ -990,7 +990,7 @@ export const products: Product[] = [
   {
     id: "banner-our-rules",
     name: '"Our Country, Our Rules" Banner',
-    price: "$39.99",
+    price: "$69.99",
     image: bannerOurRulesImg,
     tagline: "Crossed Muskets — Olive Drab",
     badge: "LIMITED",
@@ -1001,7 +1001,7 @@ export const products: Product[] = [
   {
     id: "banner-drain",
     name: '"Drain Every Last One" Banner',
-    price: "$39.99",
+    price: "$69.99",
     image: bannerDrainImg,
     tagline: "Flag Skull — No Mercy Edition",
     badge: "FAN FAVORITE",
