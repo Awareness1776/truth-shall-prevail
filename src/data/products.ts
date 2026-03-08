@@ -60,6 +60,12 @@ import poster3Img from "@/assets/product-poster3.jpg";
 import poster4Img from "@/assets/product-poster4.jpg";
 import poster5Img from "@/assets/product-poster5.jpg";
 import poster6Img from "@/assets/product-poster6.jpg";
+import bannerHadEnoughImg from "@/assets/product-banner-hadEnough.jpg";
+import bannerTakeBackImg from "@/assets/product-banner-takeBack.jpg";
+import bannerParasitesImg from "@/assets/product-banner-parasites.jpg";
+import bannerComingImg from "@/assets/product-banner-coming.jpg";
+import bannerOurRulesImg from "@/assets/product-banner-ourRules.jpg";
+import bannerDrainImg from "@/assets/product-banner-drain.jpg";
 
 export type Category =
   | "all"
