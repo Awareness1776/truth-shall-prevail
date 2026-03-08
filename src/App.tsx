@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import MovementPage from "./pages/MovementPage";
 import OurStoryPage from "./pages/OurStoryPage";
 import ShopPage from "./pages/ShopPage";
-import VideosPage from "./pages/VideosPage";
+
 import ContactPage from "./pages/ContactPage";
 import ExportPage from "./pages/ExportPage";
 import CartPage from "./pages/CartPage";
