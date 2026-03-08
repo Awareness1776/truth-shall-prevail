@@ -1166,6 +1166,7 @@ export const categories: { label: string; value: Category }[] = [
   { label: "All", value: "all" },
   { label: "Apparel", value: "apparel" },
   { label: "Tank Tops", value: "tank-tops" },
+  { label: "Car Stickers", value: "car-stickers" },
   { label: "March Banners", value: "march-banners" },
   { label: "Phone Cases", value: "phone-cases" },
   { label: "Mugs", value: "mugs" },
