@@ -66,6 +66,15 @@ import bannerParasitesImg from "@/assets/product-banner-parasites.jpg";
 import bannerComingImg from "@/assets/product-banner-coming.jpg";
 import bannerOurRulesImg from "@/assets/product-banner-ourRules.jpg";
 import bannerDrainImg from "@/assets/product-banner-drain.jpg";
+import teeParasitesImg from "@/assets/product-tee-parasites.jpg";
+import teeTakebackImg from "@/assets/product-tee-takeback.jpg";
+import teeDrainImg from "@/assets/product-tee-drain.jpg";
+import hoodieComingImg from "@/assets/product-hoodie-coming.jpg";
+import hoodieParasitesImg from "@/assets/product-hoodie-parasites.jpg";
+import hoodieOurRulesImg from "@/assets/product-hoodie-ourrules.jpg";
+import tankDrainImg from "@/assets/product-tank-drain.jpg";
+import tankTakebackImg from "@/assets/product-tank-takeback.jpg";
+import tankComingImg from "@/assets/product-tank-coming.jpg";
 
 export type Category =
   | "all"
