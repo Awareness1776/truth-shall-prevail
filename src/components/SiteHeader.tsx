@@ -9,7 +9,7 @@ const navItems = [
   { label: "The Movement", path: "/movement" },
   { label: "Our Story", path: "/our-story" },
   { label: "Shop", path: "/shop" },
-  { label: "Videos", path: "/videos" },
+  
   { label: "Contact Us", path: "/contact" },
 ];
 

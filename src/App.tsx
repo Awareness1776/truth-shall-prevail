@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import MovementPage from "./pages/MovementPage";
 import OurStoryPage from "./pages/OurStoryPage";
 import ShopPage from "./pages/ShopPage";
-import VideosPage from "./pages/VideosPage";
+
 import ContactPage from "./pages/ContactPage";
 import ExportPage from "./pages/ExportPage";
 import CartPage from "./pages/CartPage";
@@ -28,7 +28,7 @@ const App = () => (
             <Route path="/movement" element={<MovementPage />} />
             <Route path="/our-story" element={<OurStoryPage />} />
             <Route path="/shop" element={<ShopPage />} />
-            <Route path="/videos" element={<VideosPage />} />
+            
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/export" element={<ExportPage />} />
             <Route path="/cart" element={<CartPage />} />
