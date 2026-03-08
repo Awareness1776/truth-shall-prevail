@@ -98,7 +98,8 @@ export type Category =
   | "drinkware"
   | "fitness"
   | "posters"
-  | "march-banners";
+  | "march-banners"
+  | "car-stickers";
 
 export interface ColorOption {
   name: string;
