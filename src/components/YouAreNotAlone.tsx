@@ -37,6 +37,15 @@ const YouAreNotAlone = () => {
             <p className="font-display text-xl md:text-2xl text-foreground leading-relaxed font-bold mt-10">
               If you are here, it means you are already part of that awakening.
             </p>
+
+            <div className="mt-14 pt-10 border-t border-border">
+              <p className="font-display text-lg md:text-xl text-muted-foreground leading-relaxed mb-4">
+                This movement does not belong to a company.
+              </p>
+              <p className="font-display text-xl md:text-2xl text-foreground leading-relaxed font-bold">
+                It belongs to <span className="text-primary">EVERY INDIVIDUAL</span> who believes awareness, truth, and liberty are worth defending.
+              </p>
+            </div>
           </div>
         </div>
       </div>
