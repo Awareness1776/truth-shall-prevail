@@ -201,11 +201,51 @@ const CartPage = () => {
                       <span className="text-muted-foreground">Shipping</span>
                       <span className="text-primary font-heading text-xs tracking-wider">CALCULATED AT CHECKOUT</span>
                     </div>
+
+                    <div className="pt-2">
+                      <label className="flex items-start gap-3 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={donationEnabled}
+                          onChange={(event) => setDonationEnabled(event.target.checked)}
+                          className="mt-0.5 h-4 w-4 rounded border-border bg-background text-primary"
+                        />
+                        <span className="font-body text-sm text-foreground leading-snug">
+                          Add a donation to support veterans and survivor recovery.
+                        </span>
+                      </label>
+
+                      {donationEnabled && (
+                        <div className="mt-3 grid grid-cols-4 gap-2">
+                          {donationOptions.map((amount) => (
+                            <button
+                              key={amount}
+                              type="button"
+                              onClick={() => setSelectedDonation(amount)}
+                              className={`border rounded px-2 py-2 font-heading text-xs tracking-wider uppercase transition-colors ${
+                                selectedDonation === amount
+                                  ? "border-primary text-primary"
+                                  : "border-border text-muted-foreground hover:text-foreground"
+                              }`}
+                            >
+                              ${amount}
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+
+                    {donationAmount > 0 && (
+                      <div className="flex justify-between font-body text-sm">
+                        <span className="text-muted-foreground">Donation</span>
+                        <span className="text-foreground">${donationAmount.toFixed(2)}</span>
+                      </div>
+                    )}
                   </div>
 
                   <div className="flex justify-between mb-6">
                     <span className="font-display text-lg text-foreground">TOTAL</span>
-                    <span className="font-display text-2xl text-primary">${totalPrice.toFixed(2)}</span>
+                    <span className="font-display text-2xl text-primary">${orderTotal.toFixed(2)}</span>
                   </div>
 
                   <Button
