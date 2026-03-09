@@ -488,7 +488,7 @@ export const products: Product[] = [
     id: "cap-protect-children",
     name: '"Protect The Children" Snapback',
     price: "$49.99",
-    image: beanieImg,
+    image: capProtectImg,
     tagline: "Their Silence Is Complicity",
     badge: "LIMITED",
     category: "headwear" as Category,
