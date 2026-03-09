@@ -472,7 +472,7 @@ export const products: Product[] = [
     id: "cap-accountability",
     name: '"Accountability Now" Dad Cap',
     price: "$49.99",
-    image: capImg,
+    image: capAccountabilityImg,
     tagline: "No One Is Above The Law",
     badge: "🔥 HOT",
     category: "headwear" as Category,
