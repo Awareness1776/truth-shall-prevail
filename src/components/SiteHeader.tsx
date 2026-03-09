@@ -24,7 +24,7 @@ const SiteHeader = () => {
         <Link to="/" className="flex items-center gap-3">
           <img src={logo} alt="WTP Logo" className="h-10 w-10" />
           <span className="font-display text-xl tracking-widest text-foreground">
-            WE THE PEOPLE
+            AWARENESS 1776
           </span>
         </Link>
 

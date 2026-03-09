@@ -83,11 +83,14 @@ const ManifestoSection = () => {
               </span>
             </h3>
             <p className="font-body text-muted-foreground leading-relaxed mb-4 max-w-2xl mx-auto">
-              They've embedded themselves into every branch — draining our
-              treasury, shredding our liberties, and selling out our future to
-              the highest bidder. They don't represent us. They exploit us.
-              Generations of corruption have turned "public servants" into a
-              ruling class that the Founders would have never tolerated.
+              We are done being spectators while the same elite circle decides who
+              gets protected and who gets sacrificed. They profit from confusion,
+              division, and fear. We answer with clarity, unity, and public pressure.
+            </p>
+            <p className="font-body text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
+              If you wear Awareness 1776, you carry a shared duty: show up for your
+              community, speak for the voiceless, and stand shoulder to shoulder in
+              peaceful marches until accountability is no longer optional.
             </p>
             <p className="font-heading text-lg text-foreground tracking-wide mb-8">
               "Whenever any Form of Government becomes destructive of these ends,

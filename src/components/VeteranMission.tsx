@@ -50,29 +50,43 @@ const VeteranMission = () => {
             </h3>
             <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
               <p>
-                Our veterans walked into war zones so politicians could sleep
-                safe at night. They left pieces of themselves on foreign soil —
-                limbs, sanity, brothers and sisters in arms — because they
-                believed in something bigger than themselves.
+                In March 2026, families across America are watching headlines about
+                a possible war with Iran while asking the same question: <span className="text-foreground font-medium">who is
+                listening to the people who pay the price?</span> Not the pundits. Not the
+                insiders. The parents, veterans, workers, and young Americans who
+                would carry the burden of another generation of conflict.
               </p>
               <p>
-                And what did they come home to? <span className="text-foreground font-medium">Closed VA hospitals. Months-long
-                waitlists. Benefits slashed while Congress voted themselves
-                raises.</span> Veterans who defended the halls of government are now
-                sleeping outside them.
+                Our veterans already gave everything. They stepped into chaos so
+                politicians could stand at podiums and call it strategy. They came
+                home to closed clinics, endless waitlists, broken promises, and a
+                system that thanks them in speeches while abandoning them in real life.
               </p>
               <p>
-                They sent our people to fight wars that made defense contractors
-                rich and left veterans broken. They cut veteran healthcare to
-                fund pet projects. They wave the flag on Memorial Day and vote
-                against veteran bills on Tuesday.
+                And now the same machine beats the same drum again — louder fear,
+                faster escalation, less accountability. Meanwhile, Americans across
+                this country are saying they do <span className="text-foreground font-medium">not</span> want another endless war,
+                another blank check, another list of names carved into stone while
+                Washington cashes in.
               </p>
               <p className="text-foreground font-medium text-lg">
-                We started this brand because{" "}
-                <span className="text-primary">enough is enough</span>. Every
-                hoodie, every tee, every sticker you buy — 10% goes directly to
-                veteran support organizations. Not to lobbyists. Not to PACs.
-                To the men and women who actually bled for this country.
+                This brand exists so that voice can’t be ignored.
+              </p>
+              <p>
+                Every product is a signal: we remember who bleeds, who grieves, and
+                who gets left behind. Every person wearing Awareness 1776 carries a
+                piece of that truth into their town, their job, their school, and
+                their streets.
+              </p>
+              <p>
+                We are not building this for one person. We are building this for all
+                of us in the United States — for veterans, for families, for survivors,
+                for anyone tired of being treated like collateral.
+              </p>
+              <p className="text-foreground font-medium text-lg">
+                We need to unite. We need to be seen. We need to march — peacefully,
+                loudly, and together — until the people in power remember who this
+                country belongs to.
               </p>
             </div>
           </div>
