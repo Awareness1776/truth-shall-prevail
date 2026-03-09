@@ -520,7 +520,7 @@ export const products: Product[] = [
     id: "cap-veteran-owned",
     name: '"Veteran Owned" Trucker Hat',
     price: "$49.99",
-    image: capImg,
+    image: capVeteranImg,
     tagline: "They Served — Congress Forgot",
     badge: null,
     category: "headwear" as Category,
