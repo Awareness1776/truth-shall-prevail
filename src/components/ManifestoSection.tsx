@@ -82,22 +82,23 @@ const ManifestoSection = () => {
             <p className="font-display text-xs tracking-[0.4em] text-primary mb-4 uppercase">
               Enough Is Enough
             </p>
-            <h3 className="font-display text-3xl md:text-5xl text-foreground mb-6 leading-tight">
+            <h3 className="font-display text-4xl md:text-6xl text-foreground mb-8 leading-none">
               TAKE OUR GOVERNMENT BACK
               <br />
               <span className="text-gradient-revolution">
                 FROM THE PARASITES WITHIN
               </span>
             </h3>
-            <p className="font-body text-muted-foreground leading-relaxed mb-4 max-w-2xl mx-auto">
-              We are done being spectators while the same elite circle decides who
+            <p className="font-display text-lg md:text-xl text-foreground leading-relaxed mb-6 max-w-2xl mx-auto">
+              WE ARE <span className="text-primary font-bold">DONE</span> BEING SPECTATORS while the same elite circle decides who
               gets protected and who gets sacrificed. They profit from confusion,
-              division, and fear. We answer with clarity, unity, and public pressure.
+              division, and fear. <span className="text-primary font-bold">WE ANSWER WITH CLARITY, UNITY, AND PUBLIC PRESSURE.</span>
             </p>
-            <p className="font-body text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
-              If you wear Awareness 1776, you carry a shared duty: show up for your
-              community, speak for the voiceless, and stand shoulder to shoulder in
-              peaceful marches until accountability is no longer optional.
+            <p className="font-display text-lg md:text-xl text-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
+              If you wear Awareness 1776, you carry a shared duty:{" "}
+              <span className="text-primary font-bold">SHOW UP FOR YOUR COMMUNITY.</span>{" "}
+              Speak for the voiceless. Stand shoulder to shoulder in peaceful marches{" "}
+              <span className="text-primary font-bold">UNTIL ACCOUNTABILITY IS NO LONGER OPTIONAL.</span>
             </p>
             <p className="font-heading text-lg text-foreground tracking-wide mb-8">
               "Whenever any Form of Government becomes destructive of these ends,
