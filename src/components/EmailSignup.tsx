@@ -17,27 +17,47 @@ const EmailSignup = () => {
   return (
     <section className="py-24 bg-card border-t border-b border-border">
       <div className="container px-4">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center">
           <Mail className="text-primary h-10 w-10 mx-auto mb-6" />
-          <h2 className="font-display text-3xl md:text-5xl text-foreground mb-4">
-            JOIN THE FRONTLINE
-          </h2>
-          <p className="font-body text-muted-foreground mb-2">
-            Get early access to new drops, veteran impact updates, and
-            constitutional truth bombs delivered straight to your inbox.
+          <p className="font-heading text-sm tracking-[0.3em] text-primary mb-3 uppercase">
+            Be Part Of It
           </p>
-          <p className="font-heading text-xs tracking-[0.2em] text-primary uppercase mb-8">
-            No spam. No selling your data. That's a constitutional promise.
+          <h2 className="font-display text-3xl md:text-5xl text-foreground mb-10">
+            JOIN THE MOVEMENT
+          </h2>
+
+          <div className="space-y-5 mb-12 max-w-2xl mx-auto">
+            <p className="font-display text-lg md:text-xl text-foreground leading-relaxed">
+              Movements grow when people{" "}
+              <span className="text-primary font-bold">REFUSE TO REMAIN SILENT.</span>
+            </p>
+            <p className="font-display text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Join the community behind Awareness 1776 and help spread the message of awareness, truth, and liberty.
+            </p>
+            <div className="space-y-2 py-4">
+              <p className="font-display text-lg text-foreground">Stay informed.</p>
+              <p className="font-display text-lg text-foreground">Share the message.</p>
+              <p className="font-display text-lg text-foreground">
+                Encourage awareness in a world that often discourages it.
+              </p>
+            </div>
+            <p className="font-display text-lg md:text-xl text-foreground leading-relaxed">
+              The more people who stay aware, the{" "}
+              <span className="text-primary font-bold">STRONGER FREEDOM BECOMES.</span>
+            </p>
+          </div>
+
+          <p className="font-heading text-lg text-primary tracking-[0.2em] uppercase mb-10">
+            Truth Shall Prevail.
           </p>
 
           {submitted ? (
             <div className="bg-primary/10 border border-primary rounded p-6 animate-fade-up">
               <p className="font-display text-xl text-primary mb-2">
-                YOU'RE IN, PATRIOT.
+                YOU'RE IN.
               </p>
               <p className="font-body text-sm text-muted-foreground">
-                Welcome to the movement. Check your inbox for a confirmation
-                and your first look at what's coming next.
+                Welcome to the movement. Check your inbox for a confirmation.
               </p>
             </div>
           ) : (
@@ -60,7 +80,7 @@ const EmailSignup = () => {
           )}
 
           <p className="font-body text-xs text-muted-foreground mt-6">
-            Joining 12,400+ patriots already on the list
+            Join the growing community of people who believe in awareness.
           </p>
         </div>
       </div>
