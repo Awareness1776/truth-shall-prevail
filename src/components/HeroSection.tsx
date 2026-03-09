@@ -19,16 +19,15 @@ const HeroSection = () => {
           Est. 1776 — The Spirit Lives On
         </p>
         <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-none text-foreground mb-6">
-          WE THE PEOPLE
+          AWARENESS
           <br />
-          <span className="text-gradient-revolution">HAVE HAD ENOUGH</span>
+          <span className="text-gradient-revolution">1776</span>
         </h1>
-        <p className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 font-light">
-          "When injustice becomes law, resistance becomes duty."
-          <br />
-          <span className="text-sm italic">
-            — Wear the revolution. Defend the Constitution.
-          </span>
+        <p className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 font-light">
+          A platform dedicated to spreading awareness, defending truth, and encouraging the courage to question power.
+        </p>
+        <p className="font-heading text-sm md:text-base tracking-[0.2em] text-primary uppercase mb-10">
+          Truth Shall Prevail.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="revolution" size="xl" asChild>
