@@ -5,6 +5,7 @@ import WhatWeStandFor from "@/components/WhatWeStandFor";
 import ConstitutionBanners from "@/components/ConstitutionBanners";
 import SupportTheMovement from "@/components/SupportTheMovement";
 import YouAreNotAlone from "@/components/YouAreNotAlone";
+import YourRole from "@/components/YourRole";
 import EmailSignup from "@/components/EmailSignup";
 
 const MovementPage = () => {
@@ -17,6 +18,7 @@ const MovementPage = () => {
         <ConstitutionBanners />
         <SupportTheMovement />
         <YouAreNotAlone />
+        <YourRole />
         <EmailSignup />
       </div>
       <SiteFooter />
