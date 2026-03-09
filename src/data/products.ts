@@ -456,7 +456,7 @@ export const products: Product[] = [
     id: "cap-enough",
     name: '"Had Enough" Snapback',
     price: "$49.99",
-    image: capImg,
+    image: capEnoughImg,
     tagline: "We're Done Being Silent",
     badge: "NEW DROP",
     category: "headwear" as Category,
