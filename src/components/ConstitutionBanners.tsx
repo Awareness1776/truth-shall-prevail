@@ -91,7 +91,7 @@ const ConstitutionBanners = () => {
   const visibleSlogans = showAll ? slogans : slogans.slice(0, 6);
 
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-secondary">
       <div className="container px-4">
         <div className="text-center mb-16">
           <p className="font-heading text-sm tracking-[0.3em] text-primary mb-3 uppercase">

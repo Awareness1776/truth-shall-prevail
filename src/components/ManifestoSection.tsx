@@ -20,7 +20,7 @@ const pillars = [
     icon: Shield,
     title: "Awareness",
     description:
-      "A society that stops asking questions slowly loses its liberty. A society that stays aware remains difficult to control.",
+      "When people stop paying attention, freedom quietly slips away. Awareness is the first line of defense.",
   },
   {
     icon: Flame,
