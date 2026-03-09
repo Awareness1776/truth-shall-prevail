@@ -1,3 +1,4 @@
+import { useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { useCart } from "@/context/CartContext";
@@ -6,10 +7,22 @@ import { Link } from "react-router-dom";
 import { Trash2, Plus, Minus, ShoppingBag, ArrowLeft } from "lucide-react";
 import { toast } from "sonner";
 
+const donationOptions = [5, 10, 25, 50];
+
 const CartPage = () => {
   const { items, removeItem, updateQty, clearCart, totalItems, totalPrice, getKey } = useCart();
+  const [donationEnabled, setDonationEnabled] = useState(false);
+  const [selectedDonation, setSelectedDonation] = useState(10);
+
+  const donationAmount = donationEnabled ? selectedDonation : 0;
+  const orderTotal = totalPrice + donationAmount;
 
   const handleCheckout = () => {
+    if (donationAmount > 0) {
+      toast.success(`Checkout coming soon! Thanks for adding a $${donationAmount.toFixed(2)} donation.`);
+      return;
+    }
+
     toast.success("Checkout coming soon! We're setting up payments now.");
   };
 
@@ -188,11 +201,51 @@ const CartPage = () => {
                       <span className="text-muted-foreground">Shipping</span>
                       <span className="text-primary font-heading text-xs tracking-wider">CALCULATED AT CHECKOUT</span>
                     </div>
+
+                    <div className="pt-2">
+                      <label className="flex items-start gap-3 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={donationEnabled}
+                          onChange={(event) => setDonationEnabled(event.target.checked)}
+                          className="mt-0.5 h-4 w-4 rounded border-border bg-background text-primary"
+                        />
+                        <span className="font-body text-sm text-foreground leading-snug">
+                          Add a donation to support veterans and survivor recovery.
+                        </span>
+                      </label>
+
+                      {donationEnabled && (
+                        <div className="mt-3 grid grid-cols-4 gap-2">
+                          {donationOptions.map((amount) => (
+                            <button
+                              key={amount}
+                              type="button"
+                              onClick={() => setSelectedDonation(amount)}
+                              className={`border rounded px-2 py-2 font-heading text-xs tracking-wider uppercase transition-colors ${
+                                selectedDonation === amount
+                                  ? "border-primary text-primary"
+                                  : "border-border text-muted-foreground hover:text-foreground"
+                              }`}
+                            >
+                              ${amount}
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+
+                    {donationAmount > 0 && (
+                      <div className="flex justify-between font-body text-sm">
+                        <span className="text-muted-foreground">Donation</span>
+                        <span className="text-foreground">${donationAmount.toFixed(2)}</span>
+                      </div>
+                    )}
                   </div>
 
                   <div className="flex justify-between mb-6">
                     <span className="font-display text-lg text-foreground">TOTAL</span>
-                    <span className="font-display text-2xl text-primary">${totalPrice.toFixed(2)}</span>
+                    <span className="font-display text-2xl text-primary">${orderTotal.toFixed(2)}</span>
                   </div>
 
                   <Button
@@ -205,7 +258,7 @@ const CartPage = () => {
                   </Button>
 
                   <p className="font-body text-xs text-muted-foreground text-center">
-                    Taxes and shipping calculated at checkout
+                    Taxes and shipping calculated at checkout. Donations go to your stated cause.
                   </p>
 
                   {/* Trust badges */}
