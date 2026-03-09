@@ -504,7 +504,7 @@ export const products: Product[] = [
     id: "cap-release-names",
     name: '"Release Every Name" Dad Cap',
     price: "$49.99",
-    image: capImg,
+    image: capReleaseImg,
     tagline: "Unseal The Truth",
     badge: "NEW DROP",
     category: "headwear" as Category,
