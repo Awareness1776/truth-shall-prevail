@@ -258,7 +258,7 @@ const CartPage = () => {
                   </Button>
 
                   <p className="font-body text-xs text-muted-foreground text-center">
-                    Taxes and shipping calculated at checkout
+                    Taxes and shipping calculated at checkout. Donations go to your stated cause.
                   </p>
 
                   {/* Trust badges */}
