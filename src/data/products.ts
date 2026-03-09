@@ -536,7 +536,7 @@ export const products: Product[] = [
     id: "beanie-awareness",
     name: '"Awareness 1776" Beanie',
     price: "$42.99",
-    image: beanieImg,
+    image: beanieAwarenessImg,
     tagline: "Awake & United",
     badge: "🔥 HOT",
     category: "headwear" as Category,
