@@ -127,10 +127,10 @@ const ManifestoSection = () => {
               <div className="w-14 h-14 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                 <pillar.icon className="text-primary h-7 w-7" />
               </div>
-              <h4 className="font-display text-xl text-foreground mb-3">
+              <h4 className="font-display text-xl text-foreground mb-3 uppercase">
                 {pillar.title}
               </h4>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">
+              <p className="font-display text-sm text-foreground leading-relaxed">
                 {pillar.description}
               </p>
             </div>
