@@ -91,6 +91,10 @@ import capProtectImg from "@/assets/product-cap-protect.jpg";
 import capReleaseImg from "@/assets/product-cap-release.jpg";
 import capVeteranImg from "@/assets/product-cap-veteran.jpg";
 import beanieAwarenessImg from "@/assets/product-beanie-awareness.jpg";
+import bannerAccountabilityImg from "@/assets/product-banner-accountability.jpg";
+import bannerProtectImg from "@/assets/product-banner-protect.jpg";
+import bannerVeteransImg from "@/assets/product-banner-veterans.jpg";
+import bannerSilenceImg from "@/assets/product-banner-silence.jpg";
 
 export type Category =
   | "all"
