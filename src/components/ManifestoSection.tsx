@@ -18,21 +18,21 @@ const constitutionQuotes = [
 const pillars = [
   {
     icon: Shield,
-    title: "Speak Truth",
+    title: "Awareness",
     description:
-      "Truth is not partisan. It belongs to no party, no institution, no government. It belongs to the people — and it demands to be spoken, even when power tries to silence it.",
+      "A society that stops asking questions slowly loses its liberty. A society that stays aware remains difficult to control.",
   },
   {
     icon: Flame,
-    title: "Defend Liberty",
+    title: "Truth",
     description:
-      "Liberty is not given — it is guarded. Every generation must decide whether to protect the freedoms earned by those before them, or let them erode in silence.",
+      "This movement exists to remind people that truth deserves to be spoken, defended, and protected — no matter who it inconveniences.",
   },
   {
     icon: Users,
-    title: "Refuse Silence",
+    title: "Courage",
     description:
-      "Silence is compliance. When injustice operates in the dark, the only moral response is to shine a light. We choose awareness over apathy, every single time.",
+      "Throughout history, freedom has only survived because ordinary people were willing to question power and defend truth when it mattered most.",
   },
 ];
 
@@ -43,25 +43,28 @@ const ManifestoSection = () => {
         {/* Manifesto intro */}
         <div className="max-w-4xl mx-auto text-center mb-16">
           <p className="font-heading text-sm tracking-[0.3em] text-primary mb-3 uppercase">
-            Awareness 1776
+            The Movement
           </p>
           <h2 className="font-display text-5xl md:text-7xl text-foreground mb-10">
             TRUTH SHALL PREVAIL
           </h2>
-          <p className="font-display text-xl md:text-2xl text-foreground leading-snug mb-6 uppercase tracking-wide">
-            A movement built on awareness, truth, and the courage to question power.
+          <p className="font-display text-lg md:text-xl text-foreground leading-relaxed mb-6">
+            <span className="text-primary font-bold">Truth Shall Prevail</span> is the message that drives Awareness 1776.
           </p>
           <p className="font-display text-lg md:text-xl text-foreground leading-relaxed mb-6">
-            Awareness 1776 exists to remind people that freedom survives only when individuals stay{" "}
-            <span className="text-primary font-bold">INFORMED, AWARE,</span> and willing to{" "}
-            <span className="text-primary font-bold">CHALLENGE AUTHORITY</span> when necessary.
+            Throughout history, freedom has only survived because ordinary people were willing to{" "}
+            <span className="text-primary font-bold">QUESTION POWER</span> and defend truth when it mattered most.
           </p>
           <p className="font-display text-lg md:text-xl text-foreground leading-relaxed mb-6">
-            This is <span className="text-primary font-bold">NOT JUST A CLOTHING BRAND.</span>
+            Awareness 1776 was created to encourage that same spirit of{" "}
+            <span className="text-primary font-bold">AWARENESS AND COURAGE</span> in the modern world.
+          </p>
+          <p className="font-display text-xl md:text-2xl text-foreground leading-snug mb-6 uppercase tracking-wide font-bold">
+            We believe awareness is the foundation of freedom.
           </p>
           <p className="font-display text-lg md:text-xl text-foreground leading-relaxed">
-            It is a platform created to spread ideas, encourage awareness, and unite individuals who believe{" "}
-            <span className="text-primary font-bold">TRUTH SHOULD NEVER BE BURIED.</span>
+            A society that stops asking questions slowly loses its liberty. A society that stays aware{" "}
+            <span className="text-primary font-bold">REMAINS DIFFICULT TO CONTROL.</span>
           </p>
         </div>
 
@@ -70,14 +73,14 @@ const ManifestoSection = () => {
           <div className="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22><text x=%220%22 y=%2230%22 font-size=%2220%22 fill=%22white%22>★</text></svg>')] bg-repeat" />
           <div className="relative z-10 max-w-3xl mx-auto text-center">
             <div className="space-y-6">
-              <p className="font-display text-3xl md:text-5xl text-foreground leading-none uppercase">
-                Speak Truth.
+              <p className="font-display text-2xl md:text-4xl text-foreground leading-snug">
+                Awareness leads to truth.
               </p>
-              <p className="font-display text-3xl md:text-5xl leading-none uppercase">
-                <span className="text-gradient-revolution">Defend Liberty.</span>
+              <p className="font-display text-2xl md:text-4xl leading-snug">
+                <span className="text-gradient-revolution">Truth leads to courage.</span>
               </p>
-              <p className="font-display text-3xl md:text-5xl text-foreground leading-none uppercase">
-                Refuse Silence.
+              <p className="font-display text-2xl md:text-4xl text-foreground leading-snug">
+                Courage protects freedom.
               </p>
             </div>
             <p className="font-heading text-lg text-primary tracking-[0.2em] mt-10 uppercase">
