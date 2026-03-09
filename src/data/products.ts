@@ -85,6 +85,12 @@ import teeReleaseFilesImg from "@/assets/product-tee-release-files.jpg";
 import teeAboveLawImg from "@/assets/product-tee-above-law.jpg";
 import hoodieClientListImg from "@/assets/product-hoodie-client-list.jpg";
 import hoodieProtectChildrenImg from "@/assets/product-hoodie-protect-children.jpg";
+import capEnoughImg from "@/assets/product-cap-enough.jpg";
+import capAccountabilityImg from "@/assets/product-cap-accountability.jpg";
+import capProtectImg from "@/assets/product-cap-protect.jpg";
+import capReleaseImg from "@/assets/product-cap-release.jpg";
+import capVeteranImg from "@/assets/product-cap-veteran.jpg";
+import beanieAwarenessImg from "@/assets/product-beanie-awareness.jpg";
 
 export type Category =
   | "all"
@@ -450,7 +456,7 @@ export const products: Product[] = [
     id: "cap-enough",
     name: '"Had Enough" Snapback',
     price: "$49.99",
-    image: capImg,
+    image: capEnoughImg,
     tagline: "We're Done Being Silent",
     badge: "NEW DROP",
     category: "headwear" as Category,
@@ -466,7 +472,7 @@ export const products: Product[] = [
     id: "cap-accountability",
     name: '"Accountability Now" Dad Cap',
     price: "$49.99",
-    image: capImg,
+    image: capAccountabilityImg,
     tagline: "No One Is Above The Law",
     badge: "🔥 HOT",
     category: "headwear" as Category,
@@ -482,7 +488,7 @@ export const products: Product[] = [
     id: "cap-protect-children",
     name: '"Protect The Children" Snapback',
     price: "$49.99",
-    image: beanieImg,
+    image: capProtectImg,
     tagline: "Their Silence Is Complicity",
     badge: "LIMITED",
     category: "headwear" as Category,
@@ -498,7 +504,7 @@ export const products: Product[] = [
     id: "cap-release-names",
     name: '"Release Every Name" Dad Cap',
     price: "$49.99",
-    image: capImg,
+    image: capReleaseImg,
     tagline: "Unseal The Truth",
     badge: "NEW DROP",
     category: "headwear" as Category,
@@ -514,7 +520,7 @@ export const products: Product[] = [
     id: "cap-veteran-owned",
     name: '"Veteran Owned" Trucker Hat',
     price: "$49.99",
-    image: capImg,
+    image: capVeteranImg,
     tagline: "They Served — Congress Forgot",
     badge: null,
     category: "headwear" as Category,
@@ -530,7 +536,7 @@ export const products: Product[] = [
     id: "beanie-awareness",
     name: '"Awareness 1776" Beanie',
     price: "$42.99",
-    image: beanieImg,
+    image: beanieAwarenessImg,
     tagline: "Awake & United",
     badge: "🔥 HOT",
     category: "headwear" as Category,
