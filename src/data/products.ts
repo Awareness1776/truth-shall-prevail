@@ -91,6 +91,10 @@ import capProtectImg from "@/assets/product-cap-protect.jpg";
 import capReleaseImg from "@/assets/product-cap-release.jpg";
 import capVeteranImg from "@/assets/product-cap-veteran.jpg";
 import beanieAwarenessImg from "@/assets/product-beanie-awareness.jpg";
+import bannerAccountabilityImg from "@/assets/product-banner-accountability.jpg";
+import bannerProtectImg from "@/assets/product-banner-protect.jpg";
+import bannerVeteransImg from "@/assets/product-banner-veterans.jpg";
+import bannerSilenceImg from "@/assets/product-banner-silence.jpg";
 
 export type Category =
   | "all"
@@ -1211,6 +1215,50 @@ export const products: Product[] = [
     category: "march-banners",
     colors: [],
     description: "3×5 foot black march banner — CONGRESS KNEW / WE DEMAND JUSTICE. Broken gavel over Capitol dome. They knew what was happening to those children and they looked the other way. Every member who stayed silent is complicit. Heavy-duty polyester, double-sided.",
+  },
+  {
+    id: "banner-accountability",
+    name: '"Accountability Now" March Banner',
+    price: "$69.99",
+    image: bannerAccountabilityImg,
+    tagline: "No One Is Above The Law",
+    badge: "NEW DROP",
+    category: "march-banners" as Category,
+    colors: [],
+    description: "3×5 foot black march banner — ACCOUNTABILITY NOW with scales of justice. Every name on the list. Every corrupt deal. Every lie told under oath. We demand full accountability from every elected official who sold us out. Heavy-duty polyester, double-sided, brass grommets.",
+  },
+  {
+    id: "banner-protect-children",
+    name: '"Protect The Children" March Banner',
+    price: "$69.99",
+    image: bannerProtectImg,
+    tagline: "Their Silence Is Complicity",
+    badge: "LIMITED",
+    category: "march-banners" as Category,
+    colors: [],
+    description: "3×5 foot navy march banner — PROTECT THE CHILDREN with shield emblem. The Epstein files are public. The names are out. And Congress did nothing. This banner is for every child they failed and every survivor still waiting for justice. Double-sided, pole sleeve.",
+  },
+  {
+    id: "banner-22-veterans",
+    name: '"22 Veterans A Day" March Banner',
+    price: "$69.99",
+    image: bannerVeteransImg,
+    tagline: "Congress Sleeps — Veterans Don't",
+    badge: "🔥 HOT",
+    category: "march-banners" as Category,
+    colors: [],
+    description: "3×5 foot black and gold march banner — 22 VETERANS A DAY. While Congress votes themselves raises, 22 veterans take their own lives every single day. 37,000 sleep on the streets tonight. This banner demands they answer for it. Heavy-duty polyester, brass grommets.",
+  },
+  {
+    id: "banner-no-silence",
+    name: '"No More Silence" March Banner',
+    price: "$69.99",
+    image: bannerSilenceImg,
+    tagline: "Break The Chains — Speak Up",
+    badge: "NEW DROP",
+    category: "march-banners" as Category,
+    colors: [],
+    description: "3×5 foot crimson red march banner — NO MORE SILENCE with broken chain symbol. They silenced whistleblowers. They buried evidence. They sealed documents. That ends now. Every American who carries this banner is a signal that we will not be quiet anymore. Double-sided, pole sleeve.",
   },
   // Epstein Accountability Tees (2)
   {
