@@ -50,18 +50,21 @@ const ManifestoSection = () => {
             THE MANIFESTO
           </h2>
           <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-            This isn't fashion. This is a statement. When the people you elected
-            forget who they serve, when your rights get traded for power plays,
-            when the Constitution becomes a suggestion instead of the law —
-            it's time to make noise.
+            This isn't fashion. This is a public signal. In March 2026, with fear of
+            war with Iran rising and everyday Americans feeling ignored, silence is
+            no longer neutral — it protects the same system that spends lives and
+            calls it policy.
+          </p>
+          <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
+            We believe the people of this country deserve a voice before another
+            family gets a folded flag, before another veteran is discarded, and
+            before another generation is told sacrifice is patriotic while truth is
+            treated as disloyalty.
           </p>
           <p className="font-body text-lg text-foreground leading-relaxed font-medium">
-            We The People have always been the backbone of this nation. And we've
-            had enough of silence. Every hoodie, every tee, every sticker is a
-            declaration:{" "}
-            <span className="text-primary">
-              We remember our rights, and we will defend them.
-            </span>
+            Awareness 1776 is not about one founder — it's about all of us. Every
+            hoodie, tee, and sticker is a declaration that we will <span className="text-primary">unite,
+            organize, and march peacefully</span> until the people in power hear us.
           </p>
         </div>
 
@@ -80,11 +83,14 @@ const ManifestoSection = () => {
               </span>
             </h3>
             <p className="font-body text-muted-foreground leading-relaxed mb-4 max-w-2xl mx-auto">
-              They've embedded themselves into every branch — draining our
-              treasury, shredding our liberties, and selling out our future to
-              the highest bidder. They don't represent us. They exploit us.
-              Generations of corruption have turned "public servants" into a
-              ruling class that the Founders would have never tolerated.
+              We are done being spectators while the same elite circle decides who
+              gets protected and who gets sacrificed. They profit from confusion,
+              division, and fear. We answer with clarity, unity, and public pressure.
+            </p>
+            <p className="font-body text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
+              If you wear Awareness 1776, you carry a shared duty: show up for your
+              community, speak for the voiceless, and stand shoulder to shoulder in
+              peaceful marches until accountability is no longer optional.
             </p>
             <p className="font-heading text-lg text-foreground tracking-wide mb-8">
               "Whenever any Form of Government becomes destructive of these ends,
@@ -98,7 +104,7 @@ const ManifestoSection = () => {
               </span>
             </p>
             <Button variant="revolution" size="lg">
-              Join The Fight
+              Join The March
             </Button>
           </div>
         </div>
