@@ -46,25 +46,32 @@ const ManifestoSection = () => {
           <p className="font-heading text-sm tracking-[0.3em] text-primary mb-3 uppercase">
             Why We Stand
           </p>
-          <h2 className="font-display text-4xl md:text-6xl text-foreground mb-8">
+          <h2 className="font-display text-5xl md:text-7xl text-foreground mb-10">
             THE MANIFESTO
           </h2>
-          <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-            This isn't fashion. This is a public signal. In March 2026, with fear of
-            war with Iran rising and everyday Americans feeling ignored, silence is
-            no longer neutral — it protects the same system that spends lives and
-            calls it policy.
+          <p className="font-display text-xl md:text-2xl text-foreground leading-snug mb-6 uppercase tracking-wide">
+            THIS ISN'T FASHION. THIS IS A PUBLIC SIGNAL.
           </p>
-          <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-            We believe the people of this country deserve a voice before another
+          <p className="font-display text-lg md:text-xl text-foreground leading-relaxed mb-6">
+            In March 2026, with fear of war with Iran rising and everyday Americans feeling ignored,{" "}
+            <span className="text-primary font-bold">SILENCE IS NO LONGER NEUTRAL</span> — it protects the same system that{" "}
+            <span className="text-primary font-bold">SPENDS LIVES</span> and calls it policy.
+          </p>
+          <p className="font-display text-lg md:text-xl text-foreground leading-relaxed mb-6">
+            We believe the people of this country{" "}
+            <span className="text-primary font-bold">DESERVE A VOICE</span> before another
             family gets a folded flag, before another veteran is discarded, and
-            before another generation is told sacrifice is patriotic while truth is
-            treated as disloyalty.
+            before another generation is told sacrifice is patriotic while{" "}
+            <span className="text-primary font-bold">TRUTH IS TREATED AS DISLOYALTY.</span>
           </p>
-          <p className="font-body text-lg text-foreground leading-relaxed font-medium">
-            Awareness 1776 is not about one founder — it's about all of us. Every
-            hoodie, tee, and sticker is a declaration that we will <span className="text-primary">unite,
-            organize, and march peacefully</span> until the people in power hear us.
+          <p className="font-display text-xl md:text-2xl text-foreground leading-relaxed font-bold uppercase tracking-wide">
+            Awareness 1776 is not about one founder —{" "}
+            <span className="text-primary">IT'S ABOUT ALL OF US.</span>
+          </p>
+          <p className="font-display text-lg text-foreground mt-4">
+            Every hoodie, tee, and sticker is a declaration that we will{" "}
+            <span className="text-primary font-bold">UNITE, ORGANIZE, AND MARCH PEACEFULLY</span>{" "}
+            until the people in power hear us.
           </p>
         </div>
 
