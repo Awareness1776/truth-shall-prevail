@@ -1,3 +1,4 @@
+import { useState } from "react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { useCart } from "@/context/CartContext";
@@ -6,10 +7,22 @@ import { Link } from "react-router-dom";
 import { Trash2, Plus, Minus, ShoppingBag, ArrowLeft } from "lucide-react";
 import { toast } from "sonner";
 
+const donationOptions = [5, 10, 25, 50];
+
 const CartPage = () => {
   const { items, removeItem, updateQty, clearCart, totalItems, totalPrice, getKey } = useCart();
+  const [donationEnabled, setDonationEnabled] = useState(false);
+  const [selectedDonation, setSelectedDonation] = useState(10);
+
+  const donationAmount = donationEnabled ? selectedDonation : 0;
+  const orderTotal = totalPrice + donationAmount;
 
   const handleCheckout = () => {
+    if (donationAmount > 0) {
+      toast.success(`Checkout coming soon! Thanks for adding a $${donationAmount.toFixed(2)} donation.`);
+      return;
+    }
+
     toast.success("Checkout coming soon! We're setting up payments now.");
   };
 
