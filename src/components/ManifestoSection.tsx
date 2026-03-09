@@ -104,7 +104,7 @@ const ManifestoSection = () => {
               </span>
             </p>
             <Button variant="revolution" size="lg">
-              Join The Fight
+              Join The March
             </Button>
           </div>
         </div>
