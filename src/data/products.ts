@@ -85,6 +85,12 @@ import teeReleaseFilesImg from "@/assets/product-tee-release-files.jpg";
 import teeAboveLawImg from "@/assets/product-tee-above-law.jpg";
 import hoodieClientListImg from "@/assets/product-hoodie-client-list.jpg";
 import hoodieProtectChildrenImg from "@/assets/product-hoodie-protect-children.jpg";
+import capEnoughImg from "@/assets/product-cap-enough.jpg";
+import capAccountabilityImg from "@/assets/product-cap-accountability.jpg";
+import capProtectImg from "@/assets/product-cap-protect.jpg";
+import capReleaseImg from "@/assets/product-cap-release.jpg";
+import capVeteranImg from "@/assets/product-cap-veteran.jpg";
+import beanieAwarenessImg from "@/assets/product-beanie-awareness.jpg";
 
 export type Category =
   | "all"
