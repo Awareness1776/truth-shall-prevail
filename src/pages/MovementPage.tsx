@@ -11,6 +11,7 @@ const MovementPage = () => {
       <SiteHeader />
       <div className="pt-16">
         <ManifestoSection />
+        <WhatWeStandFor />
         <ConstitutionBanners />
         <EmailSignup />
       </div>
