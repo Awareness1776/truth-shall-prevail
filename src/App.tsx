@@ -9,6 +9,7 @@ import MovementPage from "./pages/MovementPage";
 import OurStoryPage from "./pages/OurStoryPage";
 import ShopPage from "./pages/ShopPage";
 
+import DonationsPage from "./pages/DonationsPage";
 import ContactPage from "./pages/ContactPage";
 import ExportPage from "./pages/ExportPage";
 import CartPage from "./pages/CartPage";
