@@ -1,4 +1,5 @@
 import { Quote, Shield, Flame, Users } from "lucide-react";
+import manifestoBg from "@/assets/manifesto-bg.jpg";
 
 const constitutionQuotes = [
   {
