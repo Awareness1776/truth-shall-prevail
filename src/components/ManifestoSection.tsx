@@ -39,17 +39,16 @@ const pillars = [
 
 const ManifestoSection = () => {
   return (
-    <section id="the-movement" className="py-24 bg-secondary">
-      <div className="container px-4">
+    <section id="the-movement" className="relative py-24 overflow-hidden">
+      {/* Full-bleed background image */}
+      <div className="absolute inset-0">
+        <img src={manifestoBg} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/65 to-black/80" />
+      </div>
+
+      <div className="relative z-10 container px-4">
         {/* Manifesto intro */}
-        <div className="relative max-w-5xl mx-auto mb-16 rounded-lg overflow-hidden">
-          {/* Background image */}
-          <div className="absolute inset-0">
-            <img src={manifestoBg} alt="" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-black/70" />
-          </div>
-          {/* Text content */}
-          <div className="relative z-10 text-center py-20 px-6 md:px-16">
+        <div className="max-w-4xl mx-auto text-center mb-16">
             <p className="font-heading text-sm tracking-[0.3em] text-primary mb-3 uppercase">
               The Movement
             </p>
@@ -74,7 +73,6 @@ const ManifestoSection = () => {
               A society that stops asking questions slowly loses its liberty. A society that stays aware{" "}
               <span className="text-primary font-bold">REMAINS DIFFICULT TO CONTROL.</span>
             </p>
-          </div>
         </div>
 
         {/* Core values banner */}
