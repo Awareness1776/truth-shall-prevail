@@ -48,12 +48,14 @@ const ProductShowcase = () => {
                           {product.badge}
                         </span>
                       )}
-                      {/* Brand logo watermark */}
-                      <img
-                        src={logo}
-                        alt="WTP"
-                        className="absolute bottom-3 right-3 w-8 h-8 opacity-80 drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] pointer-events-none"
-                      />
+                      {/* Brand logo on product */}
+                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <img
+                          src={logo}
+                          alt="Awareness 1776"
+                          className="w-28 h-auto opacity-90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]"
+                        />
+                      </div>
                     </div>
                     <div className="p-6">
                       <p className="font-heading text-xs tracking-widest text-muted-foreground mb-1 uppercase">
