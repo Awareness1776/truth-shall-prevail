@@ -42,31 +42,39 @@ const ManifestoSection = () => {
     <section id="the-movement" className="py-24 bg-secondary">
       <div className="container px-4">
         {/* Manifesto intro */}
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <p className="font-heading text-sm tracking-[0.3em] text-primary mb-3 uppercase">
-            The Movement
-          </p>
-          <h2 className="font-display text-5xl md:text-7xl text-foreground mb-10">
-            TRUTH SHALL PREVAIL
-          </h2>
-          <p className="font-display text-lg md:text-xl text-foreground leading-relaxed mb-6">
-            <span className="text-primary font-bold">Truth Shall Prevail</span> is the message that drives Awareness 1776.
-          </p>
-          <p className="font-display text-lg md:text-xl text-foreground leading-relaxed mb-6">
-            Throughout history, freedom has only survived because ordinary people were willing to{" "}
-            <span className="text-primary font-bold">QUESTION POWER</span> and defend truth when it mattered most.
-          </p>
-          <p className="font-display text-lg md:text-xl text-foreground leading-relaxed mb-6">
-            Awareness 1776 was created to encourage that same spirit of{" "}
-            <span className="text-primary font-bold">AWARENESS AND COURAGE</span> in the modern world.
-          </p>
-          <p className="font-display text-xl md:text-2xl text-foreground leading-snug mb-6 uppercase tracking-wide font-bold">
-            We believe awareness is the foundation of freedom.
-          </p>
-          <p className="font-display text-lg md:text-xl text-foreground leading-relaxed">
-            A society that stops asking questions slowly loses its liberty. A society that stays aware{" "}
-            <span className="text-primary font-bold">REMAINS DIFFICULT TO CONTROL.</span>
-          </p>
+        <div className="relative max-w-5xl mx-auto mb-16 rounded-lg overflow-hidden">
+          {/* Background image */}
+          <div className="absolute inset-0">
+            <img src={manifestoBg} alt="" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/70" />
+          </div>
+          {/* Text content */}
+          <div className="relative z-10 text-center py-20 px-6 md:px-16">
+            <p className="font-heading text-sm tracking-[0.3em] text-primary mb-3 uppercase">
+              The Movement
+            </p>
+            <h2 className="font-display text-5xl md:text-7xl text-white mb-10">
+              TRUTH SHALL PREVAIL
+            </h2>
+            <p className="font-display text-lg md:text-xl text-white/90 leading-relaxed mb-6">
+              <span className="text-primary font-bold">Truth Shall Prevail</span> is the message that drives Awareness 1776.
+            </p>
+            <p className="font-display text-lg md:text-xl text-white/90 leading-relaxed mb-6">
+              Throughout history, freedom has only survived because ordinary people were willing to{" "}
+              <span className="text-primary font-bold">QUESTION POWER</span> and defend truth when it mattered most.
+            </p>
+            <p className="font-display text-lg md:text-xl text-white/90 leading-relaxed mb-6">
+              Awareness 1776 was created to encourage that same spirit of{" "}
+              <span className="text-primary font-bold">AWARENESS AND COURAGE</span> in the modern world.
+            </p>
+            <p className="font-display text-xl md:text-2xl text-white leading-snug mb-6 uppercase tracking-wide font-bold">
+              We believe awareness is the foundation of freedom.
+            </p>
+            <p className="font-display text-lg md:text-xl text-white/90 leading-relaxed">
+              A society that stops asking questions slowly loses its liberty. A society that stays aware{" "}
+              <span className="text-primary font-bold">REMAINS DIFFICULT TO CONTROL.</span>
+            </p>
+          </div>
         </div>
 
         {/* Core values banner */}
