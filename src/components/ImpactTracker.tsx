@@ -129,7 +129,7 @@ const ImpactTracker = () => {
         <div className="text-center">
           <p className="font-body text-xs text-muted-foreground">
             Last updated: March 2026 •{" "}
-            <a href="/donations" className="text-primary hover:underline">
+            <a href="#" className="text-primary hover:underline">
               View full donation reports →
             </a>
           </p>
