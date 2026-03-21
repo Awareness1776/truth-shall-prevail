@@ -74,7 +74,7 @@ const VeteranMission = () => {
               </p>
               <p>
                 Every product is a signal: we remember who bleeds, who grieves, and
-                who gets left behind. Every person wearing Awareness 1776 carries a
+                who gets left behind. Every person wearing Awakened 1776 carries a
                 piece of that truth into their town, their job, their school, and
                 their streets.
               </p>
