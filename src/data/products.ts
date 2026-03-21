@@ -538,7 +538,7 @@ export const products: Product[] = [
   },
   {
     id: "beanie-awareness",
-    name: '"Awareness 1776" Beanie',
+    name: '"Awakened 1776" Beanie',
     price: "$42.99",
     image: beanieAwarenessImg,
     tagline: "Awake & United",
@@ -550,7 +550,7 @@ export const products: Product[] = [
       { name: "Navy", hex: "#1B2A4A" },
       { name: "Burgundy", hex: "#800020" },
     ],
-    description: "AWARENESS 1776 — embroidered cuff beanie. The spirit of 1776 never died. It lives in every American who refuses to be lied to, sold out, or silenced. Soft acrylic knit, one size fits most.",
+    description: "AWAKENED 1776 — embroidered cuff beanie. The spirit of 1776 never died. It lives in every American who refuses to be lied to, sold out, or silenced. Soft acrylic knit, one size fits most.",
   },
   // Mugs (6)
   {

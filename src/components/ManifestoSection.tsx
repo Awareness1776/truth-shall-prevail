@@ -19,7 +19,7 @@ const constitutionQuotes = [
 const pillars = [
   {
     icon: Shield,
-    title: "Awareness",
+    title: "Awakening",
     description:
       "When people stop paying attention, freedom quietly slips away. Awareness is the first line of defense.",
   },
@@ -56,14 +56,14 @@ const ManifestoSection = () => {
               TRUTH SHALL PREVAIL
             </h2>
             <p className="font-display text-lg md:text-xl text-white/90 leading-relaxed mb-6">
-              <span className="text-primary font-bold">Truth Shall Prevail</span> is the message that drives Awareness 1776.
+              <span className="text-primary font-bold">Truth Shall Prevail</span> is the message that drives Awakened 1776.
             </p>
             <p className="font-display text-lg md:text-xl text-white/90 leading-relaxed mb-6">
               Throughout history, freedom has only survived because ordinary people were willing to{" "}
               <span className="text-primary font-bold">QUESTION POWER</span> and defend truth when it mattered most.
             </p>
             <p className="font-display text-lg md:text-xl text-white/90 leading-relaxed mb-6">
-              Awareness 1776 was created to encourage that same spirit of{" "}
+              Awakened 1776 was created to encourage that same spirit of{" "}
               <span className="text-primary font-bold">AWARENESS AND COURAGE</span> in the modern world.
             </p>
             <p className="font-display text-xl md:text-2xl text-white leading-snug mb-6 uppercase tracking-wide font-bold">

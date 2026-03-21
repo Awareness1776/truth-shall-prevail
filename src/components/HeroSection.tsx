@@ -19,7 +19,7 @@ const HeroSection = () => {
           Est. 1776 — The Spirit Lives On
         </p>
         <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-none text-foreground mb-6">
-          AWARENESS
+          AWAKENED
           <br />
           <span className="text-gradient-revolution">1776</span>
         </h1>

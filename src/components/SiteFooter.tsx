@@ -9,9 +9,9 @@ const SiteFooter = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
             <Link to="/" className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="Awareness 1776 Logo" className="h-12 w-auto object-contain" />
+              <img src={logo} alt="Awakened 1776 Logo" className="h-12 w-auto object-contain" />
               <span className="font-display text-lg tracking-widest text-foreground">
-                AWARENESS 1776
+                AWAKENED 1776
               </span>
             </Link>
             <p className="font-body text-sm text-muted-foreground leading-relaxed mb-3">
@@ -72,7 +72,7 @@ const SiteFooter = () => {
 
         <div className="border-t border-border pt-8 text-center">
           <p className="font-heading text-xs tracking-[0.3em] text-muted-foreground uppercase">
-            © 2026 We The People — "Governments derive their just powers from the consent of the governed."
+            © 2026 Awakened 1776 — "Governments derive their just powers from the consent of the governed."
           </p>
         </div>
       </div>
