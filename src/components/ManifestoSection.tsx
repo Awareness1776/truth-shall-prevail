@@ -19,7 +19,7 @@ const constitutionQuotes = [
 const pillars = [
   {
     icon: Shield,
-    title: "Awareness",
+    title: "Awakening",
     description:
       "When people stop paying attention, freedom quietly slips away. Awareness is the first line of defense.",
   },
