@@ -538,7 +538,7 @@ export const products: Product[] = [
   },
   {
     id: "beanie-awareness",
-    name: '"Awareness 1776" Beanie',
+    name: '"Awakened 1776" Beanie',
     price: "$42.99",
     image: beanieAwarenessImg,
     tagline: "Awake & United",
