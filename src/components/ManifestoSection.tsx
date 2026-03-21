@@ -56,7 +56,7 @@ const ManifestoSection = () => {
               TRUTH SHALL PREVAIL
             </h2>
             <p className="font-display text-lg md:text-xl text-white/90 leading-relaxed mb-6">
-              <span className="text-primary font-bold">Truth Shall Prevail</span> is the message that drives Awareness 1776.
+              <span className="text-primary font-bold">Truth Shall Prevail</span> is the message that drives Awakened 1776.
             </p>
             <p className="font-display text-lg md:text-xl text-white/90 leading-relaxed mb-6">
               Throughout history, freedom has only survived because ordinary people were willing to{" "}
