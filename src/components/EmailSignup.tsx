@@ -32,7 +32,7 @@ const EmailSignup = () => {
               <span className="text-primary font-bold">REFUSE TO REMAIN SILENT.</span>
             </p>
             <p className="font-display text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Join the community behind Awareness 1776 and help spread the message of awareness, truth, and liberty.
+              Join the community behind Awakened 1776 and help spread the message of awareness, truth, and liberty.
             </p>
             <div className="space-y-2 py-4">
               <p className="font-display text-lg text-foreground">Stay informed.</p>

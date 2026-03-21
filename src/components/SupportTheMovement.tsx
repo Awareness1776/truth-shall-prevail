@@ -17,7 +17,7 @@ const SupportTheMovement = () => {
 
           <div className="max-w-3xl mx-auto space-y-6 mb-12">
             <p className="font-display text-lg md:text-xl text-foreground leading-relaxed">
-              Awareness 1776 is powered by the people who believe in it.
+              Awakened 1776 is powered by the people who believe in it.
             </p>
             <p className="font-display text-lg md:text-xl text-muted-foreground leading-relaxed">
               Every design represents a message.

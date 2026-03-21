@@ -25,7 +25,7 @@ const YouAreNotAlone = () => {
               They are choosing truth over silence.
             </p>
             <p className="font-display text-lg md:text-xl text-foreground leading-relaxed">
-              Awareness 1776 exists to{" "}
+              Awakened 1776 exists to{" "}
               <span className="text-primary font-bold">BRING THOSE INDIVIDUALS TOGETHER.</span>
             </p>
             <p className="font-display text-lg md:text-xl text-muted-foreground leading-relaxed">

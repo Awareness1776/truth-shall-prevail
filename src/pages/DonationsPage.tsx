@@ -135,7 +135,7 @@ const DonationsPage = () => {
                 DONATION LEDGER
               </h2>
               <p className="font-body text-muted-foreground max-w-lg mx-auto">
-                A complete record of every donation made through Awareness 1776.
+                A complete record of every donation made through Awakened 1776.
               </p>
             </div>
 

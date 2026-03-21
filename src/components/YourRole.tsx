@@ -22,7 +22,7 @@ const YourRole = () => {
               Every conversation, every shared idea, and every message worn publicly helps challenge the culture of silence.
             </p>
             <p className="font-display text-xl md:text-2xl text-foreground leading-snug font-bold uppercase tracking-wide my-10">
-              The mission of Awareness 1776 is simple:
+              The mission of Awakened 1776 is simple:
             </p>
             <div className="space-y-3 py-2">
               <p className="font-display text-lg md:text-xl text-foreground">

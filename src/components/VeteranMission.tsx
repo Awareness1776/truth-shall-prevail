@@ -249,7 +249,7 @@ const VeteranMission = () => {
               . If our government won't show you where the money goes, we will.
             </p>
             <p className="text-foreground font-medium">
-              When you wear Awareness 1776, you're not just making a statement — you're
+              When you wear Awakened 1776, you're not just making a statement — you're
               funding the fight for veterans and for the survivors that Congress abandoned.
             </p>
           </div>

@@ -31,7 +31,7 @@ const WhatWeStandFor = () => {
 
           <div className="max-w-3xl mx-auto space-y-6">
             <p className="font-display text-lg md:text-xl text-foreground leading-relaxed">
-              Awareness 1776 exists to encourage people to stay informed, think critically, and{" "}
+              Awakened 1776 exists to encourage people to stay informed, think critically, and{" "}
               <span className="text-primary font-bold">QUESTION NARRATIVES</span> that demand blind acceptance.
             </p>
             <p className="font-display text-lg md:text-xl text-muted-foreground leading-relaxed">
