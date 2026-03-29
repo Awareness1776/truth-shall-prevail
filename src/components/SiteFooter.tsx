@@ -8,11 +8,8 @@ const SiteFooter = () => {
       <div className="container px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <Link to="/" className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="Awakened 1776 Logo" className="h-12 w-auto object-contain" />
-              <span className="font-display text-lg tracking-widest text-foreground">
-                AWAKENED 1776
-              </span>
+            <Link to="/" className="flex items-center mb-4">
+              <img src={logo} alt="Awakened 1776 Logo" className="h-14 w-auto object-contain mix-blend-lighten" />
             </Link>
             <p className="font-body text-sm text-muted-foreground leading-relaxed mb-3">
               Born from the spirit of 1776. We carry the fire of the founders —
