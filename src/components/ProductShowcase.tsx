@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Flag } from "lucide-react";
 import { products, categories, type Category, type Product } from "@/data/products";
 import ProductDetailModal from "@/components/ProductDetailModal";
 import logo from "@/assets/logo.png";
