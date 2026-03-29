@@ -423,12 +423,12 @@ export const products: Product[] = [
   },
   // Headwear
   {
-    id: "cap-1776",
-    name: '"1776" Dad Cap',
+    id: "cap-76-mark",
+    name: '"76" Brand Mark Dad Cap',
     price: "$49.99",
     image: capImg,
-    tagline: "The Year It All Began",
-    badge: null,
+    tagline: "The Iconic 76 — Gold Embroidered",
+    badge: "BESTSELLER",
     category: "headwear",
     colors: [
       { name: "Black", hex: "#1a1a1a" },
@@ -436,14 +436,14 @@ export const products: Product[] = [
       { name: "Olive", hex: "#556B2F" },
       { name: "Khaki", hex: "#C3B091" },
     ],
-    description: "Embroidered 1776 dad cap. Adjustable brass buckle closure, pre-curved brim.",
+    description: "Gold embroidered 76 brand mark with AWAKENED · EST. 1776 on black dad cap. Adjustable brass buckle closure, pre-curved brim.",
   },
   {
-    id: "beanie-wtp",
-    name: '"WTP" Beanie',
+    id: "beanie-awakened",
+    name: '"Awakened 1776" Beanie',
     price: "$42.99",
     image: beanieImg,
-    tagline: "We The People — Embroidered",
+    tagline: "The Brand — Cream & Red",
     badge: "NEW",
     category: "headwear",
     colors: [
@@ -452,7 +452,7 @@ export const products: Product[] = [
       { name: "Navy", hex: "#1B2A4A" },
       { name: "Red", hex: "#B22222" },
     ],
-    description: "We The People embroidered cuff beanie. Soft acrylic knit, one size fits most.",
+    description: "AWAKENED in bold cream with 1776 in red embroidered on black cuff beanie. Soft acrylic knit, one size fits most.",
   },
   {
     id: "cap-enough",
