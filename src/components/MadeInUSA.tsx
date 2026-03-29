@@ -63,7 +63,7 @@ const MadeInUSA = () => {
               Real Talk
             </p>
             <h3 className="font-display text-3xl md:text-5xl text-foreground mb-4">
-              "WHY ARE YOU MORE EXPENSIVE?"
+              "WHY ARE WE MORE EXPENSIVE?"
             </h3>
             <p className="font-body text-lg text-muted-foreground leading-relaxed">
               We get it. Here's the honest answer.
