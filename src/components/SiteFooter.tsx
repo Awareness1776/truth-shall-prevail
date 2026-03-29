@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 import { Instagram, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const SiteFooter = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
             <Link to="/" className="flex items-center mb-4">
-              <img src={logo} alt="Awakened 1776 Logo" className="h-14 w-auto object-contain mix-blend-lighten" />
+              <img src={logo} alt="Awakened 1776 Logo" className="h-14 w-auto object-contain" />
             </Link>
             <p className="font-body text-sm text-muted-foreground leading-relaxed mb-3">
               Born from the spirit of 1776. We carry the fire of the founders —

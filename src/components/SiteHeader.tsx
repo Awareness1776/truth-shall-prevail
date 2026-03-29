@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 import { Menu, X, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -22,7 +22,7 @@ const SiteHeader = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="Awakened 1776 Logo" className="h-14 w-auto object-contain mix-blend-lighten" />
+          <img src={logo} alt="Awakened 1776 Logo" className="h-14 w-auto object-contain" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
