@@ -2,9 +2,7 @@ import tshirtImg from "@/assets/product-tshirt.jpg";
 import hoodieImg from "@/assets/product-hoodie.jpg";
 import capImg from "@/assets/product-cap.jpg";
 import mugImg from "@/assets/product-mug.jpg";
-import posterImg from "@/assets/product-poster.jpg";
 import beanieImg from "@/assets/product-beanie.jpg";
-import stickersImg from "@/assets/product-stickers.jpg";
 import tee2Img from "@/assets/product-tee2.jpg";
 import hoodie2Img from "@/assets/product-hoodie2.jpg";
 import caseEagleImg from "@/assets/product-case-eagle.jpg";
@@ -14,21 +12,13 @@ import caseWtpImg from "@/assets/product-case-wtp.jpg";
 import caseGadsdenImg from "@/assets/product-case-gadsden.jpg";
 import case1776Img from "@/assets/product-case-1776.jpg";
 import patchImg from "@/assets/product-patch.jpg";
-import pinImg from "@/assets/product-pin.jpg";
-import flagImg from "@/assets/product-flag.jpg";
 import yardSignImg from "@/assets/product-yardsign.jpg";
 import bottleImg from "@/assets/product-bottle.jpg";
 import bottle2Img from "@/assets/product-bottle2.jpg";
 import bottle3Img from "@/assets/product-bottle3.jpg";
 import bottle4Img from "@/assets/product-bottle4.jpg";
 import bottle5Img from "@/assets/product-bottle5.jpg";
-import koozieImg from "@/assets/product-koozie.jpg";
-import keychainImg from "@/assets/product-keychain.jpg";
-import keychain2Img from "@/assets/product-keychain2.jpg";
-import keychain3Img from "@/assets/product-keychain3.jpg";
-import keychain4Img from "@/assets/product-keychain4.jpg";
-import keychain5Img from "@/assets/product-keychain5.jpg";
-import keychain6Img from "@/assets/product-keychain6.jpg";
+import shakerImg from "@/assets/product-shaker.jpg";
 import decalImg from "@/assets/product-decal.jpg";
 import mug2Img from "@/assets/product-mug2.jpg";
 import mug3Img from "@/assets/product-mug3.jpg";
@@ -49,17 +39,6 @@ import tank3Img from "@/assets/product-tank3.jpg";
 import tank4Img from "@/assets/product-tank4.jpg";
 import tank5Img from "@/assets/product-tank5.jpg";
 import tank6Img from "@/assets/product-tank6.jpg";
-import shakerImg from "@/assets/product-shaker.jpg";
-import gymTowelImg from "@/assets/product-gymtowel.jpg";
-import gymBagImg from "@/assets/product-gymbag.jpg";
-import wristWrapsImg from "@/assets/product-wristwraps.jpg";
-import bandsImg from "@/assets/product-bands.jpg";
-import headbandImg from "@/assets/product-headband.jpg";
-import poster2Img from "@/assets/product-poster2.jpg";
-import poster3Img from "@/assets/product-poster3.jpg";
-import poster4Img from "@/assets/product-poster4.jpg";
-import poster5Img from "@/assets/product-poster5.jpg";
-import poster6Img from "@/assets/product-poster6.jpg";
 import bannerHadEnoughImg from "@/assets/product-banner-hadEnough.jpg";
 import bannerTakeBackImg from "@/assets/product-banner-takeBack.jpg";
 import bannerParasitesImg from "@/assets/product-banner-parasites.jpg";
@@ -104,10 +83,7 @@ export type Category =
   | "accessories"
   | "phone-cases"
   | "mugs"
-  | "keychains"
   | "drinkware"
-  | "fitness"
-  | "posters"
   | "march-banners"
   | "car-stickers";
 
@@ -178,14 +154,6 @@ const CASE_COLORS: ColorOption[] = [
   { name: "Crimson Red", hex: "#DC143C" },
   { name: "Royal Blue", hex: "#1E40AF" },
   { name: "Forest Green", hex: "#228B22" },
-];
-
-const KEYCHAIN_COLORS: ColorOption[] = [
-  { name: "Brass", hex: "#B5A642" },
-  { name: "Silver", hex: "#C0C0C0" },
-  { name: "Gunmetal", hex: "#2C3539" },
-  { name: "Red Enamel", hex: "#DC143C" },
-  { name: "Blue Enamel", hex: "#1E40AF" },
 ];
 
 const APPAREL_SIZES = ["XS", "S", "M", "L", "XL", "2XL", "3XL"];
@@ -722,194 +690,7 @@ export const products: Product[] = [
     colors: BOTTLE_COLORS,
     description: "We The People flag design on stainless steel shaker. Mixing ball included, leak-proof twist lid.",
   },
-  // Fitness (6)
-  {
-    id: "fitness-gym-towel",
-    name: '"WTP" Gym Towel',
-    price: "$34.99",
-    image: gymTowelImg,
-    tagline: "Microfiber — Full Print",
-    badge: "NEW",
-    category: "fitness",
-    colors: [
-      { name: "Black", hex: "#1a1a1a" },
-      { name: "Gray", hex: "#808080" },
-      { name: "Red", hex: "#B22222" },
-    ],
-    description: "Full-print microfiber gym towel. Quick-dry, antibacterial, machine washable. 16×32 inches.",
-  },
-  {
-    id: "fitness-gym-bag",
-    name: '"1776" Gym Bag',
-    price: "$84.99",
-    image: gymBagImg,
-    tagline: "Eagle Duffle — Tactical Black",
-    badge: "BESTSELLER",
-    category: "fitness",
-    colors: [
-      { name: "Black", hex: "#1a1a1a" },
-      { name: "Navy", hex: "#1B2A4A" },
-      { name: "Olive", hex: "#556B2F" },
-    ],
-    description: "Tactical-style duffle bag with 1776 eagle emblem. Water-resistant nylon, shoe compartment, padded strap.",
-  },
-  {
-    id: "fitness-wrist-wraps",
-    name: '"Old Glory" Wrist Wraps',
-    price: "$29.99",
-    image: wristWrapsImg,
-    tagline: "Flag Print — Heavy Duty",
-    badge: "🔥 HOT",
-    category: "fitness",
-    colors: [
-      { name: "Flag Print", hex: "#B22222" },
-      { name: "Black", hex: "#1a1a1a" },
-      { name: "Camo", hex: "#556B2F" },
-    ],
-    description: "18-inch wrist wraps with thumb loop. American flag design. Perfect for heavy lifting and CrossFit.",
-  },
-  {
-    id: "fitness-bands",
-    name: '"Patriot" Resistance Bands',
-    price: "$39.99",
-    image: bandsImg,
-    tagline: "Red, White & Blue Set",
-    badge: "NEW",
-    category: "fitness",
-    colors: [
-      { name: "Red/White/Blue", hex: "#B22222" },
-    ],
-    description: "Set of 3 resistance bands in red, white, and blue. Light, medium, and heavy resistance. Natural latex.",
-  },
-  {
-    id: "fitness-headband",
-    name: '"Stars & Stripes" Headband',
-    price: "$22.99",
-    image: headbandImg,
-    tagline: "Moisture-Wicking — Non-Slip",
-    badge: "FAN FAVORITE",
-    category: "fitness",
-    colors: [
-      { name: "Flag Print", hex: "#1B2A4A" },
-      { name: "Black", hex: "#1a1a1a" },
-      { name: "Red", hex: "#B22222" },
-    ],
-    description: "Moisture-wicking workout headband with silicone grip. American flag design. One size fits all.",
-  },
-  {
-    id: "fitness-koozie",
-    name: '"Don\'t Tread" Koozie',
-    price: "$14.99",
-    image: koozieImg,
-    tagline: "Neoprene Can Cooler",
-    badge: null,
-    category: "fitness",
-    colors: [
-      { name: "Black", hex: "#1a1a1a" },
-      { name: "Camo", hex: "#556B2F" },
-      { name: "Red", hex: "#B22222" },
-    ],
-    description: "Neoprene can cooler with Gadsden design. Fits standard 12oz cans. Collapsible for easy carry.",
-  },
-  // Posters (6)
-  {
-    id: "poster-rise",
-    name: '"RISE" Poster',
-    price: "$26.99",
-    image: posterImg,
-    tagline: "18×24 Screenprint Style",
-    badge: "LIMITED",
-    category: "posters",
-    colors: [
-      { name: "Matte", hex: "#1a1a1a" },
-      { name: "Glossy", hex: "#F5F5F5" },
-    ],
-    description: "18×24 screenprint-style poster on heavyweight 100lb matte paper. Ships rolled in protective tube.",
-  },
-  {
-    id: "poster-liberty-death",
-    name: '"Liberty or Death" Poster',
-    price: "$29.99",
-    image: poster2Img,
-    tagline: "18×24 — Flag Skull Print",
-    badge: "🔥 HOT",
-    category: "posters",
-    colors: [
-      { name: "Matte", hex: "#1a1a1a" },
-      { name: "Glossy", hex: "#F5F5F5" },
-      { name: "Canvas", hex: "#C3B091" },
-    ],
-    description: "Liberty or Death flag skull design. 18×24 on premium paper or stretched canvas upgrade available.",
-  },
-  {
-    id: "poster-wtp",
-    name: '"We The People" Poster',
-    price: "$26.99",
-    image: poster3Img,
-    tagline: "18×24 — Parchment Style",
-    badge: "BESTSELLER",
-    category: "posters",
-    colors: [
-      { name: "Parchment", hex: "#C3B091" },
-      { name: "Black", hex: "#1a1a1a" },
-    ],
-    description: "Vintage parchment-style We The People poster. 18×24 on aged-look heavyweight paper.",
-  },
-  {
-    id: "poster-gadsden",
-    name: '"Don\'t Tread" Poster',
-    price: "$26.99",
-    image: poster4Img,
-    tagline: "18×24 — Propaganda Style",
-    badge: "NEW",
-    category: "posters",
-    colors: [
-      { name: "Vintage", hex: "#C3B091" },
-      { name: "Black", hex: "#1a1a1a" },
-    ],
-    description: "Gadsden rattlesnake in vintage propaganda poster style. 18×24 on premium paper.",
-  },
-  {
-    id: "poster-1776",
-    name: '"1776 Muskets" Poster',
-    price: "$29.99",
-    image: poster5Img,
-    tagline: "18×24 — Parchment Eagle",
-    badge: "FAN FAVORITE",
-    category: "posters",
-    colors: [
-      { name: "Parchment", hex: "#C3B091" },
-      { name: "Matte", hex: "#1a1a1a" },
-      { name: "Canvas", hex: "#8B7355" },
-    ],
-    description: "1776 crossed muskets with eagle seal on aged parchment. 18×24, also available as canvas print.",
-  },
-  {
-    id: "poster-2a",
-    name: '"2nd Amendment" Poster',
-    price: "$26.99",
-    image: poster6Img,
-    tagline: "18×24 — Distressed Flag",
-    badge: "LIMITED",
-    category: "posters",
-    colors: [
-      { name: "Vintage", hex: "#C3B091" },
-      { name: "Glossy", hex: "#F5F5F5" },
-    ],
-    description: "Second Amendment poster with distressed American flag background. 18×24 premium print.",
-  },
   // Accessories
-  {
-    id: "sticker-pack",
-    name: "Sticker Pack (6pc)",
-    price: "$22.99",
-    image: stickersImg,
-    tagline: "Slap 'Em Everywhere",
-    badge: "FAN FAVORITE",
-    category: "accessories",
-    colors: [],
-    description: "6-piece vinyl sticker pack featuring our most popular designs. Weather-proof, UV resistant.",
-  },
   {
     id: "patch-wtp",
     name: '"WTP" Morale Patch',
@@ -924,31 +705,6 @@ export const products: Product[] = [
       { name: "Blackout", hex: "#1a1a1a" },
     ],
     description: "3×2 inch PVC morale patch with velcro backing. Fits hats, bags, and plate carriers.",
-  },
-  {
-    id: "pin-old-glory",
-    name: '"Old Glory" Enamel Pin',
-    price: "$16.99",
-    image: pinImg,
-    tagline: "Gold Finish — Lapel Ready",
-    badge: null,
-    category: "accessories",
-    colors: [
-      { name: "Gold", hex: "#B5A642" },
-      { name: "Silver", hex: "#C0C0C0" },
-    ],
-    description: "Hard enamel pin with gold or silver finish. Butterfly clutch backing. Perfect for lapels and hats.",
-  },
-  {
-    id: "flag-gadsden",
-    name: '"Don\'t Tread" 3×5 Flag',
-    price: "$42.99",
-    image: flagImg,
-    tagline: "Gadsden Edition — Double-Sided",
-    badge: "🔥 HOT",
-    category: "accessories",
-    colors: [],
-    description: "3×5 foot Gadsden flag. Double-sided print on durable polyester. Brass grommets, reinforced header.",
   },
   {
     id: "yardsign-wtp",
@@ -975,73 +731,6 @@ export const products: Product[] = [
       { name: "Red", hex: "#B22222" },
     ],
     description: "Die-cut vinyl decal, 5-year outdoor rated. Applies to cars, trucks, laptops, and more.",
-  },
-  // Keychains (6)
-  {
-    id: "keychain-the-people",
-    name: '"The People" Keychain',
-    price: "$22.99",
-    image: keychainImg,
-    tagline: "Brass Finish — Engraved Script",
-    badge: "NEW",
-    category: "keychains",
-    colors: KEYCHAIN_COLORS,
-    description: "Solid brass keychain with engraved 'We The People' script. Split ring and lobster clasp included.",
-  },
-  {
-    id: "keychain-1776-eagle",
-    name: '"1776 Eagle" Keychain',
-    price: "$26.99",
-    image: keychain2Img,
-    tagline: "Brass — Eagle Emblem",
-    badge: "BESTSELLER",
-    category: "keychains",
-    colors: KEYCHAIN_COLORS,
-    description: "1776 eagle emblem on solid brass tag. Laser-engraved, built to last.",
-  },
-  {
-    id: "keychain-dont-tread",
-    name: '"Don\'t Tread" Keychain',
-    price: "$22.99",
-    image: keychain3Img,
-    tagline: "Gadsden Medallion — Bronze",
-    badge: "🔥 HOT",
-    category: "keychains",
-    colors: KEYCHAIN_COLORS,
-    description: "Gadsden rattlesnake medallion keychain. Antique bronze finish, heavy-duty ring.",
-  },
-  {
-    id: "keychain-bottle-opener",
-    name: '"Old Glory" Bottle Opener',
-    price: "$26.99",
-    image: keychain4Img,
-    tagline: "Flag Opener — Stainless Steel",
-    badge: "FAN FAVORITE",
-    category: "keychains",
-    colors: KEYCHAIN_COLORS,
-    description: "American flag bottle opener keychain. Stainless steel, compact, always ready.",
-  },
-  {
-    id: "keychain-2a-shield",
-    name: '"2A Shield" Keychain',
-    price: "$22.99",
-    image: keychain5Img,
-    tagline: "Second Amendment — Gunmetal",
-    badge: null,
-    category: "keychains",
-    colors: KEYCHAIN_COLORS,
-    description: "Second Amendment shield emblem keychain. Gunmetal finish with star border detail.",
-  },
-  {
-    id: "keychain-flag-skull",
-    name: '"Flag Skull" Keychain',
-    price: "$26.99",
-    image: keychain6Img,
-    tagline: "Patriot Skull — Antique Bronze",
-    badge: "LIMITED",
-    category: "keychains",
-    colors: KEYCHAIN_COLORS,
-    description: "American flag skull 3D keychain. Antique bronze with enamel fill. Solid and weighty.",
   },
   // Phone Cases (6)
   {
@@ -1183,7 +872,6 @@ export const products: Product[] = [
     colors: [],
     description: "3×5 foot charcoal black march banner with flag skull. DRAIN EVERY LAST ONE. No golden parachutes. No quiet resignations. Drag them out into the light. Heavy-duty polyester, pole sleeve.",
   },
-  // ===== EPSTEIN FILES / ACCOUNTABILITY COLLECTION =====
   // Car Stickers (4)
   {
     id: "sticker-release-files",
@@ -1229,7 +917,7 @@ export const products: Product[] = [
     colors: [],
     description: "Die-cut vinyl sticker — PROTECT THE CHILDREN, NOT THE PREDATORS. Broken chains over American flag. They protected the monsters and silenced the victims. Never again. Weather-proof, UV resistant, 5-year outdoor rated.",
   },
-  // Epstein Accountability Banners (2)
+  // Epstein Accountability Banners
   {
     id: "banner-release-names",
     name: '"Release Every Name — Prosecute Every One" Banner',
@@ -1357,9 +1045,6 @@ export const categories: { label: string; value: Category }[] = [
   { label: "Phone Cases", value: "phone-cases" },
   { label: "Mugs", value: "mugs" },
   { label: "Drinkware", value: "drinkware" },
-  { label: "Keychains", value: "keychains" },
-  { label: "Fitness", value: "fitness" },
-  { label: "Posters", value: "posters" },
   { label: "Headwear", value: "headwear" },
   { label: "Accessories", value: "accessories" },
 ];
