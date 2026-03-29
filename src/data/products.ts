@@ -5,12 +5,6 @@ import mugImg from "@/assets/product-mug.jpg";
 import beanieImg from "@/assets/product-beanie.jpg";
 import tee2Img from "@/assets/product-tee2.jpg";
 import hoodie2Img from "@/assets/product-hoodie2.jpg";
-import caseEagleImg from "@/assets/product-case-eagle.jpg";
-import case2aImg from "@/assets/product-case-2a.jpg";
-import caseSkullImg from "@/assets/product-case-skull.jpg";
-import caseWtpImg from "@/assets/product-case-wtp.jpg";
-import caseGadsdenImg from "@/assets/product-case-gadsden.jpg";
-import case1776Img from "@/assets/product-case-1776.jpg";
 import patchImg from "@/assets/product-patch.jpg";
 import yardSignImg from "@/assets/product-yardsign.jpg";
 import bottleImg from "@/assets/product-bottle.jpg";
@@ -81,7 +75,7 @@ export type Category =
   | "tank-tops"
   | "headwear"
   | "accessories"
-  | "phone-cases"
+  
   | "mugs"
   | "drinkware"
   | "march-banners"
@@ -732,79 +726,6 @@ export const products: Product[] = [
     ],
     description: "Die-cut vinyl decal, 5-year outdoor rated. Applies to cars, trucks, laptops, and more.",
   },
-  // Phone Cases (6)
-  {
-    id: "case-wtp-eagle",
-    name: '"WTP Eagle" Phone Case',
-    price: "$42.99",
-    image: caseEagleImg,
-    tagline: "iPhone & Samsung — Tough Case",
-    badge: "NEW",
-    category: "phone-cases",
-    colors: CASE_COLORS,
-    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "iPhone 17", "Samsung S23", "Samsung S24"],
-    description: "Dual-layer tough case with WTP eagle design. Impact-resistant polycarbonate shell + TPU liner.",
-  },
-  {
-    id: "case-2a",
-    name: '"2nd Amendment" Phone Case',
-    price: "$42.99",
-    image: case2aImg,
-    tagline: "iPhone & Samsung — Tough Case",
-    badge: "🔥 HOT",
-    category: "phone-cases",
-    colors: CASE_COLORS,
-    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "iPhone 17", "Samsung S23", "Samsung S24"],
-    description: "Second Amendment design tough case. Raised edges protect camera and screen. Wireless charging compatible.",
-  },
-  {
-    id: "case-flag-skull",
-    name: '"Flag Skull" Phone Case',
-    price: "$42.99",
-    image: caseSkullImg,
-    tagline: "iPhone & Samsung — Tough Case",
-    badge: "BESTSELLER",
-    category: "phone-cases",
-    colors: CASE_COLORS,
-    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "iPhone 17", "Samsung S23", "Samsung S24"],
-    description: "Flag skull design on tough case. Non-slip grip texture, precise cutouts for all ports.",
-  },
-  {
-    id: "case-wtp-flag",
-    name: '"WTP Flag" Phone Case',
-    price: "$42.99",
-    image: caseWtpImg,
-    tagline: "iPhone & Samsung — Tough Case",
-    badge: "NEW",
-    category: "phone-cases",
-    colors: CASE_COLORS,
-    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "iPhone 17", "Samsung S23", "Samsung S24"],
-    description: "We The People flag design tough case. Slim profile doesn't add bulk. Drop tested to 6 feet.",
-  },
-  {
-    id: "case-gadsden",
-    name: '"Don\'t Tread" Phone Case',
-    price: "$42.99",
-    image: caseGadsdenImg,
-    tagline: "iPhone & Samsung — Tough Case",
-    badge: "FAN FAVORITE",
-    category: "phone-cases",
-    colors: CASE_COLORS,
-    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "iPhone 17", "Samsung S23", "Samsung S24"],
-    description: "Gadsden rattlesnake + American flag tough case. UV-printed design won't fade or peel.",
-  },
-  {
-    id: "case-1776",
-    name: '"1776 Flag" Phone Case',
-    price: "$42.99",
-    image: case1776Img,
-    tagline: "iPhone & Samsung — Tough Case",
-    badge: "LIMITED",
-    category: "phone-cases",
-    colors: CASE_COLORS,
-    sizes: ["iPhone 14", "iPhone 15", "iPhone 16", "iPhone 17", "Samsung S23", "Samsung S24"],
-    description: "1776 distressed flag tough case. Matte finish, anti-fingerprint coating. Limited edition print.",
-  },
   // March Banners (8)
   {
     id: "banner-had-enough",
@@ -1042,7 +963,7 @@ export const categories: { label: string; value: Category }[] = [
   { label: "Tank Tops", value: "tank-tops" },
   { label: "Car Stickers", value: "car-stickers" },
   { label: "March Banners", value: "march-banners" },
-  { label: "Phone Cases", value: "phone-cases" },
+  
   { label: "Mugs", value: "mugs" },
   { label: "Drinkware", value: "drinkware" },
   { label: "Headwear", value: "headwear" },

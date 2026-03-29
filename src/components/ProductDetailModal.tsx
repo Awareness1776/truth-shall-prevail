@@ -122,7 +122,7 @@ const ProductDetailModal = ({ product, open, onClose }: Props) => {
             {hasSizes && (
               <div className="mb-5">
                 <p className="font-heading text-xs tracking-widest text-muted-foreground uppercase mb-3">
-                  {product.category === "phone-cases" ? "Device" : "Size"}:{" "}
+                  Size:{" "}
                   <span className="text-foreground">{product.sizes![selectedSize]}</span>
                 </p>
                 <div className="flex flex-wrap gap-2">

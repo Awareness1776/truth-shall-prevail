@@ -106,7 +106,7 @@ const CartPage = () => {
                           )}
                           {item.size && (
                             <p className="font-heading text-xs text-muted-foreground">
-                              {item.product.category === "phone-cases" ? "Device" : "Size"}: {item.size}
+                              Size: {item.size}
                             </p>
                           )}
                         </div>
