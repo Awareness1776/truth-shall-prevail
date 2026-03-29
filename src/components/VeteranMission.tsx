@@ -50,41 +50,49 @@ const VeteranMission = () => {
             </h3>
             <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
               <p>
-                In March 2026, families across America are watching headlines about
-                a possible war with Iran while asking the same question: <span className="text-foreground font-medium">who is
-                listening to the people who pay the price?</span> Not the pundits. Not the
-                insiders. The parents, veterans, workers, and young Americans who
-                would carry the burden of another generation of conflict.
+                It's March 2026 — and America is at war with Iran. Not a "possible conflict."
+                Not a "strategic engagement." <span className="text-foreground font-medium">War.</span> Our
+                troops are already on the ground. Our sons and daughters have already been deployed.
+                And once again, the families left behind are asking the same question nobody
+                in Washington wants to answer: <span className="text-foreground font-medium">who is listening to the people who pay the price?</span>
               </p>
               <p>
-                Our veterans already gave everything. They stepped into chaos so
-                politicians could stand at podiums and call it strategy. They came
-                home to closed clinics, endless waitlists, broken promises, and a
-                system that thanks them in speeches while abandoning them in real life.
+                Not the pundits safe behind their desks. Not the politicians who voted for
+                escalation and then went to dinner. The parents, spouses, veterans, and young
+                Americans who carry the weight of every decision made in rooms they'll never enter —
+                <span className="text-foreground font-medium">those</span> are the ones paying.
               </p>
               <p>
-                And now the same machine beats the same drum again — louder fear,
-                faster escalation, less accountability. Meanwhile, Americans across
-                this country are saying they do <span className="text-foreground font-medium">not</span> want another endless war,
-                another blank check, another list of names carved into stone while
-                Washington cashes in.
+                Our veterans already gave everything. They stepped into the fire so politicians
+                could stand at podiums and call it "strategy." They came home to closed clinics,
+                endless waitlists, broken promises, and a system that thanks them on holidays
+                while abandoning them the other 364 days of the year.
+              </p>
+              <p>
+                And now, before the wounds of the last war have even healed, we're sending
+                more into the next one. The same machine. The same lies. The same blank checks
+                written in American blood. Louder fear, faster escalation, zero accountability —
+                while Americans across this country are screaming that they do{" "}
+                <span className="text-foreground font-medium">not</span> want another
+                endless war, another list of names carved into stone while Washington cashes in.
               </p>
               <p className="text-foreground font-medium text-lg">
-                This brand exists so that voice can’t be ignored.
+                This brand exists so that voice cannot be silenced.
               </p>
               <p>
-                Every product is a signal: we remember who bleeds, who grieves, and
-                who gets left behind. Every person wearing Awakened 1776 carries a
-                piece of that truth into their town, their job, their school, and
-                their streets.
+                Every product is a signal — a declaration that we remember who bleeds, who grieves,
+                and who gets left behind. Every person wearing Awakened 1776 carries a piece of
+                that truth into their town, their job, their school, and their streets. This
+                isn't fashion. It's a stand.
               </p>
               <p>
-                We are not building this for one person. We are building this for all
-                of us in the United States — for veterans, for families, for survivors,
-                for anyone tired of being treated like collateral.
+                We are not building this for one person. We are building this for every American
+                who has had enough — for the veterans coming home broken, for the Gold Star
+                families grieving in silence, for the survivors the system forgot, and for every
+                citizen tired of being treated like collateral damage in someone else's agenda.
               </p>
               <p className="text-foreground font-medium text-lg">
-                We need to unite. We need to be seen. We need to march — peacefully,
+                We need to unite. We need to be seen. We need to stand — peacefully,
                 loudly, and together — until the people in power remember who this
                 country belongs to.
               </p>
