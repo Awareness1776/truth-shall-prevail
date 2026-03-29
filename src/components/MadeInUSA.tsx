@@ -56,6 +56,49 @@ const MadeInUSA = () => {
           ))}
         </div>
 
+        {/* Why We Cost More */}
+        <div className="mt-20 max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="font-heading text-sm tracking-[0.3em] text-primary mb-3 uppercase">
+              Real Talk
+            </p>
+            <h3 className="font-display text-3xl md:text-5xl text-foreground mb-4">
+              "WHY ARE YOU MORE EXPENSIVE?"
+            </h3>
+            <p className="font-body text-lg text-muted-foreground leading-relaxed">
+              We get it. Here's the honest answer.
+            </p>
+          </div>
+
+          <div className="space-y-6 font-body text-muted-foreground leading-relaxed">
+            <p className="text-base">
+              Most brands charge you $40 for a shirt that costs them <span className="text-primary font-bold">$3 to make in Bangladesh</span>. 
+              They pocket the difference, slap a logo on it, and call it "premium." That's not premium — that's a scam.
+            </p>
+            <p className="text-base">
+              Our cost-per-garment is <span className="text-primary font-bold">8 to 10 times higher</span> than 
+              what fast-fashion brands pay — because American labor isn't cheap, and it shouldn't be. Our sewers earn 
+              a living wage. Our materials are sourced domestically. Our heavyweight fabrics cost more per yard than 
+              most brands spend on an entire shirt.
+            </p>
+            <p className="text-base">
+              When you break it down: <span className="text-foreground font-semibold">raw American-milled fabric, 
+              reinforced stitching, fade-resistant screen printing, quality control that rejects anything less than perfect, 
+              fair wages for every hand that touches your order</span> — suddenly the price isn't high. It's honest.
+            </p>
+            <p className="text-base">
+              And here's what the big brands will never tell you: <span className="text-primary font-bold">20% of every 
+              sale goes directly to veteran support and survivor advocacy</span>. So you're not just buying a shirt — 
+              you're funding a mission that Washington refuses to touch.
+            </p>
+            <p className="text-base">
+              Cheap brands cut costs by cutting people. <span className="text-foreground font-semibold">We'd rather 
+              cut our margins than cut corners.</span> Every dollar you spend here stays in America, creates jobs, 
+              and fuels a movement that the system doesn't want to exist.
+            </p>
+          </div>
+        </div>
+
         <div className="text-center mt-16">
           <p className="font-display text-2xl md:text-3xl text-foreground">
             When you wear <span className="text-primary font-bold">Awakened 1776</span>,
