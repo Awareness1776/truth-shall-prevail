@@ -535,11 +535,11 @@ export const products: Product[] = [
     description: "VETERAN OWNED — embroidered trucker hat with mesh back. 22 veterans a day. 37,000 homeless tonight. Congress sleeps fine. We don't forget. Structured front, adjustable snap closure.",
   },
   {
-    id: "beanie-awareness",
-    name: '"Awakened 1776" Beanie',
+    id: "beanie-a-stamp",
+    name: '"A" Stamp Mark Beanie',
     price: "$42.99",
     image: beanieAwarenessImg,
-    tagline: "Awake & United",
+    tagline: "Gold 'A' Mark — Embroidered",
     badge: "🔥 HOT",
     category: "headwear" as Category,
     colors: [
@@ -548,7 +548,7 @@ export const products: Product[] = [
       { name: "Navy", hex: "#1B2A4A" },
       { name: "Burgundy", hex: "#800020" },
     ],
-    description: "AWAKENED 1776 — embroidered cuff beanie. The spirit of 1776 never died. It lives in every American who refuses to be lied to, sold out, or silenced. Soft acrylic knit, one size fits most.",
+    description: "Gold 'A' stamp mark with AWAKENED 1776 embroidered on black cuff beanie. The spirit lives on. Soft acrylic knit, one size fits most.",
   },
   // Mugs (6)
   {
