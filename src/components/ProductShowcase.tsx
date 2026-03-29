@@ -49,6 +49,10 @@ const ProductShowcase = () => {
                           {product.badge}
                         </span>
                       )}
+                      <span className="absolute bottom-3 right-3 flex items-center gap-1 bg-background/90 backdrop-blur-sm text-xs font-heading tracking-wider text-foreground px-2 py-1 rounded border border-border">
+                        <Flag className="h-3 w-3 text-primary" />
+                        MADE IN USA
+                      </span>
                     </div>
                     <div className="p-6">
                       <p className="font-heading text-xs tracking-widest text-muted-foreground mb-1 uppercase">
