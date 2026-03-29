@@ -68,10 +68,18 @@ import bannerAccountabilityImg from "@/assets/product-banner-accountability.jpg"
 import bannerProtectImg from "@/assets/product-banner-protect.jpg";
 import bannerVeteransImg from "@/assets/product-banner-veterans.jpg";
 import bannerSilenceImg from "@/assets/product-banner-silence.jpg";
+import crewneck1Img from "@/assets/product-crewneck1.jpg";
+import crewneck2Img from "@/assets/product-crewneck2.jpg";
+import crewneck3Img from "@/assets/product-crewneck3.jpg";
+import crewneck4Img from "@/assets/product-crewneck4.jpg";
+import crewneck5Img from "@/assets/product-crewneck5.jpg";
+import crewneck6Img from "@/assets/product-crewneck6.jpg";
+import crewneck7Img from "@/assets/product-crewneck7.jpg";
 
 export type Category =
   | "all"
   | "apparel"
+  | "crewnecks"
   | "tank-tops"
   | "headwear"
   | "drinkware";
@@ -149,7 +157,7 @@ const APPAREL_SIZES = ["XS", "S", "M", "L", "XL", "2XL", "3XL"];
 const TANK_SIZES = ["XS", "S", "M", "L", "XL", "2XL", "3XL"];
 
 export const products: Product[] = [
-  // T-Shirts (8)
+  // T-Shirts (6)
   {
     id: "tee-76-mark",
     name: '"76" Brand Mark Tee',
@@ -222,31 +230,7 @@ export const products: Product[] = [
     sizes: APPAREL_SIZES,
     description: "Eagle silhouette with BORN TO SOAR NOT TO BOW in gold and white. AWAKENED 1776 brand mark. For those who rise above.",
   },
-  {
-    id: "tee-freedom-never-given",
-    name: '"Freedom Was Never Given" Tee',
-    price: "$59.99",
-    image: tee6Img,
-    tagline: "Declared. Defended. Passed Down.",
-    badge: "NEW DROP",
-    category: "apparel",
-    colors: APPAREL_COLORS,
-    sizes: APPAREL_SIZES,
-    description: "FREEDOM WAS NEVER GIVEN — IT WAS DECLARED, DEFENDED, AND PASSED DOWN. AWAKENED 1776 brand stamp. The declaration tee.",
-  },
-  {
-    id: "tee-spirit-independence",
-    name: '"Spirit of Independence" Tee',
-    price: "$59.99",
-    image: tee5Img,
-    tagline: "Est. In The Spirit Of Independence",
-    badge: "FAN FAVORITE",
-    category: "apparel",
-    colors: APPAREL_COLORS,
-    sizes: APPAREL_SIZES,
-    description: "EST. IN THE SPIRIT OF INDEPENDENCE — AWAKENED 1776 in bold varsity gold on premium black cotton. The heritage pride tee.",
-  },
-  // Hoodies (7)
+  // Hoodies (6)
   {
     id: "hoodie-76-mark",
     name: '"76" Brand Mark Hoodie',
@@ -319,19 +303,92 @@ export const products: Product[] = [
     sizes: APPAREL_SIZES,
     description: "The 'A' monogram with EST. MDCCLXXVI · UNITED STATES above, AWAKENED 1776 below in cream and gold. Heritage brand identity. Premium black fleece.",
   },
+  // Crewnecks (7)
   {
-    id: "hoodie-awaken-everything",
-    name: '"Awaken Everything" Hoodie',
-    price: "$109.99",
-    image: hoodieComingImg,
-    tagline: "The Campaign — Fire & Gold",
-    badge: "NEW DROP",
-    category: "apparel",
+    id: "crew-76-mark",
+    name: '"76" Brand Mark Crewneck',
+    price: "$79.99",
+    image: crewneck1Img,
+    tagline: "The Iconic 76 — Gold On Black",
+    badge: "BESTSELLER",
+    category: "crewnecks",
     colors: APPAREL_COLORS,
     sizes: APPAREL_SIZES,
-    description: "AWAKEN EVERYTHING in fire gradient text on jet black heavyweight fleece. AWAKENED 1776 brand on pocket. The campaign call to action.",
+    description: "Massive gold distressed 76 with AWAKENED · EST. 1776 on jet black heavyweight fleece crewneck. The flagship brand identity — no hood, all statement.",
   },
-  // Tank Tops (6)
+  {
+    id: "crew-awakened-collegiate",
+    name: '"Awakened 1776" Collegiate Crewneck',
+    price: "$79.99",
+    image: crewneck2Img,
+    tagline: "The Arched Classic — Cream & Red",
+    badge: "🔥 HOT",
+    category: "crewnecks",
+    colors: APPAREL_COLORS,
+    sizes: APPAREL_SIZES,
+    description: "Arched AWAKENED in cream with 1776 in red on premium black heavyweight fleece crewneck. The collegiate brand identity. Clean neckline, premium weight.",
+  },
+  {
+    id: "crew-a-stamp",
+    name: '"A" Stamp Mark Crewneck',
+    price: "$79.99",
+    image: crewneck3Img,
+    tagline: "The Spirit Lives On · Gold Stamp",
+    badge: "NEW DROP",
+    category: "crewnecks",
+    colors: APPAREL_COLORS,
+    sizes: APPAREL_SIZES,
+    description: "The gold 'A' stamp block logo with ornate border on jet black heavyweight fleece crewneck. AWAKENED — THE SPIRIT LIVES ON · 1776. Heritage luxury.",
+  },
+  {
+    id: "crew-truth-prevail",
+    name: '"Truth Shall Prevail" Crewneck',
+    price: "$79.99",
+    image: crewneck4Img,
+    tagline: "The Motto — Gold On Black",
+    badge: "🔥 HOT",
+    category: "crewnecks",
+    colors: APPAREL_COLORS,
+    sizes: APPAREL_SIZES,
+    description: "Three gold stars crown our core motto: TRUTH SHALL PREVAIL. AWAKENED 1776 brand mark below. Premium heavyweight fleece crewneck.",
+  },
+  {
+    id: "crew-simple-sovereign",
+    name: '"Simple. Sovereign. Undefeated." Crewneck',
+    price: "$79.99",
+    image: crewneck5Img,
+    tagline: "Three Words — One Identity",
+    badge: "BESTSELLER",
+    category: "crewnecks",
+    colors: APPAREL_COLORS,
+    sizes: APPAREL_SIZES,
+    description: "SIMPLE. SOVEREIGN. UNDEFEATED. in bold cream with AWAKENED 1776 brand below. Premium black heavyweight fleece crewneck. The brand values, worn with conviction.",
+  },
+  {
+    id: "crew-born-to-soar",
+    name: '"Born To Soar, Not To Bow" Crewneck',
+    price: "$79.99",
+    image: crewneck6Img,
+    tagline: "The Eagle Rises — Awakened 1776",
+    badge: "LIMITED",
+    category: "crewnecks",
+    colors: APPAREL_COLORS,
+    sizes: APPAREL_SIZES,
+    description: "Golden eagle silhouette with BORN TO SOAR, NOT TO BOW in gold and white. AWAKENED 1776 brand mark. Premium fleece crewneck.",
+  },
+  {
+    id: "crew-awaken-everything",
+    name: '"Awaken Everything" Crewneck',
+    price: "$79.99",
+    image: crewneck7Img,
+    tagline: "The Campaign — Fire & Gold",
+    badge: "NEW DROP",
+    category: "crewnecks",
+    colors: APPAREL_COLORS,
+    sizes: APPAREL_SIZES,
+    description: "AWAKEN EVERYTHING in fire gradient text on jet black heavyweight fleece crewneck. AWAKENED 1776 brand on chest. The campaign call to action.",
+  },
+  // Tank Tops (7)
   {
     id: "tank-76-mark",
     name: '"76" Brand Mark Tank',
@@ -545,61 +602,12 @@ export const products: Product[] = [
     ],
     description: "Gold 'A' stamp mark with AWAKENED 1776 embroidered on black cuff beanie. The spirit lives on. Soft acrylic knit, one size fits most.",
   },
-  // Epstein Accountability Tees (2)
-  {
-    id: "tee-release-files",
-    name: '"Release The Files — Prosecute Them All" Tee',
-    price: "$59.99",
-    image: teeReleaseFilesImg,
-    tagline: "They Buried The Evidence — We Wear The Truth",
-    badge: "🔥 HOT",
-    category: "apparel",
-    colors: APPAREL_COLORS,
-    sizes: APPAREL_SIZES,
-    description: "Premium heavyweight cotton tee — RELEASE THE FILES / PROSECUTE THEM ALL. American flag skull graphic. They shredded documents and sealed records to protect sick, powerful predators. This shirt is a walking demand for justice. Pre-shrunk, tagless.",
-  },
-  {
-    id: "tee-above-law",
-    name: '"No One Is Above The Law" Tee',
-    price: "$59.99",
-    image: teeAboveLawImg,
-    tagline: "Not Billionaires — Not Politicians — Nobody",
-    badge: "NEW DROP",
-    category: "apparel",
-    colors: APPAREL_COLORS,
-    sizes: APPAREL_SIZES,
-    description: "Premium heavyweight cotton tee — NO ONE IS ABOVE THE LAW. Blindfolded Lady Justice over distressed American flag. Congress let predators walk free because they had money and connections. Wear this until every last one of them is behind bars.",
-  },
-  // Epstein Accountability Hoodies (2)
-  {
-    id: "hoodie-client-list",
-    name: '"Where Is The Client List?" Hoodie',
-    price: "$109.99",
-    image: hoodieClientListImg,
-    tagline: "Congress Is Hiding Names — Demand Answers",
-    badge: "🔥 HOT",
-    category: "apparel",
-    colors: APPAREL_COLORS,
-    sizes: APPAREL_SIZES,
-    description: "Heavyweight 10oz fleece hoodie — WHERE IS THE CLIENT LIST? / DEMAND ANSWERS. Capitol dome with question marks. They have the names of every sick predator who visited that island and they won't release them. Why? Because their friends are on it. Double-lined hood, metal grommets.",
-  },
-  {
-    id: "hoodie-protect-children",
-    name: '"Protect The Children — Not The Predators" Hoodie',
-    price: "$109.99",
-    image: hoodieProtectChildrenImg,
-    tagline: "Children Over Corruption — Always",
-    badge: "NEW DROP",
-    category: "apparel",
-    colors: APPAREL_COLORS,
-    sizes: APPAREL_SIZES,
-    description: "Heavyweight 10oz fleece hoodie — PROTECT THE CHILDREN / NOT THE PREDATORS. American eagle breaking chains. Congress chose to protect monsters over innocent children. Every politician who stayed silent is guilty. This hoodie is for the kids who never got justice. Double-lined hood, front pouch pocket.",
-  },
 ];
 
 export const categories: { label: string; value: Category }[] = [
   { label: "All", value: "all" },
   { label: "Apparel", value: "apparel" },
+  { label: "Crewnecks", value: "crewnecks" },
   { label: "Tank Tops", value: "tank-tops" },
   { label: "Drinkware", value: "drinkware" },
   { label: "Headwear", value: "headwear" },
