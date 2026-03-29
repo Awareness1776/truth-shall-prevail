@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.jpg";
 import { Menu, X, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
