@@ -161,7 +161,7 @@ export const products: Product[] = [
   {
     id: "tee-76-mark",
     name: '"76" Brand Mark Tee',
-    price: "$59.99",
+    price: "$74.99",
     image: tshirtImg,
     tagline: "Awakened · Est. 1776",
     badge: "BESTSELLER",
@@ -173,7 +173,7 @@ export const products: Product[] = [
   {
     id: "tee-awakened-collegiate",
     name: '"Awakened 1776" Collegiate Tee',
-    price: "$59.99",
+    price: "$74.99",
     image: teeParasitesImg,
     tagline: "The Classic — Arched Logo",
     badge: "🔥 HOT",
@@ -185,7 +185,7 @@ export const products: Product[] = [
   {
     id: "tee-a-stamp",
     name: '"A" Stamp Mark Tee',
-    price: "$59.99",
+    price: "$74.99",
     image: teeTakebackImg,
     tagline: "The Spirit Lives On · 1776",
     badge: "NEW DROP",
@@ -197,7 +197,7 @@ export const products: Product[] = [
   {
     id: "tee-truth-prevail",
     name: '"Truth Shall Prevail" Tee',
-    price: "$59.99",
+    price: "$74.99",
     image: tee3Img,
     tagline: "The Motto — Gold On Black",
     badge: "🔥 HOT",
@@ -209,7 +209,7 @@ export const products: Product[] = [
   {
     id: "tee-simple-sovereign",
     name: '"Simple. Sovereign. Undefeated." Tee',
-    price: "$59.99",
+    price: "$74.99",
     image: tee4Img,
     tagline: "Three Words — One Identity",
     badge: "BESTSELLER",
@@ -221,7 +221,7 @@ export const products: Product[] = [
   {
     id: "tee-born-to-soar",
     name: '"Born To Soar, Not To Bow" Tee',
-    price: "$59.99",
+    price: "$74.99",
     image: teeDrainImg,
     tagline: "The Eagle Rises — Awakened 1776",
     badge: "LIMITED",
@@ -234,7 +234,7 @@ export const products: Product[] = [
   {
     id: "hoodie-76-mark",
     name: '"76" Brand Mark Hoodie',
-    price: "$109.99",
+    price: "$124.99",
     image: hoodieImg,
     tagline: "The Iconic 76 — Gold On Black",
     badge: "BESTSELLER",
@@ -246,7 +246,7 @@ export const products: Product[] = [
   {
     id: "hoodie-awakened-collegiate",
     name: '"Awakened 1776" Collegiate Hoodie',
-    price: "$109.99",
+    price: "$124.99",
     image: hoodie2Img,
     tagline: "The Arched Classic — Cream & Red",
     badge: "🔥 HOT",
@@ -258,7 +258,7 @@ export const products: Product[] = [
   {
     id: "hoodie-a-stamp",
     name: '"A" Stamp Mark Hoodie',
-    price: "$109.99",
+    price: "$124.99",
     image: hoodie3Img,
     tagline: "The Spirit Lives On · Gold Stamp",
     badge: "NEW DROP",
@@ -270,7 +270,7 @@ export const products: Product[] = [
   {
     id: "hoodie-stamped-liberty",
     name: '"Stamped In The Name Of Liberty" Hoodie',
-    price: "$109.99",
+    price: "$124.99",
     image: hoodie4Img,
     tagline: "Liberty Brand — Gold Print",
     badge: "🔥 HOT",
@@ -282,7 +282,7 @@ export const products: Product[] = [
   {
     id: "hoodie-eagle-storm",
     name: '"The Eagle & The Storm" Hoodie',
-    price: "$109.99",
+    price: "$124.99",
     image: hoodieParasitesImg,
     tagline: "Rise Above It — Awakened 1776",
     badge: "NEW",
@@ -294,7 +294,7 @@ export const products: Product[] = [
   {
     id: "hoodie-heritage-monogram",
     name: '"Heritage Monogram" Hoodie',
-    price: "$109.99",
+    price: "$124.99",
     image: hoodieOurRulesImg,
     tagline: "EST. MDCCLXXVI · United States",
     badge: "LIMITED",
@@ -307,7 +307,7 @@ export const products: Product[] = [
   {
     id: "crew-76-mark",
     name: '"76" Brand Mark Crewneck',
-    price: "$79.99",
+    price: "$94.99",
     image: crewneck1Img,
     tagline: "The Iconic 76 — Gold On Black",
     badge: "BESTSELLER",
@@ -319,7 +319,7 @@ export const products: Product[] = [
   {
     id: "crew-awakened-collegiate",
     name: '"Awakened 1776" Collegiate Crewneck',
-    price: "$79.99",
+    price: "$94.99",
     image: crewneck2Img,
     tagline: "The Arched Classic — Cream & Red",
     badge: "🔥 HOT",
@@ -331,7 +331,7 @@ export const products: Product[] = [
   {
     id: "crew-a-stamp",
     name: '"A" Stamp Mark Crewneck',
-    price: "$79.99",
+    price: "$94.99",
     image: crewneck3Img,
     tagline: "The Spirit Lives On · Gold Stamp",
     badge: "NEW DROP",
@@ -343,7 +343,7 @@ export const products: Product[] = [
   {
     id: "crew-truth-prevail",
     name: '"Truth Shall Prevail" Crewneck',
-    price: "$79.99",
+    price: "$94.99",
     image: crewneck4Img,
     tagline: "The Motto — Gold On Black",
     badge: "🔥 HOT",
@@ -355,7 +355,7 @@ export const products: Product[] = [
   {
     id: "crew-simple-sovereign",
     name: '"Simple. Sovereign. Undefeated." Crewneck',
-    price: "$79.99",
+    price: "$94.99",
     image: crewneck5Img,
     tagline: "Three Words — One Identity",
     badge: "BESTSELLER",
@@ -367,7 +367,7 @@ export const products: Product[] = [
   {
     id: "crew-born-to-soar",
     name: '"Born To Soar, Not To Bow" Crewneck',
-    price: "$79.99",
+    price: "$94.99",
     image: crewneck6Img,
     tagline: "The Eagle Rises — Awakened 1776",
     badge: "LIMITED",
@@ -379,7 +379,7 @@ export const products: Product[] = [
   {
     id: "crew-awaken-everything",
     name: '"Awaken Everything" Crewneck',
-    price: "$79.99",
+    price: "$94.99",
     image: crewneck7Img,
     tagline: "The Campaign — Fire & Gold",
     badge: "NEW DROP",
@@ -392,7 +392,7 @@ export const products: Product[] = [
   {
     id: "tank-76-mark",
     name: '"76" Brand Mark Tank',
-    price: "$49.99",
+    price: "$64.99",
     image: tank1Img,
     tagline: "The Iconic 76 — Gym Ready",
     badge: "NEW",
@@ -404,7 +404,7 @@ export const products: Product[] = [
   {
     id: "tank-awakened-collegiate",
     name: '"Awakened 1776" Collegiate Tank',
-    price: "$49.99",
+    price: "$64.99",
     image: tank2Img,
     tagline: "The Arched Logo — Athletic Fit",
     badge: "BESTSELLER",
@@ -416,7 +416,7 @@ export const products: Product[] = [
   {
     id: "tank-truth-prevail",
     name: '"Truth Shall Prevail" Tank',
-    price: "$49.99",
+    price: "$64.99",
     image: tankDrainImg,
     tagline: "The Motto — Gold Statement",
     badge: "🔥 HOT",
@@ -428,7 +428,7 @@ export const products: Product[] = [
   {
     id: "tank-a-stamp",
     name: '"A" Stamp Mark Tank',
-    price: "$49.99",
+    price: "$64.99",
     image: tankTakebackImg,
     tagline: "The Spirit Lives On · Gold",
     badge: "NEW DROP",
@@ -440,7 +440,7 @@ export const products: Product[] = [
   {
     id: "tank-born-to-soar",
     name: '"Born To Soar" Tank',
-    price: "$49.99",
+    price: "$64.99",
     image: tankComingImg,
     tagline: "The Eagle — Awakened 1776",
     badge: "LIMITED",
@@ -452,7 +452,7 @@ export const products: Product[] = [
   {
     id: "tank-simple-sovereign",
     name: '"Simple. Sovereign. Undefeated." Tank',
-    price: "$49.99",
+    price: "$64.99",
     image: tank6Img,
     tagline: "Brand Values — Worn Bold",
     badge: "FAN FAVORITE",
@@ -464,7 +464,7 @@ export const products: Product[] = [
   {
     id: "tank-awaken-everything",
     name: '"Awaken Everything" Tank',
-    price: "$49.99",
+    price: "$64.99",
     image: tank5Img,
     tagline: "The Campaign — Athletic Cut",
     badge: "NEW",
@@ -477,7 +477,7 @@ export const products: Product[] = [
   {
     id: "cap-76-mark",
     name: '"76" Brand Mark Dad Cap',
-    price: "$49.99",
+    price: "$64.99",
     image: capImg,
     tagline: "The Iconic 76 — Gold Embroidered",
     badge: "BESTSELLER",
@@ -493,7 +493,7 @@ export const products: Product[] = [
   {
     id: "beanie-awakened",
     name: '"Awakened 1776" Beanie',
-    price: "$42.99",
+    price: "$54.99",
     image: beanieImg,
     tagline: "The Brand — Cream & Red",
     badge: "NEW",
@@ -509,7 +509,7 @@ export const products: Product[] = [
   {
     id: "cap-enough",
     name: '"Had Enough" Snapback',
-    price: "$49.99",
+    price: "$64.99",
     image: capEnoughImg,
     tagline: "We're Done Being Silent",
     badge: "NEW DROP",
@@ -525,7 +525,7 @@ export const products: Product[] = [
   {
     id: "cap-accountability",
     name: '"Accountability Now" Dad Cap',
-    price: "$49.99",
+    price: "$64.99",
     image: capAccountabilityImg,
     tagline: "No One Is Above The Law",
     badge: "🔥 HOT",
@@ -541,7 +541,7 @@ export const products: Product[] = [
   {
     id: "cap-protect-children",
     name: '"Protect The Children" Snapback',
-    price: "$49.99",
+    price: "$64.99",
     image: capProtectImg,
     tagline: "Their Silence Is Complicity",
     badge: "LIMITED",
@@ -557,7 +557,7 @@ export const products: Product[] = [
   {
     id: "cap-release-names",
     name: '"Release Every Name" Dad Cap',
-    price: "$49.99",
+    price: "$64.99",
     image: capReleaseImg,
     tagline: "Unseal The Truth",
     badge: "NEW DROP",
@@ -573,7 +573,7 @@ export const products: Product[] = [
   {
     id: "cap-veteran-owned",
     name: '"Veteran Owned" Trucker Hat',
-    price: "$49.99",
+    price: "$64.99",
     image: capVeteranImg,
     tagline: "They Served — Congress Forgot",
     badge: null,
@@ -589,7 +589,7 @@ export const products: Product[] = [
   {
     id: "beanie-a-stamp",
     name: '"A" Stamp Mark Beanie',
-    price: "$42.99",
+    price: "$54.99",
     image: beanieAwarenessImg,
     tagline: "Gold 'A' Mark — Embroidered",
     badge: "🔥 HOT",
